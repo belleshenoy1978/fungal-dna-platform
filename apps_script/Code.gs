@@ -322,6 +322,66 @@ function onFormSubmit(e) {
   }
 }
 
+// Questions are matched by keywords in their titles (case-insensitive), so the owner can
+// reword or regroup questions in the Form editor without breaking the mapping. First match wins.
+var MATCH = {
+  TYPE: [/analysis type/i],
+  MARKER: [/marker/i, /region/i],
+  PRIMER_PAIR: [/primer pair/i],
+  FWD: [/forward primer/i],
+  REV: [/reverse primer/i],
+  PAIRING: [/read layout/i],
+  LOCATION: [/sampling location/i, /^location/i],
+  COORDS: [/coordinates/i],
+  LAT: [/latitude/i],
+  LON: [/longitude/i],
+  SUBMITTER: [/name and affiliation/i, /your name/i],
+  SEQUENCES: [/paste sequences/i, /sequences/i]
+};
+
+// Named primers -> 5'-3' sequences, for "Primer pair" answers that give names only.
+var PRIMER_SEQS = {
+  'ITS1F': 'CTTGGTCATTTAGAGGAAGTAA', 'ITS1': 'TCCGTAGGTGAACCTGCGG', 'ITS2': 'GCTGCGTTCTTCATCGATGC',
+  'ITS3': 'GCATCGATGAAGAACGCAGC', 'ITS4': 'TCCTCCGCTTATTGATATGC', 'FITS7': 'GTGARTCATCGAATCTTTG',
+  'ITS86F': 'GTGAATCATCGAATCTTTGAA', 'TAREUK454FWD1': 'CCAGCASCYGCGGTAATTCC',
+  'TAREUKREV3': 'ACTTTCGTTCTTGATYRA', '1389F': 'TTGTACACACCGCCC', '1510R': 'CCTTCYGCAGGTTCACCTAC'
+};
+
+/** Answer of the first question whose title matches one of the patterns ('' if none). */
+function pick_(answers, patterns) {
+  var titles = Object.keys(answers);
+  for (var p = 0; p < patterns.length; p++) {
+    for (var t = 0; t < titles.length; t++) {
+      if (patterns[p].test(titles[t]) && answers[titles[t]] !== '') { return answers[titles[t]]; }
+    }
+  }
+  return '';
+}
+
+/** "ITS1F / ITS2", "CTTGG... / GCTGC...", "ITS1F (CTTGG...) / ITS2 (GCTGC...)" -> [fwd, rev]. */
+function parsePrimerPair_(text) {
+  var s = String(text || '');
+  if (!s || /already|trimmed|none|no primer/i.test(s)) { return ['', '']; }
+  var seqs = s.toUpperCase().match(/[ACGTRYSWKMBDHVN]{12,}/g) || [];
+  if (seqs.length >= 2) { return [seqs[0], seqs[1]]; }
+  var parts = s.split(/\s*(?:\/|\+|,|;|\band\b)\s*/i);
+  var out = [];
+  for (var i = 0; i < parts.length && out.length < 2; i++) {
+    var key = parts[i].replace(/\(.*?\)/g, '').replace(/[^A-Za-z0-9]/g, '').toUpperCase();
+    if (PRIMER_SEQS[key]) { out.push(PRIMER_SEQS[key]); }
+  }
+  return out.length === 2 ? out : ['', ''];
+}
+
+/** "20.7, 86.9" -> ['20.7', '86.9'] (only when both are valid decimal degrees). */
+function parseCoords_(text) {
+  var nums = String(text || '').match(/-?\d+(?:\.\d+)?/g) || [];
+  if (nums.length < 2) { return ['', '']; }
+  var lat = parseFloat(nums[0]), lon = parseFloat(nums[1]);
+  if (Math.abs(lat) > 90 || Math.abs(lon) > 180) { return ['', '']; }
+  return [String(lat), String(lon)];
+}
+
 /** Map a FormResponse to a queue row object keyed by QUEUE_HEADERS. */
 function responseToQueueRow_(response) {
   var answers = {};
@@ -350,9 +410,16 @@ function responseToQueueRow_(response) {
     }
   }
 
-  var type = answers[Q.TYPE] || '';
-  var jobType = type === TYPE_BARCODE ? 'barcode' : 'amplicon';
-  var pairing = (answers[Q.PAIRING] || 'paired-end').toLowerCase().indexOf('single') === 0 ? 'single-end' : 'paired-end';
+  var type = pick_(answers, MATCH.TYPE);
+  var jobType = /barcod/i.test(type) ? 'barcode' : 'amplicon';
+  var pairing = /single/i.test(pick_(answers, MATCH.PAIRING)) ? 'single-end' : 'paired-end';
+  var primers = parsePrimerPair_(pick_(answers, MATCH.PRIMER_PAIR));
+  var fwd = cleanPrimer_(pick_(answers, MATCH.FWD)) || primers[0];
+  var rev = cleanPrimer_(pick_(answers, MATCH.REV)) || primers[1];
+  var coords = parseCoords_(pick_(answers, MATCH.COORDS));
+  var lat = pick_(answers, MATCH.LAT) || coords[0];
+  var lon = pick_(answers, MATCH.LON) || coords[1];
+  var marker = pick_(answers, MATCH.MARKER);
   var jobId = Utilities.getUuid().replace(/-/g, '').substring(0, 12);
   var submittedAt = response.getTimestamp() ? toIsoUtc_(response.getTimestamp()) : toIsoUtc_(new Date());
   var email = '';
@@ -363,16 +430,16 @@ function responseToQueueRow_(response) {
     job_type: jobType,
     submitted_at: submittedAt,
     status: 'queued',
-    submitter: (answers[Q.SUBMITTER] || '').substring(0, 200),
+    submitter: pick_(answers, MATCH.SUBMITTER).substring(0, 200),
     submitter_email: email,
-    marker: answers[Q.MARKER] || (jobType === 'barcode' ? 'ITS' : 'ITS1'),
-    fwd_primer: cleanPrimer_(answers[Q.FWD]),
-    rev_primer: cleanPrimer_(answers[Q.REV]),
+    marker: marker || (jobType === 'barcode' ? 'ITS' : 'ITS1'),
+    fwd_primer: fwd,
+    rev_primer: rev,
     pairing: pairing,
-    location: (answers[Q.LOCATION] || '').substring(0, 200),
-    lat: answers[Q.LAT] || '',
-    lon: answers[Q.LON] || '',
-    sequences_text: jobType === 'barcode' ? (answers[Q.SEQUENCES] || '').substring(0, 45000) : '',
+    location: pick_(answers, MATCH.LOCATION).substring(0, 200),
+    lat: lat,
+    lon: lon,
+    sequences_text: jobType === 'barcode' ? pick_(answers, MATCH.SEQUENCES).substring(0, 45000) : '',
     file_ids: fileIds.join(','),
     file_names: fileNames.map(function (n) { return n.replace(/,/g, '_'); }).join(','),
     form_response_id: response.getId(),
@@ -454,6 +521,37 @@ function toIsoUtc_(d) {
 /** Manual test helper: dispatch the workflow for an arbitrary job id (or an empty one = drain queue). */
 function testDispatch() {
   Logger.log('dispatch result: %s', dispatchGitHub(''));
+}
+
+/**
+ * Manual check after editing the Form: lists every question, the queue field it maps to,
+ * and (for "Primer pair") the primers each choice resolves to. Unmapped questions are flagged.
+ */
+function checkMapping() {
+  var form = FormApp.openById(PropertiesService.getScriptProperties().getProperty('FORM_ID'));
+  var items = form.getItems();
+  var lines = [];
+  for (var i = 0; i < items.length; i++) {
+    var it = items[i], title = it.getTitle(), type = it.getType();
+    if (type === FormApp.ItemType.PAGE_BREAK || type === FormApp.ItemType.SECTION_HEADER) { continue; }
+    var field = type === FormApp.ItemType.FILE_UPLOAD ? 'file_ids' : '';
+    if (!field) {
+      for (var key in MATCH) {
+        if (MATCH[key].some(function (re) { return re.test(title); })) { field = key; break; }
+      }
+    }
+    if (!field && /consent/i.test(title)) { field = '(consent)'; }
+    lines.push((field || '!! NOT MAPPED') + '  <-  ' + title);
+    if (type === FormApp.ItemType.MULTIPLE_CHOICE || type === FormApp.ItemType.LIST) {
+      var choices = (type === FormApp.ItemType.MULTIPLE_CHOICE ? it.asMultipleChoiceItem() : it.asListItem()).getChoices();
+      for (var c = 0; c < choices.length; c++) {
+        var v = choices[c].getValue();
+        var extra = field === 'PRIMER_PAIR' ? '  ->  ' + parsePrimerPair_(v).join(' / ') : '';
+        lines.push('      - ' + v + extra);
+      }
+    }
+  }
+  Logger.log(lines.join('\n'));
 }
 
 /** Manual helper: print the stored Form URLs. */
