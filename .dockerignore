@@ -1,0 +1,9 @@
+demo_reads/
+testdata*/
+sa-key.json
+*.pyc
+__pycache__/
+.git/
+tests/data/source/
+google-token.json
+client_secret.json

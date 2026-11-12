@@ -1,0 +1,1 @@
+job_id,sample_id,reads_in,reads_merged,reads_filtered,reads_nonchimeric,n_asvs,shannon,pct_fungal,location,lat,lon,substrate

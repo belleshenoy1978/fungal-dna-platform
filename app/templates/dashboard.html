@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live dashboard — Fungal DNA Analysis Platform — belleshenoy.in</title>
+<meta name="description" content="Live public dashboard of fungal eDNA amplicon and ITS barcoding submissions from Indian coastal samples.">
+<link rel="stylesheet" href="{{ static_prefix | default('/static') }}/style.css">
+{% if static_mode | default(false) %}<script src="{{ static_prefix | default('/static') }}/config.js"></script>{% endif %}
+<script>
+  /* Ledger location injected by the server from platform_config.json (FastAPI); the static build supplies it via
+     static/config.js (window.PLATFORM_CONFIG); the data-attributes on #dashboard are the last fallback. */
+  {% if not (static_mode | default(false)) %}window.LEDGER_CONFIG = {{ ledger_config | tojson }};{% endif %}
+  window.__plotlyFallback = function () { var s = document.createElement('script'); s.src = 'https://cdn.plot.ly/plotly-2.35.2.min.js'; document.head.appendChild(s); };
+</script>
+<script src="{{ static_prefix | default('/static') }}/plotly.min.js" onerror="window.__plotlyFallback()"></script>
+</head>
+<body class="{% if embed | default(false) %}embed{% endif %}">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ url_home | default('/') }}">Fungal DNA Analysis Platform <span class="brand-sub">— belleshenoy.in</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="{{ url_home | default('/') }}">Home</a>{% if static_mode | default(false) %}<a href="{{ url_submit | default('/submit') }}">Submit data</a>{% else %}<a href="{{ url_submit | default('/submit') }}">Amplicon analysis</a><a href="{{ url_barcode | default('/barcode') }}">DNA barcoding</a>{% endif %}<a class="active" href="{{ url_dashboard | default('/dashboard') }}">Dashboard</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="dashboard"
+      data-spreadsheet-id="{{ spreadsheet_id }}"
+      data-csv-template="{{ csv_template }}"{% if static_mode | default(false) %}
+      data-job-page="job.html?id={job_id}"{% endif %}>
+  <div class="dash-head">
+    <h1>Live dashboard</h1>
+    <div class="small">Source: <a href="{{ ledger_url }}" target="_blank" rel="noopener">public Google Sheets ledger</a> · refreshes every 60 s{% if static_mode | default(false) %} · hosted on GitHub Pages{% endif %} · <span id="last-updated">last updated –</span> <span id="status-msg"></span></div>
+  </div>
+
+  <section class="kpi-strip" aria-label="Key figures">
+    <div class="kpi"><div class="kpi-value" id="kpi-jobs">–</div><div class="kpi-label">jobs</div></div>
+    <div class="kpi"><div class="kpi-value" id="kpi-samples">–</div><div class="kpi-label">samples</div></div>
+    <div class="kpi"><div class="kpi-value" id="kpi-asvs">–</div><div class="kpi-label">ASVs</div></div>
+    <div class="kpi"><div class="kpi-value" id="kpi-species">–</div><div class="kpi-label">species-level assignments</div></div>
+    <div class="kpi"><div class="kpi-value" id="kpi-barcodes">–</div><div class="kpi-label">barcoding queries</div></div>
+  </section>
+
+  <div class="dash-grid">
+    <section class="panel"><h2>Submissions over time</h2><div class="plot" id="plot-submissions"></div></section>
+    <section class="panel"><h2>Sample origins</h2><div class="plot" id="plot-map"></div></section>
+    <section class="panel"><h2>Top 20 genera by reads (amplicon ledger, top-200 ASVs per job)</h2><div class="plot tall" id="plot-genera"></div></section>
+    <section class="panel"><h2>Barcoding best-hit genera (queries)</h2><div class="plot tall" id="plot-barcode-genera"></div></section>
+    <section class="panel wide"><h2>Phylum composition per job (% of ledger reads)</h2><div class="plot" id="plot-phyla"></div></section>
+    <section class="panel wide">
+      <h2>All jobs</h2>{% if static_mode | default(false) %}
+      <p class="small">Click a job id to open its result page (<code>job.html?id=&lt;job_id&gt;</code>); "Drive folder" opens the raw result files.</p>{% endif %}
+      <input class="filter" id="jobs-filter" type="search" placeholder="filter by id, location, submitter, marker…" aria-label="Filter jobs">
+      <div class="table-wrap">
+        <table class="data" id="jobs-table">
+          <thead><tr><th>Job</th><th>Type</th><th>Status</th><th>Submitted (UTC)</th><th>Marker</th><th>Location</th><th>Submitter</th><th class="num">Samples</th><th class="num">Reads kept</th><th class="num">ASVs</th><th class="num">Species</th><th>Files</th></tr></thead>
+          <tbody><tr><td colspan="12" class="empty-note">Loading ledger…</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="caveat"><strong>Caveat.</strong> Results are automated and provisional; no negative controls are enforced; verify taxonomic assignments before publication</p>
+    <p class="cites"><strong>Methods &amp; citations.</strong> cutadapt (Martin 2011, <em>EMBnet.journal</em> 17(1):10, <a href="https://doi.org/10.14806/ej.17.1.200" target="_blank" rel="noopener">doi:10.14806/ej.17.1.200</a>) · VSEARCH (Rognes et al. 2016, <em>PeerJ</em> 4:e2584, <a href="https://doi.org/10.7717/peerj.2584" target="_blank" rel="noopener">doi:10.7717/peerj.2584</a>) · UNITE (Abarenkov et al. 2024, <em>Nucleic Acids Res.</em> 52(D1):D791–D797, <a href="https://doi.org/10.1093/nar/gkad1039" target="_blank" rel="noopener">doi:10.1093/nar/gkad1039</a>) · SINTAX (Edgar 2016, bioRxiv preprint, <a href="https://doi.org/10.1101/074161" target="_blank" rel="noopener">doi:10.1101/074161</a>) · Plotly.js (MIT licence).</p>
+  </div>
+</footer>
+<script src="{{ static_prefix | default('/static') }}/app.js"></script>
+<script src="{{ static_prefix | default('/static') }}/dashboard.js"></script>
+</body>
+</html>

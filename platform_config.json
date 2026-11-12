@@ -1,0 +1,145 @@
+{
+ "drive": {
+  "root": "1k2izmHFgtFuOIyGWjckOUELCkVglR7jJ",
+  "uploads": "19O9SW_KsbzeY8C5o4Rfjgsowe2z9IJBN",
+  "results": "1otT7ewsBDb5y05BgTb5x71D-QJb4QQUy",
+  "reference": "1FYgsu73qMZqMDqYGMadp_4ge38Flm47k",
+  "public": "11yFpO3HI-cDALuKLvk1V8R_tLlI6-Y41"
+ },
+ "drive_links": {
+  "results": "https://drive.google.com/drive/folders/1otT7ewsBDb5y05BgTb5x71D-QJb4QQUy",
+  "public": "https://drive.google.com/drive/folders/11yFpO3HI-cDALuKLvk1V8R_tLlI6-Y41",
+  "reference": "https://drive.google.com/drive/folders/1FYgsu73qMZqMDqYGMadp_4ge38Flm47k"
+ },
+ "ledger": {
+  "spreadsheet_id": "1gpTf1k-i0DBJZDlUR1YQhiFgWCO56pjpSDa4M1cEJjA",
+  "url": "https://docs.google.com/spreadsheets/d/1gpTf1k-i0DBJZDlUR1YQhiFgWCO56pjpSDa4M1cEJjA/edit?usp=drivesdk",
+  "gids": {
+   "jobs": 0,
+   "samples": 1703940144,
+   "taxa": 1167686226,
+   "barcoding_hits": 1335420318,
+   "queue": 1888344867
+  },
+  "csv_export_template": "https://docs.google.com/spreadsheets/d/{spreadsheet_id}/gviz/tq?tqx=out:csv&sheet={sheet}"
+ },
+ "ledger_headers": {
+  "jobs": [
+   "job_id",
+   "job_type",
+   "submitted_at",
+   "completed_at",
+   "status",
+   "submitter",
+   "marker",
+   "n_samples",
+   "n_reads_in",
+   "n_reads_kept",
+   "n_asvs",
+   "n_fungal_asvs",
+   "n_species",
+   "location",
+   "lat",
+   "lon",
+   "result_folder_url",
+   "result_json_url",
+   "notes"
+  ],
+  "samples": [
+   "job_id",
+   "sample_id",
+   "reads_in",
+   "reads_merged",
+   "reads_filtered",
+   "reads_nonchimeric",
+   "n_asvs",
+   "shannon",
+   "pct_fungal",
+   "location",
+   "lat",
+   "lon",
+   "substrate"
+  ],
+  "taxa": [
+   "job_id",
+   "sample_id",
+   "asv_id",
+   "reads",
+   "kingdom",
+   "phylum",
+   "class",
+   "order",
+   "family",
+   "genus",
+   "species",
+   "sintax_conf"
+  ],
+  "barcoding_hits": [
+   "job_id",
+   "query_id",
+   "query_length",
+   "submitted_at",
+   "best_hit_accession",
+   "best_hit_species",
+   "best_hit_sh",
+   "identity_pct",
+   "coverage_pct",
+   "sintax_genus",
+   "sintax_species",
+   "sintax_conf",
+   "assignment_level",
+   "chimera_flag",
+   "report_url"
+  ],
+  "queue": [
+   "job_id",
+   "job_type",
+   "submitted_at",
+   "status",
+   "submitter",
+   "submitter_email",
+   "marker",
+   "fwd_primer",
+   "rev_primer",
+   "pairing",
+   "location",
+   "lat",
+   "lon",
+   "sequences_text",
+   "file_ids",
+   "file_names",
+   "form_response_id",
+   "started_at",
+   "completed_at",
+   "result_folder_url",
+   "result_page_url",
+   "error"
+  ]
+ },
+ "reference": {
+  "unite_sintax_file": "unite10_sintax.fasta.gz",
+  "sha256": "c881de75a86abd3b...",
+  "staged_in_drive": false,
+  "note": "Connector upload exceeded the 15 MB wire cap; container downloads UNITE at first start or user drops the file into reference/."
+ },
+ "website": {
+  "url": "https://www.belleshenoy.in",
+  "platform": "Google Sites",
+  "integration": "Insert > Embed > By URL"
+ },
+ "visibility": "public",
+ "free_mode": {
+  "description": "Zero-cost deployment: Google Form intake -> Apps Script trigger -> GitHub Actions compute -> Drive + Sheets -> static dashboard on GitHub Pages embedded in Google Sites.",
+  "github_repo": "belleshenoy1978/fungal-dna-platform",
+  "github_pages_url": "https://belleshenoy1978.github.io/fungal-dna-platform/",
+  "google_form_url": "<filled in by apps_script setup()>",
+  "google_form_embed_url": "<filled in by apps_script setup()>",
+  "queue_sheet": "queue",
+  "queue_status_values": [
+   "queued",
+   "running",
+   "done",
+   "failed"
+  ]
+ }
+}

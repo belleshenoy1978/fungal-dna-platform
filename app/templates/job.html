@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Job {{ job_id | default('') }} — Fungal DNA Analysis Platform{% endblock %}
+{% block head %}<script src="{{ static_prefix | default('/static') }}/plotly.min.js" onerror="window.__plotlyFallback()"></script>{% endblock %}
+{% block content %}
+{#- Under FastAPI the job id is injected server-side; in the static build it is empty and job.js reads ?id=<job_id>. -#}
+<div id="job-root" data-job-id="{{ job_id | default('') }}" data-jobs-path="{{ jobs_json_path | default('') }}">
+  <div class="dash-head">
+    <h1>Job <code id="job-id">{{ job_id | default('') }}</code> <span class="badge" id="job-type-badge"></span></h1>
+    <div class="small" id="job-meta">Loading…</div>
+  </div>
+  <section class="panel" id="job-status-panel">
+    <p id="job-status-text">Fetching job status…</p>
+    <p class="small" id="job-links"></p>{% if static_mode | default(false) %}
+    <p class="small">Results are read from <code>./jobs/&lt;job_id&gt;.json</code> on this site; while a job is queued or running, its status comes from the <a href="{{ ledger_url }}" target="_blank" rel="noopener">public ledger</a> (<code>queue</code> tab) and this page refreshes every 30 s.</p>{% endif %}
+    <ul class="small" id="job-notes"></ul>
+  </section>
+
+  <div id="amplicon-view" class="hidden">
+    <section class="kpi-strip" id="summary-tiles"></section>
+    <div class="dash-grid">
+      <section class="panel"><h2>Read survival per sample</h2><div class="plot" id="plot-reads"></div></section>
+      <section class="panel"><h2>Shannon diversity (fungal ASVs) per sample</h2><div class="plot" id="plot-shannon"></div></section>
+      <section class="panel"><h2>Phylum composition (% of kept reads)</h2><div class="plot" id="plot-phylum"></div></section>
+      <section class="panel"><h2>Top genera (% of kept reads)</h2><div class="plot" id="plot-genus"></div></section>
+      <section class="panel wide">
+        <h2>Per-sample summary</h2>
+        <div class="table-wrap"><table class="data" id="samples-table"><thead><tr><th>Sample</th><th class="num">Reads in</th><th class="num">Merged</th><th class="num">Filtered</th><th class="num">Non-chimeric</th><th class="num">% kept</th><th class="num">ASVs</th><th class="num">Shannon</th><th class="num">% fungal</th></tr></thead><tbody></tbody></table></div>
+      </section>
+      <section class="panel wide">
+        <h2>ASV / taxonomy table <span class="small" id="asv-count"></span></h2>
+        <input class="filter" id="asv-filter" type="search" placeholder="search ASV, phylum, genus, species…" aria-label="Search ASV table">
+        <div class="table-wrap" style="max-height:520px;overflow-y:auto"><table class="data" id="asv-table"><thead><tr><th>ASV</th><th class="num">Reads</th><th>Kingdom</th><th>Phylum</th><th>Class</th><th>Order</th><th>Family</th><th>Genus</th><th>Species</th><th class="num">Conf.</th><th>Per sample</th></tr></thead><tbody></tbody></table></div>
+      </section>
+      <section class="panel wide"><h2>Downloads</h2><ul id="file-links"></ul></section>
+    </div>
+  </div>
+
+  <div id="barcode-view" class="hidden">
+    <section class="panel">
+      <p><a id="report-link" href="#" target="_blank" rel="noopener">Open printable report (report.html) →</a></p>
+      <div class="table-wrap"><table class="data" id="hits-table"><thead><tr>
+        <th>Query</th><th>Length</th><th>Best hit (UNITE)</th><th>SH</th><th>Identity %</th><th>Coverage %</th><th>SINTAX genus / species</th><th>Assignment</th><th>Chimera</th>
+      </tr></thead><tbody></tbody></table></div>
+    </section>
+    <section class="panel"><h2>Downloads</h2><ul id="file-links-bc"></ul></section>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ static_prefix | default('/static') }}/barcode.js"></script>
+<script src="{{ static_prefix | default('/static') }}/job.js"></script>
+{% endblock %}

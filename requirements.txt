@@ -1,0 +1,12 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+jinja2>=3.1
+biopython>=1.83
+cutadapt>=4.9
+google-api-python-client>=2.120
+google-auth>=2.29
+pandas>=2.1
+numpy>=1.26
+hypercorn>=0.17
+requests>=2.31

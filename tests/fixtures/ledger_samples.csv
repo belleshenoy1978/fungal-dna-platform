@@ -1,0 +1,5 @@
+job_id,sample_id,reads_in,reads_merged,reads_filtered,reads_nonchimeric,n_asvs,shannon,pct_fungal,location,lat,lon,substrate
+6dac4df1df36,SRR21859822,59580,54653,54621,53604,91,1.2796,99.99,test,0.0,0.0,
+6dac4df1df36,SRR21859823,80475,75407,75375,73371,123,1.4494,98.27,test,0.0,0.0,
+e90e6df6dc7f,SRR21859822,59580,54653,54621,53604,91,1.2796,99.99,test,0.0,0.0,
+e90e6df6dc7f,SRR21859823,80475,75407,75375,73371,123,1.4494,98.27,test,0.0,0.0,

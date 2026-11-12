@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Fungal DNA Analysis Platform — belleshenoy.in{% endblock %}</title>
+<meta name="description" content="Public, automated fungal eDNA amplicon analysis and ITS barcoding for Indian coastal samples (CSIR-NIO, Visakhapatnam / belleshenoy.in).">
+{# Variables with defaults so the same templates serve FastAPI (defaults) and the static GitHub Pages build
+    (scripts/build_static_site.py overrides them). No cookies, no X-Frame-Options: pages are embeddable. #}
+<link rel="stylesheet" href="{{ static_prefix | default('/static') }}/style.css">
+{% if static_mode | default(false) %}<script src="{{ static_prefix | default('/static') }}/config.js"></script>{% endif %}
+<script>
+/* Prefer the vendored Plotly bundle; fall back to the CDN if /static is unavailable (e.g. template opened standalone). */
+window.__plotlyFallback = function () {
+  var s = document.createElement('script'); s.src = 'https://cdn.plot.ly/plotly-2.35.2.min.js'; s.async = false;
+  document.head.appendChild(s);
+};
+</script>
+{% block head %}{% endblock %}
+</head>
+<body class="{% block bodyclass %}{% endblock %}">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ url_home | default('/') }}">Fungal DNA Analysis Platform <span class="brand-sub">— belleshenoy.in</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="{{ url_home | default('/') }}" {% if active == 'home' %}class="active"{% endif %}>Home</a>
+      {% if static_mode | default(false) %}
+      <a href="{{ url_submit | default('/submit') }}" {% if active in ('submit', 'barcode') %}class="active"{% endif %}>Submit data</a>
+      {% else %}
+      <a href="{{ url_submit | default('/submit') }}" {% if active == 'submit' %}class="active"{% endif %}>Amplicon analysis</a>
+      <a href="{{ url_barcode | default('/barcode') }}" {% if active == 'barcode' %}class="active"{% endif %}>DNA barcoding</a>
+      {% endif %}
+      <a href="{{ url_dashboard | default('/dashboard') }}" {% if active == 'dashboard' %}class="active"{% endif %}>Dashboard</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="caveat"><strong>Caveat.</strong> Results are automated and provisional; no negative controls are enforced; verify taxonomic assignments before publication</p>
+    <p class="cites"><strong>Methods &amp; citations.</strong>
+      cutadapt (Martin 2011, <em>EMBnet.journal</em> 17(1):10, <a href="https://doi.org/10.14806/ej.17.1.200" target="_blank" rel="noopener">doi:10.14806/ej.17.1.200</a>) ·
+      VSEARCH (Rognes et al. 2016, <em>PeerJ</em> 4:e2584, <a href="https://doi.org/10.7717/peerj.2584" target="_blank" rel="noopener">doi:10.7717/peerj.2584</a>) ·
+      UNITE (Abarenkov et al. 2024, <em>Nucleic Acids Res.</em> 52(D1):D791–D797, <a href="https://doi.org/10.1093/nar/gkad1039" target="_blank" rel="noopener">doi:10.1093/nar/gkad1039</a>) ·
+      SINTAX (Edgar 2016, bioRxiv preprint, <a href="https://doi.org/10.1101/074161" target="_blank" rel="noopener">doi:10.1101/074161</a>) ·
+      Plotly.js (MIT licence).</p>
+    <p class="small">Data ledger: <a href="{{ ledger_url }}" target="_blank" rel="noopener">Google Sheets</a> · Result files: <a href="{{ drive_links.results }}" target="_blank" rel="noopener">Google Drive</a>{% if static_mode | default(false) and github_repo_url | default('') %} · Pipeline code &amp; run logs: <a href="{{ github_repo_url }}" target="_blank" rel="noopener">GitHub</a>{% endif %} · All results on this platform are public.</p>
+  </div>
+</footer>
+<script src="{{ static_prefix | default('/static') }}/app.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

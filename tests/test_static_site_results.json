@@ -1,0 +1,672 @@
+{
+ "passed": 133,
+ "total": 133,
+ "site": "docs/",
+ "results": [
+  {
+   "check": "docs: index.html exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: .nojekyll exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/README.md exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/app.js exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/dashboard.js exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/job.js exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/barcode.js exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/submit.js exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/config.js exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/style.css exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/plotly.min.js exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/ebe1f6d12027.json exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/cabb8aa86f74.json exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/demo-barcode.json NOT published (synthetic data)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: index.html has caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: index.html has five citations",
+   "pass": true,
+   "detail": "missing []"
+  },
+  {
+   "check": "docs: index.html has DOI links for cutadapt/VSEARCH/UNITE/SINTAX",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: index.html has no X-Frame-Options / frame-ancestors meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: index.html has viewport meta (responsive)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: index.html uses only relative links (no /static, no absolute routes)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: index.html loads static/config.js before app.js",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: index.html has no cookies / storage",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: index.html has no leftover Jinja syntax",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: index.html links the public ledger",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html has caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html has five citations",
+   "pass": true,
+   "detail": "missing []"
+  },
+  {
+   "check": "docs: dashboard.html has DOI links for cutadapt/VSEARCH/UNITE/SINTAX",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html has no X-Frame-Options / frame-ancestors meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html has viewport meta (responsive)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html uses only relative links (no /static, no absolute routes)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html loads static/config.js before app.js",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html has no cookies / storage",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html has no leftover Jinja syntax",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html links the public ledger",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html has caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html has five citations",
+   "pass": true,
+   "detail": "missing []"
+  },
+  {
+   "check": "docs: job.html has DOI links for cutadapt/VSEARCH/UNITE/SINTAX",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html has no X-Frame-Options / frame-ancestors meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html has viewport meta (responsive)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html uses only relative links (no /static, no absolute routes)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html loads static/config.js before app.js",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html has no cookies / storage",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html has no leftover Jinja syntax",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html links the public ledger",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html has caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html has five citations",
+   "pass": true,
+   "detail": "missing []"
+  },
+  {
+   "check": "docs: submit.html has DOI links for cutadapt/VSEARCH/UNITE/SINTAX",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html has no X-Frame-Options / frame-ancestors meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html has viewport meta (responsive)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html uses only relative links (no /static, no absolute routes)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html loads static/config.js before app.js",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html has no cookies / storage",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html has no leftover Jinja syntax",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html links the public ledger",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html links job.html?id=",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html keeps #dashboard data-attributes (ledger fallback)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.html loads dashboard.js (60 s poll)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html references ./jobs/",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html has empty data-job-id (id comes from ?id=)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.html mentions queue tab fallback + 30 s refresh",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html explains both analysis types",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html lists accepted inputs",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html carries the public-results notice",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: submit.html shows 'form not configured yet' placeholder (config still has <...> placeholder)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: index.html has live KPI strip + cards to submit.html / dashboard.html",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: config.js parses as JSON",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: config.js mode=static",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: config.js carries ledger id 1gpTf1k-i0DBJZDlUR1YQhiFgWCO56pjpSDa4M1cEJjA",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: config.js carries the CSV template",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: config.js carries queue sheet name + status values",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: config.js job_page / jobs_json_path",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: config.js has Pages base URL + form URL keys (empty until configured)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: config.js contains no secrets-looking keys",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: platform_config.json queue header matches spec order",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/app.js bracket balance",
+   "pass": true,
+   "detail": "balanced"
+  },
+  {
+   "check": "docs: static/dashboard.js bracket balance",
+   "pass": true,
+   "detail": "balanced"
+  },
+  {
+   "check": "docs: static/job.js bracket balance",
+   "pass": true,
+   "detail": "balanced"
+  },
+  {
+   "check": "docs: static/barcode.js bracket balance",
+   "pass": true,
+   "detail": "balanced"
+  },
+  {
+   "check": "docs: static/submit.js bracket balance",
+   "pass": true,
+   "detail": "balanced"
+  },
+  {
+   "check": "docs: static/config.js bracket balance",
+   "pass": true,
+   "detail": "balanced"
+  },
+  {
+   "check": "docs: app.js reads window.PLATFORM_CONFIG and keeps FastAPI fallback",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: app.js static job lookup: jobs json -> queue -> jobs tab",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: app.js static poll interval 30 s",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: app.js applies ?embed=1 body class",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.js job links via FDP.jobUrl (no hard-coded /jobs/)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.js polls every 60000 ms",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: dashboard.js links result_folder_url as 'Drive folder'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: job.js reads id from query string (FDP.currentJobId)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/app.js identical to app/static/app.js",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/dashboard.js identical to app/static/dashboard.js",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/job.js identical to app/static/job.js",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/barcode.js identical to app/static/barcode.js",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: static/submit.js identical to app/static/submit.js",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: style.css responsive down to 320 px",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: style.css styles the form iframe + placeholder",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/cabb8aa86f74.json <= 400 KB",
+   "pass": true,
+   "detail": "32534 B"
+  },
+  {
+   "check": "docs: jobs/cabb8aa86f74.json job_id matches filename",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/cabb8aa86f74.json has every field job.html reads",
+   "pass": true,
+   "detail": "missing []"
+  },
+  {
+   "check": "docs: jobs/cabb8aa86f74.json file links are http(s) or root-relative",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "docs: mirror fetch jobs/cabb8aa86f74.json -> status done from jobs_json (terminal)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/cabb8aa86f74.json summary/samples identical to tests/data/results source",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/cabb8aa86f74.json keeps all 127 taxa rows (no truncation needed)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/cabb8aa86f74.json marker/location: ITS1 / Kerala coast (west coast)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/ebe1f6d12027.json <= 400 KB",
+   "pass": true,
+   "detail": "116934 B"
+  },
+  {
+   "check": "docs: jobs/ebe1f6d12027.json job_id matches filename",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/ebe1f6d12027.json has every field job.html reads",
+   "pass": true,
+   "detail": "missing []"
+  },
+  {
+   "check": "docs: jobs/ebe1f6d12027.json file links are http(s) or root-relative",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "docs: mirror fetch jobs/ebe1f6d12027.json -> status done from jobs_json (terminal)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/ebe1f6d12027.json summary/samples identical to tests/data/results source",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/ebe1f6d12027.json keeps all 500 taxa rows (no truncation needed)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: jobs/ebe1f6d12027.json marker/location: ITS2 / Bhitarkanika mangrove, Odisha (east coast)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: compact_result keeps every barcode field job.html reads (demo-barcode, not published)",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "docs: compact_result truncates an oversized result under 400 KB with a note",
+   "pass": true,
+   "detail": "357052 B, 1536 taxa kept"
+  },
+  {
+   "check": "docs: mirror fallback: queued job -> status queued, keeps polling",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: mirror fallback: running job -> status running",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: mirror fallback: failed job -> terminal with error text",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: mirror fallback: done without json -> folder link from jobs tab, keeps polling for Pages deploy",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: mirror fallback: unknown id -> status unknown (keeps polling)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: mirror fallback: job only in jobs tab (test ledger) -> done + Drive folder",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: FastAPI / still renders (200, defaults, no config.js tag)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: FastAPI /submit still renders (200, defaults, no config.js tag)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: FastAPI /barcode still renders (200, defaults, no config.js tag)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: FastAPI /dashboard still renders (200, defaults, no config.js tag)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: FastAPI /jobs/ebe1f6d12027 still renders (200, defaults, no config.js tag)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "docs: FastAPI /dashboard?embed=1 keeps server-side embed class",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "pages.yml exists",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "pages.yml parses; triggers on push(main, docs/**) + workflow_dispatch",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "pages.yml permissions pages: write, id-token: write",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "pages.yml build runs scripts/build_static_site.py before upload-pages-artifact",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "pages.yml uploads docs/ and deploys with actions/deploy-pages",
+   "pass": true,
+   "detail": ""
+  }
+ ]
+}

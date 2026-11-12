@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Submit amplicon data — Fungal DNA Analysis Platform{% endblock %}
+{% block content %}
+<h1>Amplicon analysis</h1>
+<p class="lead">Upload demultiplexed FASTQ(.gz) files (one or two per sample). Pipeline: cutadapt → VSEARCH merge → maxEE 1.0 filter → dereplication → UNOISE3 → UCHIME3 → SINTAX (UNITE v10). Results are public.</p>
+
+<form id="amplicon-form" class="form" enctype="multipart/form-data" novalidate>
+  <fieldset>
+    <legend>Sequence files</legend>
+    <label for="files">FASTQ / FASTQ.gz files (R1 and R2 are paired by filename)</label>
+    <input type="file" id="files" name="files" multiple required accept=".fastq,.fq,.gz,.fastq.gz,.fq.gz">
+    <div class="small" id="file-summary">No files selected.</div>
+    <label for="pairing">Pairing mode</label>
+    <select id="pairing" name="pairing">
+      <option value="paired" selected>Paired-end (auto-pair _R1/_R2 or _1/_2)</option>
+      <option value="single">Single-end / already merged</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>Marker &amp; primers</legend>
+    <div class="grid-2">
+      <div>
+        <label for="marker">Marker</label>
+        <select id="marker" name="marker">
+          <option value="ITS1">ITS1 (ITS1F / ITS2)</option>
+          <option value="ITS2" selected>ITS2 (ITS3 / ITS4)</option>
+          <option value="ITS2-86F">ITS2 (ITS86F / ITS4)</option>
+          <option value="18S-V4">18S V4 (TAReuk454FWD1 / TAReukREV3)</option>
+          <option value="18S-V9">18S V9 (1391F / EukBr)</option>
+          <option value="other">Other / custom primers</option>
+        </select>
+      </div>
+      <div class="small primer-note" id="primer-note"></div>
+      <div>
+        <label for="fwd_primer">Forward primer (5'→3', IUPAC allowed; empty = skip trimming)</label>
+        <input type="text" id="fwd_primer" name="fwd_primer" pattern="[ACGTURYSWKMBDHVNacgturyswkmbdhvn]*" autocomplete="off">
+      </div>
+      <div>
+        <label for="rev_primer">Reverse primer (5'→3')</label>
+        <input type="text" id="rev_primer" name="rev_primer" pattern="[ACGTURYSWKMBDHVNacgturyswkmbdhvn]*" autocomplete="off">
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Sample origin</legend>
+    <div class="grid-3">
+      <div><label for="location">Location (site, state)</label><input type="text" id="location" name="location" placeholder="e.g. Bhitarkanika mangrove, Odisha" required></div>
+      <div><label for="lat">Latitude (°N, decimal)</label><input type="number" id="lat" name="lat" step="0.0001" min="-90" max="90" placeholder="20.7"></div>
+      <div><label for="lon">Longitude (°E, decimal)</label><input type="number" id="lon" name="lon" step="0.0001" min="-180" max="180" placeholder="86.9"></div>
+    </div>
+    <label for="submitter">Submitter (name or initials; shown publicly)</label>
+    <input type="text" id="submitter" name="submitter" maxlength="80" required>
+  </fieldset>
+
+  <p class="small">By submitting you agree that the uploaded reads, metadata and all derived results are published openly (CC BY 4.0). Do not upload data under embargo.</p>
+  <button type="submit" class="btn" id="submit-btn">Start analysis</button>
+  <span class="small" id="form-msg"></span>
+</form>
+
+<section id="progress" class="panel hidden" aria-live="polite">
+  <h2>Job <code id="job-id"></code></h2>
+  <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+  <p id="progress-text">Uploading…</p>
+  <ul class="small" id="progress-notes"></ul>
+  <p><a id="job-link" href="#" class="hidden">Open result page →</a></p>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="/static/submit.js"></script>
+{% endblock %}

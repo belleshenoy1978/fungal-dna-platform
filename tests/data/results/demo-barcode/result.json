@@ -1,0 +1,144 @@
+{
+ "job_id": "demo-barcode",
+ "job_type": "barcode",
+ "status": "done",
+ "submitted_at": "2026-11-12T04:05:00Z",
+ "completed_at": "2026-11-12T04:06:20Z",
+ "params": {
+  "submitter": "demo-user",
+  "n_queries": 3
+ },
+ "summary": {
+  "n_samples": 3,
+  "n_reads_in": 3,
+  "n_reads_kept": 3,
+  "n_asvs": null,
+  "n_fungal_asvs": null,
+  "n_species": 2,
+  "marker": "ITS",
+  "location": "",
+  "lat": null,
+  "lon": null
+ },
+ "samples": [],
+ "barcoding": [
+  {
+   "query_id": "SYNTHETIC_q1_Aspergillus",
+   "query_length": 562,
+   "best_hit_accession": "MH865380",
+   "best_hit_species": "Aspergillus_niger",
+   "best_hit_sh": "SH0987654.10FU",
+   "identity_pct": 99.6,
+   "coverage_pct": 100.0,
+   "sintax": {
+    "genus": [
+     "Aspergillus",
+     0.98
+    ],
+    "species": [
+     "Aspergillus_niger",
+     0.98
+    ]
+   },
+   "assignment_level": "species",
+   "chimera_flag": "N",
+   "hits": [
+    {
+     "accession": "MH865380",
+     "species": "Aspergillus_niger",
+     "sh": "SH0987654.10FU",
+     "identity_pct": 99.6,
+     "coverage_pct": 100.0
+    },
+    {
+     "accession": "SYN000002",
+     "species": "Aspergillus_niger",
+     "sh": "SH0987654.10FU",
+     "identity_pct": 98.9,
+     "coverage_pct": 100.0
+    }
+   ]
+  },
+  {
+   "query_id": "SYNTHETIC_q2_Penicillium",
+   "query_length": 548,
+   "best_hit_accession": "MN431384",
+   "best_hit_species": "Penicillium_citrinum",
+   "best_hit_sh": "SH1234567.10FU",
+   "identity_pct": 98.9,
+   "coverage_pct": 99.1,
+   "sintax": {
+    "genus": [
+     "Penicillium",
+     0.91
+    ],
+    "species": [
+     "Penicillium_citrinum",
+     0.91
+    ]
+   },
+   "assignment_level": "species",
+   "chimera_flag": "N",
+   "hits": [
+    {
+     "accession": "MN431384",
+     "species": "Penicillium_citrinum",
+     "sh": "SH1234567.10FU",
+     "identity_pct": 98.9,
+     "coverage_pct": 99.1
+    },
+    {
+     "accession": "SYN000002",
+     "species": "Penicillium_citrinum",
+     "sh": "SH1234567.10FU",
+     "identity_pct": 98.2,
+     "coverage_pct": 99.1
+    }
+   ]
+  },
+  {
+   "query_id": "SYNTHETIC_q3_Talaromyces",
+   "query_length": 531,
+   "best_hit_accession": "KX961234",
+   "best_hit_species": "Talaromyces_sp",
+   "best_hit_sh": "SH2345678.10FU",
+   "identity_pct": 95.2,
+   "coverage_pct": 97.4,
+   "sintax": {
+    "genus": [
+     "Talaromyces",
+     0.74
+    ],
+    "species": [
+     null,
+     null
+    ]
+   },
+   "assignment_level": "genus",
+   "chimera_flag": "N",
+   "hits": [
+    {
+     "accession": "KX961234",
+     "species": "Talaromyces_sp",
+     "sh": "SH2345678.10FU",
+     "identity_pct": 95.2,
+     "coverage_pct": 97.4
+    },
+    {
+     "accession": "SYN000002",
+     "species": "Talaromyces_sp",
+     "sh": "SH2345678.10FU",
+     "identity_pct": 94.5,
+     "coverage_pct": 97.4
+    }
+   ]
+  }
+ ],
+ "files": {
+  "result.json": "/api/jobs/demo-barcode/files/result.json",
+  "report.html": "/api/barcode/demo-barcode/report.html"
+ },
+ "notes": [
+  "SYNTHETIC demo barcoding job: query sequences and hits are invented for layout testing only."
+ ]
+}

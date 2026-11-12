@@ -1,0 +1,2 @@
+job_id,job_type,submitted_at,completed_at,status,submitter,marker,n_samples,n_reads_in,n_reads_kept,n_asvs,n_fungal_asvs,n_species,location,lat,lon,result_folder_url,result_json_url,notes
+testbarcode01,barcode,2026-11-12T05:59:47Z,2026-11-12T05:59:52Z,done,test-harness,ITS,7,7,7,7,7,3,,,,file:///C:/Users/ASUS/AppData/Local/Packages/operon.kernel.9efbfe0fab5e.f4168836d51c55622/AC/Temp/barcode_test_07h8m6jt/results/testbarcode01,,

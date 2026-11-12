@@ -1,0 +1,13 @@
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+__pycache__/
+client_secret.json
+demo_reads/
+google-token.json
+ref/
+sa-key.json
+testdata*/
+tests/data/ena_PRJNA889370/
+tests/work_actions_runner/

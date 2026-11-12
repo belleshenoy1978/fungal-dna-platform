@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}DNA barcoding — Fungal DNA Analysis Platform{% endblock %}
+{% block content %}
+<h1>DNA barcoding (ITS)</h1>
+<p class="lead">Paste one or more sequences in FASTA format, or upload FASTA / Sanger .ab1 files. Each query is aligned against UNITE v10 species hypotheses (VSEARCH <code>--usearch_global</code>) and classified with SINTAX; chimeras are flagged. Results are public.</p>
+
+<form id="barcode-form" class="form" enctype="multipart/form-data" novalidate>
+  <fieldset>
+    <legend>Sequences</legend>
+    <label for="sequences">Paste FASTA (up to 50 sequences)</label>
+    <textarea id="sequences" name="sequences" rows="8" placeholder="&gt;isolate_01&#10;TCCGTAGGTGAACCTGCGGAAGGATCATTA..." spellcheck="false"></textarea>
+    <label for="files">…or upload FASTA / .ab1 files</label>
+    <input type="file" id="files" name="files" multiple accept=".fasta,.fa,.fna,.fas,.txt,.ab1">
+  </fieldset>
+  <fieldset>
+    <legend>Submitter</legend>
+    <input type="text" id="submitter" name="submitter" maxlength="80" placeholder="name or initials (shown publicly)" required>
+  </fieldset>
+  <button type="submit" class="btn" id="submit-btn">Identify</button>
+  <span class="small" id="form-msg"></span>
+</form>
+
+<section id="progress" class="panel hidden" aria-live="polite">
+  <h2>Job <code id="job-id"></code></h2>
+  <p id="progress-text">Uploading…</p>
+  <ul class="small" id="progress-notes"></ul>
+</section>
+
+<section id="report" class="panel hidden">
+  <h2>Barcoding results</h2>
+  <p><a id="report-link" href="#" target="_blank" rel="noopener">Open printable report (report.html) →</a> · <a id="job-link" href="#">Result page →</a></p>
+  <div class="table-wrap"><table class="data" id="hits-table"><thead><tr>
+    <th>Query</th><th>Length</th><th>Best hit (UNITE)</th><th>SH</th><th>Identity %</th><th>Coverage %</th><th>SINTAX genus / species</th><th>Assignment</th><th>Chimera</th>
+  </tr></thead><tbody></tbody></table></div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="/static/barcode.js"></script>
+{% endblock %}

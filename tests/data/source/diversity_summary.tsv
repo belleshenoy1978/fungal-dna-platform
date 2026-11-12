@@ -1,0 +1,7 @@
+marker	sample_id	fungal_reads	fungal_ASVs	shannon	simpson	pielou	pct_reads_fungal	region	library	collection_date	isolation_source	raw_read_pairs
+ITS1	Ernakulam	72100	111	1.449	0.5323	0.308	98.3	Kerala (west coast)	EKMITS	2022-03-03	sediment	80475
+ITS1	Kannur	53598	90	1.28	0.4794	0.284	100.0	Kerala (west coast)	KANITS	2021-12-18	sediment	59580
+ITS2	Dangmal	106234	677	4.696	0.9718	0.72	58.9	Bhitarkanika, Odisha (east coast)	DSF	2022-04-03	rhizosphere soil	358716
+ITS2	Gupti	62659	471	4.383	0.9682	0.712	58.6	Bhitarkanika, Odisha (east coast)	GSF	2022-04-02	rhizosphere soil	250208
+ITS2	Habalikhati	79501	553	4.461	0.9625	0.706	57.6	Bhitarkanika, Odisha (east coast)	HSF	2022-04-02	rhizosphere soil	250864
+ITS2	Kalibhanjadiha	104149	742	4.841	0.976	0.732	88.0	Bhitarkanika, Odisha (east coast)	KSF	2022-04-03	rhizosphere soil	320580

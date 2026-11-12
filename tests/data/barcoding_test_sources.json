@@ -1,0 +1,22 @@
+{
+ "Aspergillus": {
+  "label": "SH1187575.10FU;tax=d:Fungi,p:Ascomycota,c:Eurotiomycetes,o:Eurotiales,f:Aspergillaceae,g:Aspergillus,s:Aspergillus_flavus;",
+  "length": 513
+ },
+ "Trichoderma": {
+  "label": "SH1413670.10FU;tax=d:Fungi,p:Ascomycota,c:Sordariomycetes,o:Hypocreales,f:Hypocreaceae,g:Trichoderma,s:Trichoderma_neorufoides;",
+  "length": 506
+ },
+ "Penicillium": {
+  "label": "SH1308127.10FU;tax=d:Fungi,p:Ascomycota,c:Eurotiomycetes,o:Eurotiales,f:Aspergillaceae,g:Penicillium,s:Penicillium_sanguifluum;",
+  "length": 516
+ },
+ "Fusarium": {
+  "label": "SH1050214.10FU;tax=d:Fungi,p:Ascomycota,c:Sordariomycetes,o:Hypocreales,f:Nectriaceae,g:Fusarium,s:Fusarium_equiseti;",
+  "length": 539
+ },
+ "Rhodotorula": {
+  "label": "SH1231671.10FU;tax=d:Fungi,p:Basidiomycota,c:Microbotryomycetes,o:Sporidiobolales,f:Sporidiobolaceae,g:Rhodotorula,s:Rhodotorula_ngohengohe;",
+  "length": 524
+ }
+}

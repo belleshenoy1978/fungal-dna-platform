@@ -1,0 +1,102 @@
+{
+ "kpis": {
+  "jobs": 3,
+  "samples": 6,
+  "asvs": 2872,
+  "species": 184,
+  "barcodes": 3
+ },
+ "submissions": {
+  "days": [
+   "2026-11-10",
+   "2026-11-11",
+   "2026-11-12"
+  ],
+  "amplicon": [
+   1,
+   1,
+   0
+  ],
+  "barcode": [
+   0,
+   0,
+   1
+  ]
+ },
+ "top_genera": [
+  [
+   "Talaromyces",
+   86066.0
+  ],
+  [
+   "Nigrospora",
+   12137.0
+  ],
+  [
+   "Candolleomyces",
+   11314.0
+  ],
+  [
+   "Penicillium",
+   10392.0
+  ],
+  [
+   "Fusarium",
+   6008.0
+  ]
+ ],
+ "barcode_genera": [
+  [
+   "Aspergillus",
+   1
+  ],
+  [
+   "Penicillium",
+   1
+  ],
+  [
+   "Talaromyces",
+   1
+  ]
+ ],
+ "phyla": {
+  "ITS2 \u00b7 Bhitarkanika mangrove, Odisha (east coast)": {
+   "Ascomycota": 45.2,
+   "Unassigned": 20.1,
+   "Non-fungal": 19.7,
+   "Basidiomycota": 13.8,
+   "Chytridiomycota": 0.5,
+   "Mortierellomycota": 0.3,
+   "Mucoromycota": 0.2,
+   "Blastocladiomycota": 0.1,
+   "Rozellomycota": 0.0
+  },
+  "ITS1 \u00b7 Kerala coast (west coast)": {
+   "Ascomycota": 96.9,
+   "Unassigned": 1.8,
+   "Non-fungal": 0.0,
+   "Basidiomycota": 1.2,
+   "Chytridiomycota": 0.0,
+   "Mortierellomycota": 0.0,
+   "Mucoromycota": 0.0,
+   "Blastocladiomycota": 0.0,
+   "Rozellomycota": 0.0
+  }
+ },
+ "map_points": [
+  [
+   20.7,
+   86.9,
+   "Bhitarkanika mangrove, Odisha (east coast)",
+   4.0,
+   "ITS2"
+  ],
+  [
+   10.0,
+   76.3,
+   "Kerala coast (west coast)",
+   2.0,
+   "ITS1"
+  ]
+ ]
+}

@@ -1,0 +1,4 @@
+job_id,query_id,query_length,submitted_at,best_hit_accession,best_hit_species,best_hit_sh,identity_pct,coverage_pct,sintax_genus,sintax_species,sintax_conf,assignment_level,chimera_flag,report_url
+demo-barcode,SYNTHETIC_q1_Aspergillus,562,2026-11-12T04:05:00Z,MH865380,Aspergillus_niger,SH0987654.10FU,99.6,100.0,Aspergillus,Aspergillus_niger,0.98,species,N,/api/barcode/demo-barcode/report.html
+demo-barcode,SYNTHETIC_q2_Penicillium,548,2026-11-12T04:05:00Z,MN431384,Penicillium_citrinum,SH1234567.10FU,98.9,99.1,Penicillium,Penicillium_citrinum,0.91,species,N,/api/barcode/demo-barcode/report.html
+demo-barcode,SYNTHETIC_q3_Talaromyces,531,2026-11-12T04:05:00Z,KX961234,Talaromyces_sp,SH2345678.10FU,95.2,97.4,Talaromyces,,0.74,genus,N,/api/barcode/demo-barcode/report.html

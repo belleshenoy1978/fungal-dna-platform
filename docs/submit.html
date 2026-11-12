@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Submit data — Fungal DNA Analysis Platform</title>
+<meta name="description" content="Public, automated fungal eDNA amplicon analysis and ITS barcoding for Indian coastal samples (CSIR-NIO, Visakhapatnam / belleshenoy.in).">
+
+<link rel="stylesheet" href="static/style.css">
+<script src="static/config.js"></script>
+<script>
+/* Prefer the vendored Plotly bundle; fall back to the CDN if /static is unavailable (e.g. template opened standalone). */
+window.__plotlyFallback = function () {
+  var s = document.createElement('script'); s.src = 'https://cdn.plot.ly/plotly-2.35.2.min.js'; s.async = false;
+  document.head.appendChild(s);
+};
+</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Fungal DNA Analysis Platform <span class="brand-sub">— belleshenoy.in</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" >Home</a>
+      
+      <a href="submit.html" class="active">Submit data</a>
+      
+      <a href="dashboard.html" >Dashboard</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<h1>Submit data for analysis</h1>
+<p class="lead">One Google Form serves both analysis types. Choose the analysis type in the form, attach your files (or paste sequences), and submit. The job is queued automatically, processed by a public GitHub Actions workflow, and its results appear on the <a href="dashboard.html">dashboard</a> and on a result page (<code>job.html?id=&lt;job_id&gt;</code>) within minutes to about an hour. No platform account is needed (Google Forms itself asks for a Google sign-in for file uploads); everything submitted here is public.</p>
+
+<section class="cards">
+  <article class="card">
+    <h2>Amplicon analysis (metabarcoding)</h2>
+    <p><strong>Input:</strong> demultiplexed Illumina FASTQ or FASTQ.gz, one or two files per sample (R1/R2 are paired by filename: <code>_R1</code>/<code>_R2</code> or <code>_1</code>/<code>_2</code>). Markers: ITS1 (ITS1F/ITS2), ITS2 (ITS3/ITS4 or ITS86F/ITS4), 18S-V4, 18S-V9, or custom primers.</p>
+    <p><strong>Pipeline:</strong> cutadapt primer trimming → VSEARCH merge → maxEE 1.0 filter → dereplication → UNOISE3 → UCHIME3 → read mapping → SINTAX against UNITE v10.</p>
+    <p><strong>Output:</strong> ASV table with taxonomy, per-sample read survival, Shannon diversity, composition charts, TSV/FASTA downloads.</p>
+  </article>
+  <article class="card" id="barcode">
+    <h2>DNA barcoding (Sanger ITS)</h2>
+    <p><strong>Input:</strong> FASTA pasted into the form (up to 50 sequences) or uploaded FASTA / <code>.ab1</code> trace files.</p>
+    <p><strong>Pipeline:</strong> quality trimming (Mott, Q20) → orientation → VSEARCH <code>--usearch_global</code> against UNITE species hypotheses (top 10 hits) → SINTAX confidence → <code>uchime_ref</code> chimera check.</p>
+    <p><strong>Output:</strong> identity %, coverage %, SH, assignment tier (species ≥ 98.5 % identity &amp; ≥ 90 % coverage; genus 97–98.5 %; family/order 90–97 %), printable report.</p>
+  </article>
+</section>
+
+<section class="panel notice">
+  <h2>Before you submit</h2>
+  <ul>
+    <li><strong>Everything is public.</strong> Uploaded reads, metadata (location, coordinates, submitter name) and all derived results are published openly (CC BY 4.0) in a <a href="https://drive.google.com/drive/folders/1otT7ewsBDb5y05BgTb5x71D-QJb4QQUy" target="_blank" rel="noopener">public Drive folder</a> and a <a href="https://docs.google.com/spreadsheets/d/1gpTf1k-i0DBJZDlUR1YQhiFgWCO56pjpSDa4M1cEJjA/edit?usp=drivesdk" target="_blank" rel="noopener">public ledger</a>. Do not upload data under embargo or containing personal information.</li>
+    <li><strong>Accepted inputs:</strong> <code>.fastq</code>, <code>.fq</code>, <code>.fastq.gz</code>, <code>.fq.gz</code> (amplicon); <code>.fasta</code>, <code>.fa</code>, <code>.fna</code>, <code>.fas</code>, <code>.txt</code>, <code>.ab1</code> (barcoding). Google Forms accepts up to 10 files per question and files up to 1 GB each; the free compute tier processes roughly up to a few million read pairs per job (about 6 h of runner time) comfortably.</li>
+    <li><strong>Google sign-in.</strong> Google Forms requires you to be signed in to a Google account to upload files (a Google policy for file-upload questions). Your e-mail is recorded in the private form responses only and is not published.</li>
+    <li><strong>Turnaround.</strong> Jobs run one at a time on a public GitHub Actions runner; barcoding takes 2–5 min, amplicon jobs 10–60 min depending on read counts. Keep the job id shown in the form confirmation, or find your job on the dashboard.</li>
+  </ul>
+</section>
+
+<section class="panel form-embed" id="form">
+  <h2>Submission form</h2>
+  
+  <div class="placeholder" role="status">
+    <p><strong>Submission form not configured yet.</strong></p>
+    <p class="small">Run the Apps Script <code>setup()</code> once, paste the resulting form URLs into <code>platform_config.json → free_mode.google_form_url / google_form_embed_url</code>, and rebuild the site (<code>python scripts/build_static_site.py</code>). Until then, submissions cannot be accepted.</p>
+  </div>
+  
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="caveat"><strong>Caveat.</strong> Results are automated and provisional; no negative controls are enforced; verify taxonomic assignments before publication</p>
+    <p class="cites"><strong>Methods &amp; citations.</strong>
+      cutadapt (Martin 2011, <em>EMBnet.journal</em> 17(1):10, <a href="https://doi.org/10.14806/ej.17.1.200" target="_blank" rel="noopener">doi:10.14806/ej.17.1.200</a>) ·
+      VSEARCH (Rognes et al. 2016, <em>PeerJ</em> 4:e2584, <a href="https://doi.org/10.7717/peerj.2584" target="_blank" rel="noopener">doi:10.7717/peerj.2584</a>) ·
+      UNITE (Abarenkov et al. 2024, <em>Nucleic Acids Res.</em> 52(D1):D791–D797, <a href="https://doi.org/10.1093/nar/gkad1039" target="_blank" rel="noopener">doi:10.1093/nar/gkad1039</a>) ·
+      SINTAX (Edgar 2016, bioRxiv preprint, <a href="https://doi.org/10.1101/074161" target="_blank" rel="noopener">doi:10.1101/074161</a>) ·
+      Plotly.js (MIT licence).</p>
+    <p class="small">Data ledger: <a href="https://docs.google.com/spreadsheets/d/1gpTf1k-i0DBJZDlUR1YQhiFgWCO56pjpSDa4M1cEJjA/edit?usp=drivesdk" target="_blank" rel="noopener">Google Sheets</a> · Result files: <a href="https://drive.google.com/drive/folders/1otT7ewsBDb5y05BgTb5x71D-QJb4QQUy" target="_blank" rel="noopener">Google Drive</a> · All results on this platform are public.</p>
+  </div>
+</footer>
+<script src="static/app.js"></script>
+
+</body>
+</html>

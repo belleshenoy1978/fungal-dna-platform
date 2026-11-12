@@ -1,0 +1,71 @@
+job_id	query_id	query_length	strand	rank	accession	sh	species	identity_pct	coverage_pct	assignment_level	chimera_flag	sintax_genus	sintax_genus_conf	sintax_species	sintax_species_conf
+testbarcode01	exact_Aspergillus	513	+	1	SH1187575.10FU	SH1187575.10FU	Aspergillus flavus	100.0	100.0	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	exact_Aspergillus	513	+	2	SH1307622.10FU	SH1307622.10FU	Aspergillus flavus	86.9	97.5	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	exact_Aspergillus	513	+	3	SH1073529.10FU	SH1073529.10FU	Aspergillus flavus	86.7	94.2	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	exact_Aspergillus	513	+	4	SH1307679.10FU	SH1307679.10FU	Aspergillus flavus	86.0	98.1	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	exact_Aspergillus	513	+	5	SH1308153.10FU	SH1308153.10FU	Aspergillus flavus	85.9	93.8	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	exact_Aspergillus	513	+	6	SH1339568.10FU	SH1339568.10FU	unidentified	85.8	99.8	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	exact_Aspergillus	513	+	7	SH1307719.10FU	SH1307719.10FU	Aspergillus flavus	84.8	90.6	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	exact_Aspergillus	513	+	8	SH1307713.10FU	SH1307713.10FU	Aspergillus flavus	84.7	83.4	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	exact_Aspergillus	513	+	9	SH1307602.10FU	SH1307602.10FU	Aspergillus flavus	84.5	93.2	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	exact_Aspergillus	513	+	10	SH1264425.10FU	SH1264425.10FU	Aspergillus flavus	84.4	84.2	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	exact_Fusarium	539	+	1	SH1050214.10FU	SH1050214.10FU	Fusarium equiseti	100.0	100.0	species	False	Fusarium	1.0	Fusarium equiseti	1.0
+testbarcode01	exact_Fusarium	539	+	2	SH1050282.10FU	SH1050282.10FU	Fusarium incarnatum	98.0	73.7	species	False	Fusarium	1.0	Fusarium equiseti	1.0
+testbarcode01	exact_Fusarium	539	+	3	SH1050221.10FU	SH1050221.10FU	Fusarium equiseti	95.3	77.6	species	False	Fusarium	1.0	Fusarium equiseti	1.0
+testbarcode01	exact_Fusarium	539	+	4	SH1049509.10FU	SH1049509.10FU	unidentified	94.8	81.8	species	False	Fusarium	1.0	Fusarium equiseti	1.0
+testbarcode01	exact_Fusarium	539	+	5	SH1050219.10FU	SH1050219.10FU	Fusarium humuli	94.4	82.4	species	False	Fusarium	1.0	Fusarium equiseti	1.0
+testbarcode01	exact_Fusarium	539	+	6	SH1050003.10FU	SH1050003.10FU	unidentified	93.5	81.6	species	False	Fusarium	1.0	Fusarium equiseti	1.0
+testbarcode01	exact_Fusarium	539	+	7	SH1050005.10FU	SH1050005.10FU	Fusarium polyphialidicum	93.5	73.3	species	False	Fusarium	1.0	Fusarium equiseti	1.0
+testbarcode01	exact_Fusarium	539	+	8	SH1049473.10FU	SH1049473.10FU	Fusarium sporotrichioides	91.9	75.1	species	False	Fusarium	1.0	Fusarium equiseti	1.0
+testbarcode01	exact_Fusarium	539	+	9	SH1049363.10FU	SH1049363.10FU	Fusarium sp.	90.7	85.2	species	False	Fusarium	1.0	Fusarium equiseti	1.0
+testbarcode01	exact_Fusarium	539	+	10	SH1049549.10FU	SH1049549.10FU	Fusarium oxysporum	90.6	82.9	species	False	Fusarium	1.0	Fusarium equiseti	1.0
+testbarcode01	mut1pct_Trichoderma	506	+	1	SH1413670.10FU	SH1413670.10FU	Trichoderma neorufoides	99.0	100.0	species	False	Trichoderma	1.0	Trichoderma neorufoides	1.0
+testbarcode01	mut1pct_Trichoderma	506	+	2	SH1956943.10FU	SH1956943.10FU	Trichoderma paucisporum	97.1	100.0	species	False	Trichoderma	1.0	Trichoderma neorufoides	1.0
+testbarcode01	mut1pct_Trichoderma	506	+	3	SH1413769.10FU	SH1413769.10FU	Trichoderma yunnanense	97.1	99.8	species	False	Trichoderma	1.0	Trichoderma neorufoides	1.0
+testbarcode01	mut1pct_Trichoderma	506	+	4	SH1956815.10FU	SH1956815.10FU	Trichoderma cerebriforme	97.1	99.8	species	False	Trichoderma	1.0	Trichoderma neorufoides	1.0
+testbarcode01	mut1pct_Trichoderma	506	+	5	SH1413630.10FU	SH1413630.10FU	Trichoderma neorufum	96.9	100.0	species	False	Trichoderma	1.0	Trichoderma neorufoides	1.0
+testbarcode01	mut1pct_Trichoderma	506	+	6	SH1957169.10FU	SH1957169.10FU	Trichoderma theobromicola	96.9	100.0	species	False	Trichoderma	1.0	Trichoderma neorufoides	1.0
+testbarcode01	mut1pct_Trichoderma	506	+	7	SH1958573.10FU	SH1958573.10FU	Trichoderma theobromicola	96.9	100.0	species	False	Trichoderma	1.0	Trichoderma neorufoides	1.0
+testbarcode01	mut1pct_Trichoderma	506	+	8	SH1200157.10FU	SH1200157.10FU	Trichoderma asperellum	96.7	99.8	species	False	Trichoderma	1.0	Trichoderma neorufoides	1.0
+testbarcode01	mut1pct_Trichoderma	506	+	9	SH1414447.10FU	SH1414447.10FU	Trichoderma asperellum	96.7	99.8	species	False	Trichoderma	1.0	Trichoderma neorufoides	1.0
+testbarcode01	mut1pct_Trichoderma	506	+	10	SH1414517.10FU	SH1414517.10FU	Trichoderma asperellum	96.7	99.8	species	False	Trichoderma	1.0	Trichoderma neorufoides	1.0
+testbarcode01	mut3pct_Rhodotorula	524	+	1	SH1231671.10FU	SH1231671.10FU	Rhodotorula ngohengohe	97.1	100.0	genus (species uncertain)	False	Rhodotorula	1.0	Rhodotorula ngohengohe	1.0
+testbarcode01	mut3pct_Rhodotorula	524	+	2	SH1231678.10FU	SH1231678.10FU	Rhodotorula sp.	91.1	98.1	genus (species uncertain)	False	Rhodotorula	1.0	Rhodotorula ngohengohe	1.0
+testbarcode01	mut3pct_Rhodotorula	524	+	3	SH1697987.10FU	SH1697987.10FU	Rhodotorula graminis	91.0	98.7	genus (species uncertain)	False	Rhodotorula	1.0	Rhodotorula ngohengohe	1.0
+testbarcode01	mut3pct_Rhodotorula	524	+	4	SH1231705.10FU	SH1231705.10FU	Rhodotorula sp.	89.9	98.3	genus (species uncertain)	False	Rhodotorula	1.0	Rhodotorula ngohengohe	1.0
+testbarcode01	mut3pct_Rhodotorula	524	+	5	SH1231694.10FU	SH1231694.10FU	Rhodotorula graminis	89.5	98.7	genus (species uncertain)	False	Rhodotorula	1.0	Rhodotorula ngohengohe	1.0
+testbarcode01	mut3pct_Rhodotorula	524	+	6	SH1231708.10FU	SH1231708.10FU	Rhodotorula kratochvilovae	89.2	97.9	genus (species uncertain)	False	Rhodotorula	1.0	Rhodotorula ngohengohe	1.0
+testbarcode01	mut3pct_Rhodotorula	524	+	7	SH1697927.10FU	SH1697927.10FU	Rhodotorula araucariae	89.2	97.9	genus (species uncertain)	False	Rhodotorula	1.0	Rhodotorula ngohengohe	1.0
+testbarcode01	mut3pct_Rhodotorula	524	+	8	SH1231814.10FU	SH1231814.10FU	Rhodotorula diobovata	89.1	99.0	genus (species uncertain)	False	Rhodotorula	1.0	Rhodotorula ngohengohe	1.0
+testbarcode01	mut3pct_Rhodotorula	524	+	9	SH1231688.10FU	SH1231688.10FU	Rhodotorula babjevae	89.1	98.5	genus (species uncertain)	False	Rhodotorula	1.0	Rhodotorula ngohengohe	1.0
+testbarcode01	mut3pct_Rhodotorula	524	+	10	SH1698110.10FU	SH1698110.10FU	Rhodotorula evergladensis	88.7	97.7	genus (species uncertain)	False	Rhodotorula	1.0	Rhodotorula ngohengohe	1.0
+testbarcode01	mut8pct_Penicillium	516	+	1	SH1308127.10FU	SH1308127.10FU	Penicillium sanguifluum	92.1	100.0	family/order level only	False	Penicillium	0.98	Penicillium sanguifluum	0.41
+testbarcode01	mut8pct_Penicillium	516	+	2	SH1307441.10FU	SH1307441.10FU	Penicillium roseopurpureum	92.0	96.7	family/order level only	False	Penicillium	0.98	Penicillium sanguifluum	0.41
+testbarcode01	mut8pct_Penicillium	516	+	3	SH1307500.10FU	SH1307500.10FU	Penicillium roseopurpureum	91.8	80.8	family/order level only	False	Penicillium	0.98	Penicillium sanguifluum	0.41
+testbarcode01	mut8pct_Penicillium	516	+	4	SH1306918.10FU	SH1306918.10FU	Penicillium roseopurpureum	91.0	89.9	family/order level only	False	Penicillium	0.98	Penicillium sanguifluum	0.41
+testbarcode01	mut8pct_Penicillium	516	+	5	SH1308121.10FU	SH1308121.10FU	Penicillium shearii	90.1	97.5	family/order level only	False	Penicillium	0.98	Penicillium sanguifluum	0.41
+testbarcode01	mut8pct_Penicillium	516	+	6	SH1307463.10FU	SH1307463.10FU	Penicillium miczynskii	90.0	98.3	family/order level only	False	Penicillium	0.98	Penicillium sanguifluum	0.41
+testbarcode01	mut8pct_Penicillium	516	+	7	SH1307486.10FU	SH1307486.10FU	Penicillium terrigenum	89.8	96.5	family/order level only	False	Penicillium	0.98	Penicillium sanguifluum	0.41
+testbarcode01	mut8pct_Penicillium	516	+	8	SH1307497.10FU	SH1307497.10FU	Penicillium shearii	89.7	99.0	family/order level only	False	Penicillium	0.98	Penicillium sanguifluum	0.41
+testbarcode01	mut8pct_Penicillium	516	+	9	SH1307375.10FU	SH1307375.10FU	Penicillium terrigenum	89.7	98.1	family/order level only	False	Penicillium	0.98	Penicillium sanguifluum	0.41
+testbarcode01	mut8pct_Penicillium	516	+	10	SH1803645.10FU	SH1803645.10FU	Penicillium copticola	89.4	96.5	family/order level only	False	Penicillium	0.98	Penicillium sanguifluum	0.41
+testbarcode01	revcomp_Aspergillus	513	-	1	SH1187575.10FU	SH1187575.10FU	Aspergillus flavus	100.0	100.0	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	revcomp_Aspergillus	513	-	2	SH1307622.10FU	SH1307622.10FU	Aspergillus flavus	86.9	97.5	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	revcomp_Aspergillus	513	-	3	SH1073529.10FU	SH1073529.10FU	Aspergillus flavus	86.7	94.2	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	revcomp_Aspergillus	513	-	4	SH1307679.10FU	SH1307679.10FU	Aspergillus flavus	86.0	98.1	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	revcomp_Aspergillus	513	-	5	SH1308153.10FU	SH1308153.10FU	Aspergillus flavus	85.9	93.8	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	revcomp_Aspergillus	513	-	6	SH1339568.10FU	SH1339568.10FU	unidentified	85.8	99.8	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	revcomp_Aspergillus	513	-	7	SH1307719.10FU	SH1307719.10FU	Aspergillus flavus	84.8	90.6	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	revcomp_Aspergillus	513	-	8	SH1307713.10FU	SH1307713.10FU	Aspergillus flavus	84.7	83.4	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	revcomp_Aspergillus	513	-	9	SH1307602.10FU	SH1307602.10FU	Aspergillus flavus	84.5	93.2	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	revcomp_Aspergillus	513	-	10	SH1264425.10FU	SH1264425.10FU	Aspergillus flavus	84.4	84.2	species	False	Aspergillus	1.0	Aspergillus flavus	1.0
+testbarcode01	chimera_Asp_Fus	526	+	1	SH1050282.10FU	SH1050282.10FU	Fusarium incarnatum	86.0	75.5	chimera suspected (not assigned)	True	Fusarium	0.39	Fusarium equiseti	0.37
+testbarcode01	chimera_Asp_Fus	526	+	2	SH1050044.10FU	SH1050044.10FU	Fusarium oxysporum	85.3	69.8	chimera suspected (not assigned)	True	Fusarium	0.39	Fusarium equiseti	0.37
+testbarcode01	chimera_Asp_Fus	526	+	3	SH1050221.10FU	SH1050221.10FU	Fusarium equiseti	83.7	78.7	chimera suspected (not assigned)	True	Fusarium	0.39	Fusarium equiseti	0.37
+testbarcode01	chimera_Asp_Fus	526	+	4	SH1049509.10FU	SH1049509.10FU	unidentified	82.7	81.4	chimera suspected (not assigned)	True	Fusarium	0.39	Fusarium equiseti	0.37
+testbarcode01	chimera_Asp_Fus	526	+	5	SH1049926.10FU	SH1049926.10FU	Fusarium andiyazi	81.7	75.1	chimera suspected (not assigned)	True	Fusarium	0.39	Fusarium equiseti	0.37
+testbarcode01	chimera_Asp_Fus	526	+	6	SH1264425.10FU	SH1264425.10FU	Aspergillus flavus	81.4	79.5	chimera suspected (not assigned)	True	Fusarium	0.39	Fusarium equiseti	0.37
+testbarcode01	chimera_Asp_Fus	526	+	7	SH1379040.10FU	SH1379040.10FU	unidentified	81.1	87.5	chimera suspected (not assigned)	True	Fusarium	0.39	Fusarium equiseti	0.37
+testbarcode01	chimera_Asp_Fus	526	+	8	SH1050219.10FU	SH1050219.10FU	Fusarium humuli	80.7	84.4	chimera suspected (not assigned)	True	Fusarium	0.39	Fusarium equiseti	0.37
+testbarcode01	chimera_Asp_Fus	526	+	9	SH1050003.10FU	SH1050003.10FU	unidentified	80.3	84.2	chimera suspected (not assigned)	True	Fusarium	0.39	Fusarium equiseti	0.37
+testbarcode01	chimera_Asp_Fus	526	+	10	SH1050241.10FU	SH1050241.10FU	Fusarium oxysporum	79.7	85.4	chimera suspected (not assigned)	True	Fusarium	0.39	Fusarium equiseti	0.37

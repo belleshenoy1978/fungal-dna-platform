@@ -1,0 +1,1 @@
+job_id,job_type,submitted_at,completed_at,status,submitter,marker,n_samples,n_reads_in,n_reads_kept,n_asvs,n_fungal_asvs,n_species,location,lat,lon,result_folder_url,result_json_url,notes

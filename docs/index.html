@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fungal DNA Analysis Platform — belleshenoy.in</title>
+<meta name="description" content="Public, automated fungal eDNA amplicon analysis and ITS barcoding for Indian coastal samples (CSIR-NIO, Visakhapatnam / belleshenoy.in).">
+
+<link rel="stylesheet" href="static/style.css">
+<script src="static/config.js"></script>
+<script>
+/* Prefer the vendored Plotly bundle; fall back to the CDN if /static is unavailable (e.g. template opened standalone). */
+window.__plotlyFallback = function () {
+  var s = document.createElement('script'); s.src = 'https://cdn.plot.ly/plotly-2.35.2.min.js'; s.async = false;
+  document.head.appendChild(s);
+};
+</script>
+
+</head>
+<body class="">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Fungal DNA Analysis Platform <span class="brand-sub">— belleshenoy.in</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="active">Home</a>
+      
+      <a href="submit.html" >Submit data</a>
+      
+      <a href="dashboard.html" >Dashboard</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="hero">
+  <h1>Automated fungal DNA analysis for Indian coastal samples</h1>
+  <p class="lead">Upload ITS / 18S amplicon reads or single ITS barcode sequences. The pipeline trims primers (cutadapt), merges, quality-filters, denoises and removes chimeras (VSEARCH), assigns taxonomy against UNITE v10 with SINTAX, and publishes the results to a public Google Drive folder and a live ledger that feeds the dashboard below. In free mode, submissions arrive through a Google Form and are processed by a public GitHub Actions workflow; a typical job takes 5–40 minutes. No platform account is needed; everything submitted here is public.</p>
+</section>
+
+<section class="kpi-strip" id="kpi-strip" data-spreadsheet-id="1gpTf1k-i0DBJZDlUR1YQhiFgWCO56pjpSDa4M1cEJjA" data-csv-template="https://docs.google.com/spreadsheets/d/{spreadsheet_id}/gviz/tq?tqx=out:csv&amp;sheet={sheet}">
+  <div class="kpi"><div class="kpi-value" id="kpi-jobs">–</div><div class="kpi-label">jobs</div></div>
+  <div class="kpi"><div class="kpi-value" id="kpi-samples">–</div><div class="kpi-label">samples</div></div>
+  <div class="kpi"><div class="kpi-value" id="kpi-asvs">–</div><div class="kpi-label">ASVs</div></div>
+  <div class="kpi"><div class="kpi-value" id="kpi-species">–</div><div class="kpi-label">species-level assignments</div></div>
+  <div class="kpi"><div class="kpi-value" id="kpi-barcodes">–</div><div class="kpi-label">barcoding queries</div></div>
+  <div class="kpi-note small" id="kpi-note">Live from the public ledger…</div>
+</section>
+
+<section class="cards">
+  <article class="card">
+    <h2>Amplicon analysis</h2>
+    <p>Paired or single-end Illumina FASTQ(.gz) for ITS1, ITS2, 18S-V4 or 18S-V9 (or custom primers). Output: ASV table with taxonomy, read-survival QC per sample, Shannon diversity, composition charts and downloadable TSV/FASTA files.</p>
+    <p><a class="btn" href="submit.html">Submit amplicon data →</a></p>
+  </article>
+  <article class="card">
+    <h2>DNA barcoding</h2>
+    <p>Paste or upload Sanger ITS sequences (FASTA or .ab1). Each query is searched against UNITE species hypotheses (VSEARCH global alignment) and classified with SINTAX; you get identity, coverage, SH, confidence and a printable report.</p>
+    <p><a class="btn" href="submit.html#barcode">Identify a sequence →</a></p>
+  </article>
+  <article class="card">
+    <h2>Public dashboard</h2>
+    <p>All submissions, sample origins on a map, taxon leaderboards and phylum composition, refreshed every minute from the Google Sheets ledger. Embeddable in Google Sites.</p>
+    <p><a class="btn btn-secondary" href="dashboard.html">Open dashboard →</a></p>
+  </article>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="caveat"><strong>Caveat.</strong> Results are automated and provisional; no negative controls are enforced; verify taxonomic assignments before publication</p>
+    <p class="cites"><strong>Methods &amp; citations.</strong>
+      cutadapt (Martin 2011, <em>EMBnet.journal</em> 17(1):10, <a href="https://doi.org/10.14806/ej.17.1.200" target="_blank" rel="noopener">doi:10.14806/ej.17.1.200</a>) ·
+      VSEARCH (Rognes et al. 2016, <em>PeerJ</em> 4:e2584, <a href="https://doi.org/10.7717/peerj.2584" target="_blank" rel="noopener">doi:10.7717/peerj.2584</a>) ·
+      UNITE (Abarenkov et al. 2024, <em>Nucleic Acids Res.</em> 52(D1):D791–D797, <a href="https://doi.org/10.1093/nar/gkad1039" target="_blank" rel="noopener">doi:10.1093/nar/gkad1039</a>) ·
+      SINTAX (Edgar 2016, bioRxiv preprint, <a href="https://doi.org/10.1101/074161" target="_blank" rel="noopener">doi:10.1101/074161</a>) ·
+      Plotly.js (MIT licence).</p>
+    <p class="small">Data ledger: <a href="https://docs.google.com/spreadsheets/d/1gpTf1k-i0DBJZDlUR1YQhiFgWCO56pjpSDa4M1cEJjA/edit?usp=drivesdk" target="_blank" rel="noopener">Google Sheets</a> · Result files: <a href="https://drive.google.com/drive/folders/1otT7ewsBDb5y05BgTb5x71D-QJb4QQUy" target="_blank" rel="noopener">Google Drive</a> · All results on this platform are public.</p>
+  </div>
+</footer>
+<script src="static/app.js"></script>
+
+<script>
+(function () {
+  var el = document.getElementById('kpi-strip');
+  var ledger = FDP.ledgerConfig(el);
+  Promise.all([FDP.fetchSheet(ledger, 'jobs'), FDP.fetchSheet(ledger, 'samples'), FDP.fetchSheet(ledger, 'barcoding_hits')])
+    .then(function (r) {
+      var k = FDP.kpis(r[0], r[1], r[2]);
+      FDP.setText('kpi-jobs', FDP.fmtInt(k.jobs)); FDP.setText('kpi-samples', FDP.fmtInt(k.samples));
+      FDP.setText('kpi-asvs', FDP.fmtInt(k.asvs)); FDP.setText('kpi-species', FDP.fmtInt(k.species));
+      FDP.setText('kpi-barcodes', FDP.fmtInt(k.barcodes));
+      FDP.setText('kpi-note', k.jobs ? 'Live from the public ledger · updated ' + FDP.nowHMS() : 'Ledger is empty — no jobs yet.');
+    })
+    .catch(function (e) { FDP.setText('kpi-note', 'Ledger unavailable: ' + e.message); });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+sample_id	marker	trimmed_pairs	merged	filtered	pct_merged	pct_filtered
+Ernakulam	ITS1	78761	75407	75375	95.7	95.7
+Kannur	ITS1	57339	54653	54621	95.3	95.3
+Dangmal	ITS2	344738	198060	185120	57.5	53.7
+Gupti	ITS2	238939	128092	116634	53.6	48.8
+Habalikhati	ITS2	242574	149110	140641	61.5	58.0
+Kalibhanjadiha	ITS2	310948	125524	121053	40.4	38.9

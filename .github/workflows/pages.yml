@@ -1,0 +1,84 @@
+# Deploy the static site (docs/) to GitHub Pages.
+#
+# Free-mode architecture: Google Form -> Apps Script -> repository_dispatch -> compute workflow (runs the
+# pipeline, uploads to Drive/Sheets, commits docs/jobs/<job_id>.json) -> this workflow redeploys Pages.
+#
+# The site is REBUILT here from app/templates + app/static + platform_config.json before upload, so the
+# committed docs/ can never drift from the templates (the Pages artifact, not the commit, is what is served).
+# Repository settings once: Settings -> Pages -> Source: "GitHub Actions".
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "app/templates/**"
+      - "app/static/**"
+      - "platform_config.json"
+      - "scripts/build_static_site.py"
+      - "tests/test_static_site.py"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; do not cancel a running deploy when the compute workflow commits another job.
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install build dependency (jinja2 only)
+        run: python -m pip install --quiet "jinja2>=3.1"
+
+      - name: Render templates into docs/ (idempotent; keeps docs/jobs/*.json committed by the compute workflow)
+        run: python scripts/build_static_site.py --json build_report.json
+
+      - name: Static-site checks (pages, footer caveat + citations, config.js, JS bracket balance, job JSON fields)
+        run: python tests/test_static_site.py --no-build
+
+      - name: Fail if the committed docs/ had drifted from the templates (informational diff)
+        run: |
+          if ! git diff --quiet -- docs; then
+            echo "::warning::docs/ was out of date relative to app/templates; the freshly built version is being deployed. Commit the rebuilt docs/ to silence this."
+            git --no-pager diff --stat -- docs
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: static-site-report
+          path: |
+            build_report.json
+            tests/test_static_site_report.md
+            tests/test_static_site_results.json
+          if-no-files-found: ignore
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

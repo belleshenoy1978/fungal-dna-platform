@@ -1,0 +1,175 @@
+# Fungal DNA Analysis Platform - free-mode compute worker.
+#
+# One run processes queued jobs from the `queue` tab of the public ledger
+# spreadsheet (platform_config.json -> ledger.spreadsheet_id). It is started
+#   * by the Apps Script onFormSubmit handler (repository_dispatch, type run-job,
+#     client_payload.job_id = the job just queued),
+#   * manually (workflow_dispatch, optional job_id),
+#   * every 30 minutes as a catch-up for dispatches that were lost (e.g. the
+#     GitHub PAT in Apps Script expired) - the runner then takes every row whose
+#     status is still `queued`, oldest first, at most 5 per run.
+#
+# Runs are serialised through the `fungal-jobs` concurrency group; with
+# cancel-in-progress: false a second dispatch waits instead of killing the run.
+#
+# Secrets / variables expected in the repository:
+#   secrets.GOOGLE_TOKEN_JSON    OAuth 'authorized_user' JSON from scripts/authorize_google.py
+#                                (Drive + Sheets scopes, the owner's account). Never echoed.
+#   vars.PUBLIC_BASE_URL         GitHub Pages URL of this repo, e.g. https://<user>.github.io/fungal-dna-platform
+#   vars.LEDGER_SPREADSHEET_ID   optional override of platform_config.json ledger.spreadsheet_id
+#   vars.DRIVE_RESULTS_FOLDER_ID optional override of platform_config.json drive.results
+name: run-job
+
+on:
+  repository_dispatch:
+    types: [run-job]
+  workflow_dispatch:
+    inputs:
+      job_id:
+        description: "queue job_id to run (leave empty to drain all queued jobs)"
+        required: false
+        default: ""
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fungal-jobs
+  cancel-in-progress: false
+
+env:
+  VSEARCH_VERSION: "2.32.0"
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python requirements (cutadapt, google-api-python-client, ...)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          cutadapt --version
+
+      - name: Install VSEARCH ${{ env.VSEARCH_VERSION }}
+        run: |
+          set -euo pipefail
+          url="https://github.com/torognes/vsearch/releases/download/v${VSEARCH_VERSION}/vsearch-${VSEARCH_VERSION}-linux-x86_64.tar.gz"
+          curl -sSL --retry 3 -o vsearch.tar.gz "$url"
+          tar -xzf vsearch.tar.gz
+          mkdir -p "$HOME/.local/bin"
+          cp "vsearch-${VSEARCH_VERSION}-linux-x86_64/bin/vsearch" "$HOME/.local/bin/vsearch"
+          chmod +x "$HOME/.local/bin/vsearch"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Verify vsearch on PATH
+        run: vsearch --version 2>&1 | head -n 1
+
+      # The UNITE SINTAX database (about 21 MB gzipped) is cached between runs.
+      # The key is derived from the UNITE download URL in scripts/fetch_reference.py,
+      # so bumping the release there invalidates the cache automatically.
+      - name: Compute UNITE cache key
+        id: unite-key
+        run: |
+          key=$(python - <<'EOF'
+          import hashlib, re
+          src = open("scripts/fetch_reference.py", encoding="utf-8").read()
+          url = re.search(r'UNITE_URL\s*=\s*"([^"]+)"', src).group(1)
+          print("unite-sintax-" + hashlib.sha256(url.encode()).hexdigest()[:16])
+          EOF
+          )
+          echo "key=$key" >> "$GITHUB_OUTPUT"
+          echo "UNITE cache key: $key"
+
+      - name: Restore UNITE SINTAX db
+        id: unite-cache
+        uses: actions/cache@v4
+        with:
+          path: ref/unite_sintax.fasta.gz
+          key: ${{ steps.unite-key.outputs.key }}
+
+      - name: Build UNITE SINTAX db (cache miss)
+        if: steps.unite-cache.outputs.cache-hit != 'true'
+        run: python scripts/fetch_reference.py --out ref/unite_sintax.fasta.gz
+
+      - name: Check reference db
+        run: |
+          ls -l ref/unite_sintax.fasta.gz
+          python -c "import gzip; fh=gzip.open('ref/unite_sintax.fasta.gz','rt'); l=fh.readline(); assert l.startswith('>'), l; print('db header OK:', l[:80])"
+
+      - name: Run queued jobs
+        env:
+          # The secret is passed only through the environment; the runner never prints it.
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_TOKEN_JSON }}
+          VSEARCH_BIN: vsearch
+          UNITE_SINTAX_DB: ${{ github.workspace }}/ref/unite_sintax.fasta.gz
+          DATA_DIR: ${{ runner.temp }}/data
+          PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
+          LEDGER_SPREADSHEET_ID: ${{ vars.LEDGER_SPREADSHEET_ID }}
+          DRIVE_RESULTS_FOLDER_ID: ${{ vars.DRIVE_RESULTS_FOLDER_ID }}
+          PIPELINE_THREADS: "4"
+          DOCS_JOBS_DIR: ${{ github.workspace }}/docs/jobs
+          MAX_JOBS_PER_RUN: "5"
+        run: |
+          set -euo pipefail
+          # An empty LEDGER_SPREADSHEET_ID / DRIVE_RESULTS_FOLDER_ID would override the
+          # platform_config.json defaults with "", so unset them when the vars are not defined.
+          [ -z "${LEDGER_SPREADSHEET_ID}" ] && unset LEDGER_SPREADSHEET_ID
+          [ -z "${DRIVE_RESULTS_FOLDER_ID}" ] && unset DRIVE_RESULTS_FOLDER_ID
+          if [ -z "${GOOGLE_SERVICE_ACCOUNT_JSON}" ]; then
+            echo "::error::secret GOOGLE_TOKEN_JSON is not set - the runner cannot read the queue or write results"
+            exit 1
+          fi
+          mkdir -p "$DATA_DIR" "$DOCS_JOBS_DIR"
+          python scripts/actions_runner.py --job-id "${{ github.event.client_payload.job_id || inputs.job_id }}"
+
+      - name: Commit job pages (docs/jobs)
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name "fungal-platform-bot"
+          git config user.email "fungal-platform-bot@users.noreply.github.com"
+          git add -A docs/jobs
+          if git diff --cached --quiet; then
+            echo "no new job pages to commit"
+            exit 0
+          fi
+          git commit -m "jobs: results for run ${{ github.run_id }} [skip ci]"
+          # Another run may have pushed meanwhile; rebase keeps our commit on top.
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"; then
+              echo "pushed docs/jobs"
+              exit 0
+            fi
+            echo "push attempt $attempt failed; retrying"
+            sleep $((attempt * 5))
+          done
+          echo "::error::could not push docs/jobs after 5 attempts"
+          exit 1
+
+      - name: Upload run logs (debugging aid)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-logs-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/data/jobs/*/pipeline_log.txt
+            ${{ runner.temp }}/data/jobs/*/result.json
+            ${{ runner.temp }}/data/ledger/*.csv
+          if-no-files-found: ignore
+          retention-days: 14

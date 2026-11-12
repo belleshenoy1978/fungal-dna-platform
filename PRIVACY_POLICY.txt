@@ -1,0 +1,26 @@
+Fungal DNA Analysis Platform – Privacy Policy
+Last updated: 12 November 2026
+
+This policy covers the Fungal DNA Analysis Platform hosted at www.belleshenoy.in (the "platform"), which accepts fungal sequence data through a Google Form and analyses it automatically.
+
+1. What we collect
+When you submit data, we receive only what you enter in the Form:
+- your name and affiliation (shown publicly next to your results);
+- the analysis type, marker, primers, read layout and sampling location / coordinates you provide;
+- the sequence files (FASTQ, FASTA, .ab1) or pasted sequences you submit.
+Google Forms requires you to sign in with a Google account to upload files. The platform does not record your e-mail address.
+
+2. How it is used and published
+Submissions are analysed automatically (cutadapt, VSEARCH, UNITE reference database). By ticking the consent box you agree that your submitted data and all results are published openly under the Creative Commons Attribution 4.0 licence (CC BY 4.0) on the public dashboard and in a public Google Drive folder. Do not submit data you are not entitled to make public.
+
+3. Where data is stored
+Uploaded files and results are stored in the platform owner's Google Drive and a Google Sheets ledger. Processing runs on GitHub Actions. These services are operated by Google and GitHub under their own privacy policies.
+
+4. Google account access by the platform
+The platform's Google OAuth application ("Fungal DNA Platform") is used only by the platform owner, to let the automated pipeline read submissions from and write results to the owner's own Google Drive and Sheets. It does not access any submitter's Google account or data.
+
+5. Removal requests
+Because results are public, copies may already exist elsewhere. To request removal of a submission from the platform, contact the site owner through www.belleshenoy.in. We will delete the job's Drive folder, ledger rows and dashboard page.
+
+6. Changes
+We may update this policy; the date above shows the latest version.

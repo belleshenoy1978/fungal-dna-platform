@@ -1,0 +1,882 @@
+{
+ "n_checks": 175,
+ "n_pass": 175,
+ "n_fail": 0,
+ "checks": [
+  {
+   "check": "client mode",
+   "pass": true,
+   "detail": "in-process fastapi.testclient.TestClient (loopback sockets blocked in sandbox)"
+  },
+  {
+   "check": "landing: HTTP 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "landing: no X-Frame-Options",
+   "pass": true,
+   "detail": "{'content-length': '6018', 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store'}"
+  },
+  {
+   "check": "landing: no frame-ancestors CSP",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "landing: no Set-Cookie",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "landing: viewport meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "landing: caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "landing: citations",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "landing: contains 'href=\"/submit\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "landing: contains 'href=\"/barcode\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "landing: contains 'href=\"/dashboard\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "landing: contains 'id=\"kpi-strip\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "landing: contains 'data-spreadsheet-id=\"1gpTf1k-i0DBJZDlUR1YQhiFgWCO56pjpSDa4M1cEJjA\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: HTTP 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "submit: no X-Frame-Options",
+   "pass": true,
+   "detail": "{'content-length': '6243', 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store'}"
+  },
+  {
+   "check": "submit: no frame-ancestors CSP",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: no Set-Cookie",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: viewport meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: citations",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "submit: contains 'id=\"amplicon-form\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'name=\"marker\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'value=\"ITS1\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'value=\"ITS2\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'value=\"18S-V4\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'value=\"18S-V9\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'value=\"other\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'name=\"fwd_primer\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'name=\"rev_primer\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'name=\"location\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'name=\"lat\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'name=\"lon\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'name=\"submitter\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains 'name=\"pairing\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit: contains '/static/submit.js'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "barcode: HTTP 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "barcode: no X-Frame-Options",
+   "pass": true,
+   "detail": "{'content-length': '4600', 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store'}"
+  },
+  {
+   "check": "barcode: no frame-ancestors CSP",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "barcode: no Set-Cookie",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "barcode: viewport meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "barcode: caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "barcode: citations",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "barcode: contains 'id=\"barcode-form\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "barcode: contains 'name=\"sequences\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "barcode: contains 'name=\"files\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "barcode: contains 'name=\"submitter\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "barcode: contains '/static/barcode.js'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: HTTP 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "dashboard: no X-Frame-Options",
+   "pass": true,
+   "detail": "{'content-length': '5150', 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store'}"
+  },
+  {
+   "check": "dashboard: no frame-ancestors CSP",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: no Set-Cookie",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: viewport meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: citations",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "dashboard: contains 'id=\"dashboard\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: contains 'data-spreadsheet-id=\"1gpTf1k-i0DBJZDlUR1YQhiFgWCO56pjpSDa4M1cEJjA\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: contains 'gviz/tq?tqx=out:csv&amp;sheet={sheet}'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: contains 'id=\"plot-submissions\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: contains 'id=\"plot-map\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: contains 'id=\"plot-genera\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: contains 'id=\"plot-barcode-genera\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: contains 'id=\"plot-phyla\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: contains 'id=\"jobs-table\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: contains 'id=\"last-updated\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: contains 'kpi-barcodes'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: contains '/static/plotly.min.js'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: contains 'cdn.plot.ly/plotly-2.35.2.min.js'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard: LEDGER_CONFIG injected from platform_config.json",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard-embed: HTTP 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "dashboard-embed: no X-Frame-Options",
+   "pass": true,
+   "detail": "{'content-length': '5155', 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store'}"
+  },
+  {
+   "check": "dashboard-embed: no frame-ancestors CSP",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard-embed: no Set-Cookie",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard-embed: viewport meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard-embed: caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "dashboard-embed: citations",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "dashboard-embed: contains 'class=\"embed\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job ebe1f6d12027: HTTP 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "job ebe1f6d12027: no X-Frame-Options",
+   "pass": true,
+   "detail": "{'content-length': '5653', 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store'}"
+  },
+  {
+   "check": "job ebe1f6d12027: no frame-ancestors CSP",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job ebe1f6d12027: no Set-Cookie",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job ebe1f6d12027: viewport meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job ebe1f6d12027: caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job ebe1f6d12027: citations",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "job ebe1f6d12027: contains 'data-job-id=\"ebe1f6d12027\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job ebe1f6d12027: contains 'id=\"amplicon-view\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job ebe1f6d12027: contains 'id=\"barcode-view\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job ebe1f6d12027: contains 'id=\"asv-table\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job ebe1f6d12027: contains '/static/job.js'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job cabb8aa86f74: HTTP 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "job cabb8aa86f74: no X-Frame-Options",
+   "pass": true,
+   "detail": "{'content-length': '5653', 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store'}"
+  },
+  {
+   "check": "job cabb8aa86f74: no frame-ancestors CSP",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job cabb8aa86f74: no Set-Cookie",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job cabb8aa86f74: viewport meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job cabb8aa86f74: caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job cabb8aa86f74: citations",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "job cabb8aa86f74: contains 'data-job-id=\"cabb8aa86f74\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job cabb8aa86f74: contains 'id=\"amplicon-view\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job cabb8aa86f74: contains 'id=\"barcode-view\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job cabb8aa86f74: contains 'id=\"asv-table\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job cabb8aa86f74: contains '/static/job.js'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job demo-barcode: HTTP 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "job demo-barcode: no X-Frame-Options",
+   "pass": true,
+   "detail": "{'content-length': '5653', 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store'}"
+  },
+  {
+   "check": "job demo-barcode: no frame-ancestors CSP",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job demo-barcode: no Set-Cookie",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job demo-barcode: viewport meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job demo-barcode: caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job demo-barcode: citations",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "job demo-barcode: contains 'data-job-id=\"demo-barcode\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job demo-barcode: contains 'id=\"amplicon-view\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job demo-barcode: contains 'id=\"barcode-view\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job demo-barcode: contains 'id=\"asv-table\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job demo-barcode: contains '/static/job.js'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-queued: HTTP 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "job stub-queued: no X-Frame-Options",
+   "pass": true,
+   "detail": "{'content-length': '5650', 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store'}"
+  },
+  {
+   "check": "job stub-queued: no frame-ancestors CSP",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-queued: no Set-Cookie",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-queued: viewport meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-queued: caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-queued: citations",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "job stub-queued: contains 'data-job-id=\"stub-queued\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-queued: contains 'id=\"amplicon-view\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-queued: contains 'id=\"barcode-view\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-queued: contains 'id=\"asv-table\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-queued: contains '/static/job.js'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-failed: HTTP 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "job stub-failed: no X-Frame-Options",
+   "pass": true,
+   "detail": "{'content-length': '5650', 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store'}"
+  },
+  {
+   "check": "job stub-failed: no frame-ancestors CSP",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-failed: no Set-Cookie",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-failed: viewport meta",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-failed: caveat footer",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-failed: citations",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "job stub-failed: contains 'data-job-id=\"stub-failed\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-failed: contains 'id=\"amplicon-view\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-failed: contains 'id=\"barcode-view\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-failed: contains 'id=\"asv-table\"'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "job stub-failed: contains '/static/job.js'",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "static /static/style.css: 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "static /static/app.js: 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "static /static/dashboard.js: 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "static /static/job.js: 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "static /static/submit.js: 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "static /static/barcode.js: 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "static /static/plotly.min.js: 200",
+   "pass": true,
+   "detail": "200"
+  },
+  {
+   "check": "submit.js primer preset CTTGGTCATTTAGAGGAAGTAA",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit.js primer preset GCTGCGTTCTTCATCGATGC",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit.js primer preset GCATCGATGAAGAACGCAGC",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit.js primer preset TCCTCCGCTTATTGATATGC",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit.js primer preset GTGAATCATCGAATCTTTGAA",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit.js primer preset CCAGCASCYGCGGTAATTCC",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit.js primer preset ACTTTCGTTCTTGATYRA",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit.js primer preset GTACACACCGCCCGTC",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "submit.js primer preset TGATCCTTCTGCAGGTTCACCTAC",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "api ebe1f6d12027: status done & type",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "api ebe1f6d12027: result schema keys",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "api ebe1f6d12027: taxa <= 500",
+   "pass": true,
+   "detail": "500"
+  },
+  {
+   "check": "api cabb8aa86f74: status done & type",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "api cabb8aa86f74: result schema keys",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "api cabb8aa86f74: taxa <= 500",
+   "pass": true,
+   "detail": "127"
+  },
+  {
+   "check": "api demo-barcode: status done & type",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "api demo-barcode: result schema keys",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "ledger jobs: header order exact",
+   "pass": true,
+   "detail": "['job_id', 'job_type', 'submitted_at', 'completed_at', 'status', 'submitter', 'marker', 'n_samples', 'n_reads_in', 'n_reads_kept', 'n_asvs', 'n_fungal_asvs', 'n_species', 'location', 'lat', 'lon', 'result_folder_url', 'result_json_url', 'notes']"
+  },
+  {
+   "check": "ledger jobs: has data rows",
+   "pass": true,
+   "detail": "4"
+  },
+  {
+   "check": "empty ledger jobs: headers only",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "ledger samples: header order exact",
+   "pass": true,
+   "detail": "['job_id', 'sample_id', 'reads_in', 'reads_merged', 'reads_filtered', 'reads_nonchimeric', 'n_asvs', 'shannon', 'pct_fungal', 'location', 'lat', 'lon', 'substrate']"
+  },
+  {
+   "check": "ledger samples: has data rows",
+   "pass": true,
+   "detail": "7"
+  },
+  {
+   "check": "empty ledger samples: headers only",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "ledger taxa: header order exact",
+   "pass": true,
+   "detail": "['job_id', 'sample_id', 'asv_id', 'reads', 'kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species', 'sintax_conf']"
+  },
+  {
+   "check": "ledger taxa: has data rows",
+   "pass": true,
+   "detail": "628"
+  },
+  {
+   "check": "empty ledger taxa: headers only",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "ledger barcoding_hits: header order exact",
+   "pass": true,
+   "detail": "['job_id', 'query_id', 'query_length', 'submitted_at', 'best_hit_accession', 'best_hit_species', 'best_hit_sh', 'identity_pct', 'coverage_pct', 'sintax_genus', 'sintax_species', 'sintax_conf', 'assignment_level', 'chimera_flag', 'report_url']"
+  },
+  {
+   "check": "ledger barcoding_hits: has data rows",
+   "pass": true,
+   "detail": "4"
+  },
+  {
+   "check": "empty ledger barcoding_hits: headers only",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "ledger taxa: <= 200 ASVs per job",
+   "pass": true,
+   "detail": "{'ebe1f6d12027': 200, 'cabb8aa86f74': 126}"
+  },
+  {
+   "check": "ledger barcoding_hits: 3 demo-barcode rows",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "404 for unknown job",
+   "pass": true,
+   "detail": ""
+  }
+ ]
+}

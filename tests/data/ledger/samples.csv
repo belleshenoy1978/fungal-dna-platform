@@ -1,0 +1,7 @@
+job_id,sample_id,reads_in,reads_merged,reads_filtered,reads_nonchimeric,n_asvs,shannon,pct_fungal,location,lat,lon,substrate
+ebe1f6d12027,Dangmal,358716,198060,185120,180328,1090,4.696,58.9,"Bhitarkanika mangrove, Odisha (east coast)",20.7,86.9,rhizosphere soil
+ebe1f6d12027,Gupti,250208,128092,116634,106854,1044,4.383,58.6,"Bhitarkanika mangrove, Odisha (east coast)",20.7,86.9,rhizosphere soil
+ebe1f6d12027,Habalikhati,250864,149110,140641,138130,848,4.461,57.6,"Bhitarkanika mangrove, Odisha (east coast)",20.7,86.9,rhizosphere soil
+ebe1f6d12027,Kalibhanjadiha,320580,125524,121053,118336,904,4.841,88.0,"Bhitarkanika mangrove, Odisha (east coast)",20.7,86.9,rhizosphere soil
+cabb8aa86f74,Ernakulam,80475,75407,75375,73371,123,1.449,98.3,Kerala coast (west coast),10.0,76.3,sediment
+cabb8aa86f74,Kannur,59580,54653,54621,53604,91,1.28,100.0,Kerala coast (west coast),10.0,76.3,sediment

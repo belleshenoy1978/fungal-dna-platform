@@ -1,0 +1,8062 @@
+{
+ "job_id": "ebe1f6d12027",
+ "job_type": "amplicon",
+ "status": "done",
+ "submitted_at": "2026-11-10T06:12:00Z",
+ "completed_at": "2026-11-10T06:41:30Z",
+ "params": {
+  "marker": "ITS2",
+  "fwd_primer": "GCATCGATGAAGAACGCAGC",
+  "rev_primer": "TCCTCCGCTTATTGATATGC",
+  "location": "Bhitarkanika mangrove, Odisha (east coast)",
+  "lat": 20.7,
+  "lon": 86.9,
+  "submitter": "demo-user",
+  "pairing": "paired"
+ },
+ "summary": {
+  "n_samples": 4,
+  "n_reads_in": 1180368,
+  "n_reads_kept": 543648,
+  "n_asvs": 2745,
+  "n_fungal_asvs": 1605,
+  "n_species": 147,
+  "marker": "ITS2",
+  "location": "Bhitarkanika mangrove, Odisha (east coast)",
+  "lat": 20.7,
+  "lon": 86.9
+ },
+ "samples": [
+  {
+   "sample_id": "Dangmal",
+   "reads_in": 358716,
+   "reads_merged": 198060,
+   "reads_filtered": 185120,
+   "reads_nonchimeric": 180328,
+   "n_asvs": 1090,
+   "shannon": 4.696,
+   "pct_fungal": 58.9
+  },
+  {
+   "sample_id": "Gupti",
+   "reads_in": 250208,
+   "reads_merged": 128092,
+   "reads_filtered": 116634,
+   "reads_nonchimeric": 106854,
+   "n_asvs": 1044,
+   "shannon": 4.383,
+   "pct_fungal": 58.6
+  },
+  {
+   "sample_id": "Habalikhati",
+   "reads_in": 250864,
+   "reads_merged": 149110,
+   "reads_filtered": 140641,
+   "reads_nonchimeric": 138130,
+   "n_asvs": 848,
+   "shannon": 4.461,
+   "pct_fungal": 57.6
+  },
+  {
+   "sample_id": "Kalibhanjadiha",
+   "reads_in": 320580,
+   "reads_merged": 125524,
+   "reads_filtered": 121053,
+   "reads_nonchimeric": 118336,
+   "n_asvs": 904,
+   "shannon": 4.841,
+   "pct_fungal": 88.0
+  }
+ ],
+ "taxa": [
+  {
+   "asv_id": "ITS2_ASV1",
+   "reads_total": 29053,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Gupti": 1,
+    "Habalikhati": 29048,
+    "Kalibhanjadiha": 3
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV2",
+   "reads_total": 22795,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 42,
+    "Gupti": 3,
+    "Habalikhati": 12145,
+    "Kalibhanjadiha": 10605
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV3",
+   "reads_total": 11250,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 11250
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV4",
+   "reads_total": 9429,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 9330,
+    "Habalikhati": 27,
+    "Kalibhanjadiha": 72
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV5",
+   "reads_total": 8260,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 61,
+    "Habalikhati": 55,
+    "Kalibhanjadiha": 8144
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV6",
+   "reads_total": 6855,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": "Psathyrellaceae",
+   "genus": "Candolleomyces",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 4844,
+    "Gupti": 74,
+    "Habalikhati": 240,
+    "Kalibhanjadiha": 1697
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV7",
+   "reads_total": 6423,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 9,
+    "Gupti": 136,
+    "Habalikhati": 4329,
+    "Kalibhanjadiha": 1949
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV8",
+   "reads_total": 6348,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 6348
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV12",
+   "reads_total": 6108,
+   "kingdom": "Viridiplantae",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 6062,
+    "Habalikhati": 46
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV9",
+   "reads_total": 5868,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": "Oligohymenophorea",
+   "order": "Philasterida",
+   "family": "Uronematidae",
+   "genus": "Uronema",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 1,
+    "Habalikhati": 5867
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV10",
+   "reads_total": 5865,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1241,
+    "Gupti": 3683,
+    "Habalikhati": 392,
+    "Kalibhanjadiha": 549
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV11",
+   "reads_total": 5374,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Sordariales",
+   "family": "Chaetomiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 5364,
+    "Habalikhati": 10
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV13",
+   "reads_total": 4934,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 4931,
+    "Habalikhati": 2,
+    "Kalibhanjadiha": 1
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV15",
+   "reads_total": 4660,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 4660
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV14",
+   "reads_total": 4604,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 10,
+    "Gupti": 4594
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV16",
+   "reads_total": 4298,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": "Fusarium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 264,
+    "Gupti": 138,
+    "Habalikhati": 1967,
+    "Kalibhanjadiha": 1929
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV17",
+   "reads_total": 4186,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": "Spirotrichea",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 4186
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV18",
+   "reads_total": 4151,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 2588,
+    "Gupti": 1322,
+    "Kalibhanjadiha": 241
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV19",
+   "reads_total": 3635,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 3635
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV22",
+   "reads_total": 3605,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Gupti": 1,
+    "Habalikhati": 2936,
+    "Kalibhanjadiha": 667
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV21",
+   "reads_total": 3475,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Amphisphaeriales",
+   "family": "Sporocadaceae",
+   "genus": "Pestalotiopsis",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Habalikhati": 130,
+    "Kalibhanjadiha": 3344
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV20",
+   "reads_total": 3418,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Gupti": 3417
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV23",
+   "reads_total": 3412,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 1,
+    "Habalikhati": 3050,
+    "Kalibhanjadiha": 361
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV25",
+   "reads_total": 3321,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": "Entolomataceae",
+   "genus": "Clitopilus",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 3177,
+    "Kalibhanjadiha": 144
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV24",
+   "reads_total": 3260,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Microthyriales",
+   "family": "Microthyriaceae",
+   "genus": "Keqinzhangia",
+   "species": "Keqinzhangia_aquatica",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 2938,
+    "Habalikhati": 262,
+    "Kalibhanjadiha": 60
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV29",
+   "reads_total": 3216,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 410,
+    "Gupti": 154,
+    "Habalikhati": 819,
+    "Kalibhanjadiha": 1833
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV27",
+   "reads_total": 3208,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": "Penicillium_citrinum",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 77,
+    "Gupti": 59,
+    "Habalikhati": 778,
+    "Kalibhanjadiha": 2294
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV26",
+   "reads_total": 3198,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1583,
+    "Gupti": 95,
+    "Habalikhati": 722,
+    "Kalibhanjadiha": 798
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV28",
+   "reads_total": 3099,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": "Oligohymenophorea",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 3099
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV32",
+   "reads_total": 3023,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 3023
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV30",
+   "reads_total": 2954,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Sordariales",
+   "family": "Lasiosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1947,
+    "Gupti": 24,
+    "Habalikhati": 939,
+    "Kalibhanjadiha": 44
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV31",
+   "reads_total": 2932,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 2932
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV44",
+   "reads_total": 2851,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 2851
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV33",
+   "reads_total": 2766,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Sordariales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 2766
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV34",
+   "reads_total": 2735,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 2097,
+    "Gupti": 638
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV38",
+   "reads_total": 2630,
+   "kingdom": "Viridiplantae",
+   "phylum": "Anthophyta",
+   "class": "Eudicotyledonae",
+   "order": "Brassicales",
+   "family": "Brassicaceae",
+   "genus": "Brassica",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 2609,
+    "Habalikhati": 18,
+    "Kalibhanjadiha": 3
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV36",
+   "reads_total": 2609,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": "Psathyrellaceae",
+   "genus": "Candolleomyces",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 4,
+    "Gupti": 2605
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV37",
+   "reads_total": 2586,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 2048,
+    "Gupti": 538
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV40",
+   "reads_total": 2558,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 2,
+    "Habalikhati": 456,
+    "Kalibhanjadiha": 2100
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV39",
+   "reads_total": 2536,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 2536
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV35",
+   "reads_total": 2504,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": null,
+   "genus": "Candida",
+   "species": "Candida_parapsilosis",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 70,
+    "Gupti": 64,
+    "Habalikhati": 2370
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV81",
+   "reads_total": 2449,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 9,
+    "Gupti": 2421,
+    "Habalikhati": 19
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV42",
+   "reads_total": 2395,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Pezizomycetes",
+   "order": "Pezizales",
+   "family": null,
+   "genus": "Boubovia",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 402,
+    "Gupti": 1993
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV43",
+   "reads_total": 2334,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Cladosporiales",
+   "family": "Cladosporiaceae",
+   "genus": "Cladosporium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 35,
+    "Gupti": 36,
+    "Habalikhati": 185,
+    "Kalibhanjadiha": 2078
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV74",
+   "reads_total": 2288,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 765,
+    "Habalikhati": 701,
+    "Kalibhanjadiha": 822
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV45",
+   "reads_total": 2229,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Habalikhati": 97,
+    "Kalibhanjadiha": 2131
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV50",
+   "reads_total": 2174,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 2174
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV46",
+   "reads_total": 2128,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 2128
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV49",
+   "reads_total": 2081,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 2081
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV48",
+   "reads_total": 2070,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 37,
+    "Habalikhati": 2000,
+    "Kalibhanjadiha": 33
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV53",
+   "reads_total": 2038,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 191,
+    "Habalikhati": 1749,
+    "Kalibhanjadiha": 98
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV47",
+   "reads_total": 2038,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 1971,
+    "Kalibhanjadiha": 67
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV51",
+   "reads_total": 1980,
+   "kingdom": "Viridiplantae",
+   "phylum": "Anthophyta",
+   "class": "Eudicotyledonae",
+   "order": "Brassicales",
+   "family": "Brassicaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1943,
+    "Gupti": 20,
+    "Habalikhati": 17
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV41",
+   "reads_total": 1956,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 1956
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV52",
+   "reads_total": 1944,
+   "kingdom": "Fungi",
+   "phylum": "Chytridiomycota",
+   "class": "Chytridiomycetes",
+   "order": "Chytridiales",
+   "family": "Phlyctochytriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 516,
+    "Kalibhanjadiha": 1428
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV58",
+   "reads_total": 1850,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": "Psathyrellaceae",
+   "genus": "Candolleomyces",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 1850
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV55",
+   "reads_total": 1846,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Cladosporiales",
+   "family": "Cladosporiaceae",
+   "genus": "Cladosporium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 191,
+    "Gupti": 12,
+    "Habalikhati": 405,
+    "Kalibhanjadiha": 1238
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV59",
+   "reads_total": 1843,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 1843
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV54",
+   "reads_total": 1834,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 1309,
+    "Kalibhanjadiha": 525
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV56",
+   "reads_total": 1807,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Sordariales",
+   "family": "Sordariaceae",
+   "genus": "Neurospora",
+   "species": "Neurospora_crassa",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 21,
+    "Gupti": 142,
+    "Habalikhati": 1605,
+    "Kalibhanjadiha": 39
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV57",
+   "reads_total": 1799,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Sordariales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1799
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV61",
+   "reads_total": 1743,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Botryosphaeriales",
+   "family": "Botryosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 19,
+    "Habalikhati": 617,
+    "Kalibhanjadiha": 1107
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV60",
+   "reads_total": 1729,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 837,
+    "Kalibhanjadiha": 892
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV62",
+   "reads_total": 1720,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 225,
+    "Gupti": 1487,
+    "Habalikhati": 8
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV64",
+   "reads_total": 1701,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1079,
+    "Habalikhati": 528,
+    "Kalibhanjadiha": 94
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV63",
+   "reads_total": 1601,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1601
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV65",
+   "reads_total": 1576,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 1477,
+    "Kalibhanjadiha": 99
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV66",
+   "reads_total": 1521,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 66,
+    "Habalikhati": 64,
+    "Kalibhanjadiha": 1391
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV68",
+   "reads_total": 1507,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": "Penicillium_dokdoense",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 622,
+    "Habalikhati": 19,
+    "Kalibhanjadiha": 866
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV73",
+   "reads_total": 1492,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 1492
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV67",
+   "reads_total": 1456,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Ceratocystidaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 803,
+    "Kalibhanjadiha": 653
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV69",
+   "reads_total": 1452,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1452
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV71",
+   "reads_total": 1434,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 981,
+    "Gupti": 2,
+    "Habalikhati": 345,
+    "Kalibhanjadiha": 106
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV72",
+   "reads_total": 1423,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1423
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV70",
+   "reads_total": 1416,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Mycosphaerellales",
+   "family": "Mycosphaerellaceae",
+   "genus": "Phaeophleospora",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 14,
+    "Gupti": 24,
+    "Habalikhati": 125,
+    "Kalibhanjadiha": 1253
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV77",
+   "reads_total": 1376,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 211,
+    "Gupti": 45,
+    "Habalikhati": 92,
+    "Kalibhanjadiha": 1028
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV76",
+   "reads_total": 1341,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Cordycipitaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 1341
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV78",
+   "reads_total": 1338,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 86,
+    "Gupti": 44,
+    "Habalikhati": 56,
+    "Kalibhanjadiha": 1152
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV79",
+   "reads_total": 1328,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 66,
+    "Habalikhati": 283,
+    "Kalibhanjadiha": 979
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV84",
+   "reads_total": 1317,
+   "kingdom": "Alveolata",
+   "phylum": "Apicomplexa",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1317
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV80",
+   "reads_total": 1309,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 1,
+    "Habalikhati": 1245,
+    "Kalibhanjadiha": 63
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV75",
+   "reads_total": 1279,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 44,
+    "Habalikhati": 1220,
+    "Kalibhanjadiha": 15
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV82",
+   "reads_total": 1275,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Cladosporiales",
+   "family": "Cladosporiaceae",
+   "genus": "Cladosporium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 229,
+    "Kalibhanjadiha": 1046
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV124",
+   "reads_total": 1250,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1045,
+    "Gupti": 205
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV83",
+   "reads_total": 1245,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1244,
+    "Habalikhati": 1
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV86",
+   "reads_total": 1203,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 671,
+    "Kalibhanjadiha": 532
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV89",
+   "reads_total": 1202,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": "Penicillium_dokdoense",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 2,
+    "Habalikhati": 336,
+    "Kalibhanjadiha": 864
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV107",
+   "reads_total": 1187,
+   "kingdom": "Fungi",
+   "phylum": "Mortierellomycota",
+   "class": "Mortierellomycetes",
+   "order": "Mortierellales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1055,
+    "Kalibhanjadiha": 132
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV87",
+   "reads_total": 1176,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": "Fusarium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 200,
+    "Kalibhanjadiha": 976
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV85",
+   "reads_total": 1161,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 67,
+    "Gupti": 1094
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV88",
+   "reads_total": 1157,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1157
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV1353",
+   "reads_total": 1143,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 42,
+    "Gupti": 1101
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV92",
+   "reads_total": 1138,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 8,
+    "Gupti": 769,
+    "Habalikhati": 230,
+    "Kalibhanjadiha": 131
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV94",
+   "reads_total": 1109,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": "Spirotrichea",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 929,
+    "Kalibhanjadiha": 180
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV90",
+   "reads_total": 1107,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 1061,
+    "Kalibhanjadiha": 46
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV93",
+   "reads_total": 1101,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": "Spirotrichea",
+   "order": "Stichotrichida",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 1101
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV103",
+   "reads_total": 1098,
+   "kingdom": "Viridiplantae",
+   "phylum": "Anthophyta",
+   "class": "Eudicotyledonae",
+   "order": "Fabales",
+   "family": "Fabaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 1011,
+    "Kalibhanjadiha": 87
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV91",
+   "reads_total": 1090,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1090
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV95",
+   "reads_total": 1072,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1066,
+    "Kalibhanjadiha": 6
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV98",
+   "reads_total": 1055,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 1038,
+    "Kalibhanjadiha": 17
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV101",
+   "reads_total": 1030,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Cantharellales",
+   "family": "Ceratobasidiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1030
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV104",
+   "reads_total": 1015,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": "Aspergillus_itaconicus",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 221,
+    "Habalikhati": 115,
+    "Kalibhanjadiha": 679
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV96",
+   "reads_total": 1010,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Amphisphaeriales",
+   "family": "Apiosporaceae",
+   "genus": "Nigrospora",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 295,
+    "Gupti": 37,
+    "Habalikhati": 374,
+    "Kalibhanjadiha": 304
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV97",
+   "reads_total": 986,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 961,
+    "Habalikhati": 19,
+    "Kalibhanjadiha": 6
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV102",
+   "reads_total": 984,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 739,
+    "Kalibhanjadiha": 245
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV100",
+   "reads_total": 977,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 612,
+    "Kalibhanjadiha": 365
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV99",
+   "reads_total": 963,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 963
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV108",
+   "reads_total": 950,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 15,
+    "Habalikhati": 320,
+    "Kalibhanjadiha": 615
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV106",
+   "reads_total": 949,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 949
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV111",
+   "reads_total": 919,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 90,
+    "Habalikhati": 385,
+    "Kalibhanjadiha": 444
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV116",
+   "reads_total": 909,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 2,
+    "Habalikhati": 370,
+    "Kalibhanjadiha": 537
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV105",
+   "reads_total": 901,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 901
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV110",
+   "reads_total": 898,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 898
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV109",
+   "reads_total": 897,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": "Spirotrichea",
+   "order": "Euplotida",
+   "family": "Euplotidae",
+   "genus": "Euplotes",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Habalikhati": 896
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV117",
+   "reads_total": 883,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 15,
+    "Kalibhanjadiha": 868
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV119",
+   "reads_total": 870,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 425,
+    "Kalibhanjadiha": 445
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV114",
+   "reads_total": 867,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 867
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV112",
+   "reads_total": 866,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 866
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV120",
+   "reads_total": 852,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Botryosphaeriales",
+   "family": "Botryosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 852
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV118",
+   "reads_total": 850,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": "Qarounispora",
+   "species": "Qarounispora_grandiappendiculata",
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 1,
+    "Habalikhati": 204,
+    "Kalibhanjadiha": 645
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV115",
+   "reads_total": 850,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 850
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV122",
+   "reads_total": 830,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 830
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV121",
+   "reads_total": 822,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 796,
+    "Kalibhanjadiha": 26
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV136",
+   "reads_total": 817,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Malasseziomycetes",
+   "order": "Malasseziales",
+   "family": "Malasseziaceae",
+   "genus": "Malassezia",
+   "species": "Malassezia_restricta",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 232,
+    "Gupti": 217,
+    "Habalikhati": 240,
+    "Kalibhanjadiha": 128
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV126",
+   "reads_total": 816,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 816
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV191",
+   "reads_total": 803,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 803
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV161",
+   "reads_total": 802,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 802
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV123",
+   "reads_total": 799,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 799
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV125",
+   "reads_total": 797,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 797
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV128",
+   "reads_total": 793,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 84,
+    "Gupti": 16,
+    "Habalikhati": 31,
+    "Kalibhanjadiha": 662
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV129",
+   "reads_total": 792,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Onygenales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 70,
+    "Kalibhanjadiha": 722
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV363",
+   "reads_total": 787,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 112,
+    "Gupti": 107,
+    "Habalikhati": 568
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV127",
+   "reads_total": 785,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 785
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV138",
+   "reads_total": 774,
+   "kingdom": "Fungi",
+   "phylum": "Mucoromycota",
+   "class": "Mucoromycetes",
+   "order": "Mucorales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 377,
+    "Kalibhanjadiha": 397
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV131",
+   "reads_total": 760,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 443,
+    "Habalikhati": 258,
+    "Kalibhanjadiha": 59
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV132",
+   "reads_total": 741,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Cucurbitariaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 741
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV130",
+   "reads_total": 739,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Geoglossomycetes",
+   "order": "Geoglossales",
+   "family": "Geoglossaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 211,
+    "Kalibhanjadiha": 528
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV133",
+   "reads_total": 728,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 728
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV137",
+   "reads_total": 725,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 725
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV147",
+   "reads_total": 723,
+   "kingdom": "Viridiplantae",
+   "phylum": "Anthophyta",
+   "class": "Eudicotyledonae",
+   "order": "Myrtales",
+   "family": "Lythraceae",
+   "genus": "Sonneratia",
+   "species": "Sonneratia_apetala",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 24,
+    "Gupti": 699
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV141",
+   "reads_total": 722,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 635,
+    "Kalibhanjadiha": 87
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV134",
+   "reads_total": 712,
+   "kingdom": "Viridiplantae",
+   "phylum": "Chlorophyta",
+   "class": "Trebouxiophyceae",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 699,
+    "Kalibhanjadiha": 13
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV139",
+   "reads_total": 709,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 682,
+    "Habalikhati": 27
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV135",
+   "reads_total": 705,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 705
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV279",
+   "reads_total": 704,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 43,
+    "Gupti": 661
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV140",
+   "reads_total": 690,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 690
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV142",
+   "reads_total": 667,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 667
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV192",
+   "reads_total": 663,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 663
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV148",
+   "reads_total": 661,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 661
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV151",
+   "reads_total": 661,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Xylariales",
+   "family": "Zygosporiaceae",
+   "genus": "Zygosporium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 99,
+    "Habalikhati": 42,
+    "Kalibhanjadiha": 520
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV205",
+   "reads_total": 657,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 657
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV143",
+   "reads_total": 657,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 657
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV146",
+   "reads_total": 647,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 647
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV152",
+   "reads_total": 646,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 641,
+    "Kalibhanjadiha": 5
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV145",
+   "reads_total": 642,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 642
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV178",
+   "reads_total": 639,
+   "kingdom": "Viridiplantae",
+   "phylum": "Anthophyta",
+   "class": "Eudicotyledonae",
+   "order": "Malpighiales",
+   "family": "Euphorbiaceae",
+   "genus": "Excoecaria",
+   "species": "Excoecaria_agallocha",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 432,
+    "Gupti": 46,
+    "Habalikhati": 131,
+    "Kalibhanjadiha": 30
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV156",
+   "reads_total": 637,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 629,
+    "Kalibhanjadiha": 8
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV170",
+   "reads_total": 637,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 637
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV144",
+   "reads_total": 636,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 636
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV157",
+   "reads_total": 636,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Auriculariales",
+   "family": "Oliveoniaceae",
+   "genus": "Oliveonia",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 636
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV162",
+   "reads_total": 626,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 46,
+    "Habalikhati": 89,
+    "Kalibhanjadiha": 491
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV150",
+   "reads_total": 616,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 616
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV183",
+   "reads_total": 616,
+   "kingdom": "Viridiplantae",
+   "phylum": "Anthophyta",
+   "class": "Eudicotyledonae",
+   "order": "Fabales",
+   "family": "Fabaceae",
+   "genus": "Pongamia",
+   "species": "Pongamia_pinnata_var._pinnata",
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 457,
+    "Kalibhanjadiha": 159
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV149",
+   "reads_total": 615,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 615
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV154",
+   "reads_total": 610,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 610
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV164",
+   "reads_total": 610,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Trichocomaceae",
+   "genus": "Talaromyces",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 7,
+    "Kalibhanjadiha": 603
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV166",
+   "reads_total": 599,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 599
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV168",
+   "reads_total": 598,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Mycosphaerellales",
+   "family": "Mycosphaerellaceae",
+   "genus": "Phaeophleospora",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 2,
+    "Habalikhati": 64,
+    "Kalibhanjadiha": 532
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV182",
+   "reads_total": 594,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 594
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV174",
+   "reads_total": 594,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Pyrenochaetopsidaceae",
+   "genus": "Pyrenochaetopsis",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 28,
+    "Kalibhanjadiha": 566
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV158",
+   "reads_total": 593,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 582,
+    "Kalibhanjadiha": 11
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV710",
+   "reads_total": 592,
+   "kingdom": "Viridiplantae",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 592
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV113",
+   "reads_total": 592,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 410,
+    "Gupti": 181,
+    "Kalibhanjadiha": 1
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV160",
+   "reads_total": 590,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 589,
+    "Gupti": 1
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV165",
+   "reads_total": 589,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Nigrogranaceae",
+   "genus": "Nigrograna",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 380,
+    "Gupti": 209
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV159",
+   "reads_total": 588,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 354,
+    "Gupti": 28,
+    "Habalikhati": 113,
+    "Kalibhanjadiha": 93
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV185",
+   "reads_total": 587,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 377,
+    "Kalibhanjadiha": 210
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV167",
+   "reads_total": 573,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 545,
+    "Kalibhanjadiha": 28
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV171",
+   "reads_total": 569,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Xylariales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 569
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV173",
+   "reads_total": 568,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 568
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV190",
+   "reads_total": 564,
+   "kingdom": "Fungi",
+   "phylum": "Blastocladiomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 564
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV163",
+   "reads_total": 561,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 554,
+    "Kalibhanjadiha": 7
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV169",
+   "reads_total": 560,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 560
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV180",
+   "reads_total": 554,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 166,
+    "Kalibhanjadiha": 388
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV2634",
+   "reads_total": 553,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 12,
+    "Gupti": 541
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV172",
+   "reads_total": 553,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 553
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV186",
+   "reads_total": 552,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Cordycipitaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 552
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV177",
+   "reads_total": 551,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 63,
+    "Habalikhati": 21,
+    "Kalibhanjadiha": 467
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV2014",
+   "reads_total": 547,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Gupti": 546
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV181",
+   "reads_total": 544,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Glomerellales",
+   "family": "Glomerellaceae",
+   "genus": "Colletotrichum",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 544
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV197",
+   "reads_total": 542,
+   "kingdom": "Viridiplantae",
+   "phylum": "Anthophyta",
+   "class": "Eudicotyledonae",
+   "order": "Lamiales",
+   "family": "Acanthaceae",
+   "genus": "Avicennia",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 33,
+    "Gupti": 509
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV176",
+   "reads_total": 540,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 529,
+    "Kalibhanjadiha": 11
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV155",
+   "reads_total": 529,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 17,
+    "Habalikhati": 512
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV189",
+   "reads_total": 525,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 525
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV179",
+   "reads_total": 523,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 523
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV187",
+   "reads_total": 522,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Pleosporaceae",
+   "genus": "Curvularia",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 11,
+    "Gupti": 448,
+    "Kalibhanjadiha": 63
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV194",
+   "reads_total": 512,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 512
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV195",
+   "reads_total": 510,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": "Penicillium_pimiteouiense",
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 84,
+    "Kalibhanjadiha": 426
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV214",
+   "reads_total": 507,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 235,
+    "Habalikhati": 272
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV193",
+   "reads_total": 506,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Tetraplosphaeriaceae",
+   "genus": "Ernakulamia",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 24,
+    "Kalibhanjadiha": 482
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV208",
+   "reads_total": 499,
+   "kingdom": "Fungi",
+   "phylum": "Glomeromycota",
+   "class": "Glomeromycetes",
+   "order": "Glomerales",
+   "family": "Glomeraceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Habalikhati": 332,
+    "Kalibhanjadiha": 166
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV188",
+   "reads_total": 498,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 498
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV1813",
+   "reads_total": 497,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 7,
+    "Gupti": 490
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV198",
+   "reads_total": 488,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": "Spirotrichea",
+   "order": "Euplotida",
+   "family": "Euplotidae",
+   "genus": "Euplotes",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 488
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV196",
+   "reads_total": 482,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": "Fusarium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 22,
+    "Habalikhati": 5,
+    "Kalibhanjadiha": 455
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV200",
+   "reads_total": 482,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 415,
+    "Habalikhati": 67
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV203",
+   "reads_total": 477,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 477
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV201",
+   "reads_total": 474,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 474
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV221",
+   "reads_total": 474,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": "Penicillium_pimiteouiense",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 11,
+    "Habalikhati": 22,
+    "Kalibhanjadiha": 441
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV206",
+   "reads_total": 474,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 423,
+    "Gupti": 51
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV199",
+   "reads_total": 468,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 468
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV228",
+   "reads_total": 464,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 38,
+    "Gupti": 136,
+    "Habalikhati": 2,
+    "Kalibhanjadiha": 288
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV202",
+   "reads_total": 464,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 463,
+    "Habalikhati": 1
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV229",
+   "reads_total": 463,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 94,
+    "Kalibhanjadiha": 369
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV217",
+   "reads_total": 460,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Habalikhati": 379,
+    "Kalibhanjadiha": 80
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV210",
+   "reads_total": 457,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 457
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV207",
+   "reads_total": 455,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 454,
+    "Kalibhanjadiha": 1
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV222",
+   "reads_total": 453,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Bionectriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 7,
+    "Kalibhanjadiha": 446
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV204",
+   "reads_total": 451,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 451
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV227",
+   "reads_total": 450,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 9,
+    "Kalibhanjadiha": 441
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV226",
+   "reads_total": 449,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 449
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV235",
+   "reads_total": 445,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 236,
+    "Kalibhanjadiha": 209
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV246",
+   "reads_total": 445,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 445
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV209",
+   "reads_total": 444,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 444
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV211",
+   "reads_total": 444,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 444
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV238",
+   "reads_total": 444,
+   "kingdom": "Fungi",
+   "phylum": "Glomeromycota",
+   "class": "Glomeromycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 41,
+    "Gupti": 266,
+    "Habalikhati": 64,
+    "Kalibhanjadiha": 73
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV225",
+   "reads_total": 442,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 442
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV212",
+   "reads_total": 441,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 441
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV219",
+   "reads_total": 437,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 437
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV213",
+   "reads_total": 437,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 437
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV220",
+   "reads_total": 436,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 436
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV216",
+   "reads_total": 436,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 436
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV215",
+   "reads_total": 434,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 434
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV249",
+   "reads_total": 429,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Habalikhati": 340,
+    "Kalibhanjadiha": 88
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV265",
+   "reads_total": 428,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 75,
+    "Gupti": 353
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV224",
+   "reads_total": 428,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 427,
+    "Habalikhati": 1
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV243",
+   "reads_total": 427,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 56,
+    "Habalikhati": 371
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV223",
+   "reads_total": 422,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 422
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV239",
+   "reads_total": 417,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 417
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV233",
+   "reads_total": 414,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 414
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV240",
+   "reads_total": 413,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 413
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV232",
+   "reads_total": 413,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 413
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV218",
+   "reads_total": 413,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 413
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV245",
+   "reads_total": 413,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Trichocomaceae",
+   "genus": "Talaromyces",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 413
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV237",
+   "reads_total": 411,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 411
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV230",
+   "reads_total": 407,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 407
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV945",
+   "reads_total": 406,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 307,
+    "Gupti": 92,
+    "Habalikhati": 7
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV234",
+   "reads_total": 404,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 404
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV236",
+   "reads_total": 402,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 402
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV241",
+   "reads_total": 397,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 115,
+    "Habalikhati": 282
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV231",
+   "reads_total": 396,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 396
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV252",
+   "reads_total": 395,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 3,
+    "Habalikhati": 79,
+    "Kalibhanjadiha": 313
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV242",
+   "reads_total": 394,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 394
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV258",
+   "reads_total": 393,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Pezizomycetes",
+   "order": "Pezizales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 22,
+    "Gupti": 371
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV266",
+   "reads_total": 392,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 2,
+    "Kalibhanjadiha": 390
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV254",
+   "reads_total": 392,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": "Oligohymenophorea",
+   "order": "Philasterida",
+   "family": "Uronematidae",
+   "genus": "Homalogastra",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 392
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV244",
+   "reads_total": 390,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 276,
+    "Kalibhanjadiha": 114
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV255",
+   "reads_total": 386,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 386
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV256",
+   "reads_total": 384,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 384
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV290",
+   "reads_total": 384,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 338,
+    "Habalikhati": 17,
+    "Kalibhanjadiha": 29
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV264",
+   "reads_total": 383,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Hypocreaceae",
+   "genus": "Trichoderma",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 24,
+    "Habalikhati": 31,
+    "Kalibhanjadiha": 328
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV250",
+   "reads_total": 381,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Capnodiales",
+   "family": "Capnodiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 258,
+    "Kalibhanjadiha": 123
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV257",
+   "reads_total": 379,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 101,
+    "Gupti": 157,
+    "Habalikhati": 52,
+    "Kalibhanjadiha": 69
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV247",
+   "reads_total": 378,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 378
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV248",
+   "reads_total": 372,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 361,
+    "Kalibhanjadiha": 11
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV530",
+   "reads_total": 370,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 22,
+    "Gupti": 348
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV268",
+   "reads_total": 368,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 311,
+    "Kalibhanjadiha": 57
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV259",
+   "reads_total": 367,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 144,
+    "Habalikhati": 168,
+    "Kalibhanjadiha": 55
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV251",
+   "reads_total": 367,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 367
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV253",
+   "reads_total": 367,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 262,
+    "Kalibhanjadiha": 105
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV285",
+   "reads_total": 367,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 367
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV273",
+   "reads_total": 365,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Cladosporiales",
+   "family": "Cladosporiaceae",
+   "genus": "Cladosporium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 4,
+    "Habalikhati": 16,
+    "Kalibhanjadiha": 345
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV326",
+   "reads_total": 362,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 176,
+    "Gupti": 186
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV293",
+   "reads_total": 362,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Malasseziomycetes",
+   "order": "Malasseziales",
+   "family": "Malasseziaceae",
+   "genus": "Malassezia",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 117,
+    "Gupti": 51,
+    "Habalikhati": 179,
+    "Kalibhanjadiha": 15
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV262",
+   "reads_total": 362,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 362
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV261",
+   "reads_total": 361,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 361
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV260",
+   "reads_total": 359,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Clavicipitaceae",
+   "genus": "Ustilaginoidea",
+   "species": "Ustilaginoidea_virens",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 35,
+    "Gupti": 283,
+    "Habalikhati": 22,
+    "Kalibhanjadiha": 19
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV311",
+   "reads_total": 358,
+   "kingdom": "Fungi",
+   "phylum": "Glomeromycota",
+   "class": "Glomeromycetes",
+   "order": "Glomerales",
+   "family": "Glomeraceae",
+   "genus": "Glomus",
+   "species": "Glomus_cubense",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 69,
+    "Habalikhati": 246,
+    "Kalibhanjadiha": 43
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV280",
+   "reads_total": 356,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 29,
+    "Habalikhati": 10,
+    "Kalibhanjadiha": 317
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV267",
+   "reads_total": 356,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Astrosphaeriellaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 134,
+    "Habalikhati": 132,
+    "Kalibhanjadiha": 90
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV263",
+   "reads_total": 353,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Sordariales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 353
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV274",
+   "reads_total": 349,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 344,
+    "Kalibhanjadiha": 5
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV269",
+   "reads_total": 348,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 347,
+    "Kalibhanjadiha": 1
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV271",
+   "reads_total": 347,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 347
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV270",
+   "reads_total": 345,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 345
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV276",
+   "reads_total": 344,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 3,
+    "Habalikhati": 6,
+    "Kalibhanjadiha": 335
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV283",
+   "reads_total": 343,
+   "kingdom": "Fungi",
+   "phylum": "Glomeromycota",
+   "class": "Glomeromycetes",
+   "order": "Glomerales",
+   "family": "Glomeraceae",
+   "genus": "Glomus",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 168,
+    "Kalibhanjadiha": 175
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV291",
+   "reads_total": 342,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 342
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV287",
+   "reads_total": 342,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 342
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV281",
+   "reads_total": 341,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 341
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV308",
+   "reads_total": 340,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 54,
+    "Gupti": 286
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV288",
+   "reads_total": 336,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Chaetothyriales",
+   "family": "Herpotrichiellaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 193,
+    "Kalibhanjadiha": 143
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV275",
+   "reads_total": 334,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Habalikhati": 328,
+    "Kalibhanjadiha": 5
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV292",
+   "reads_total": 334,
+   "kingdom": "Fungi",
+   "phylum": "Glomeromycota",
+   "class": "Glomeromycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 63,
+    "Gupti": 255,
+    "Habalikhati": 16
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV284",
+   "reads_total": 332,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Sporormiaceae",
+   "genus": "Preussia",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 272,
+    "Kalibhanjadiha": 60
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV277",
+   "reads_total": 330,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 292,
+    "Kalibhanjadiha": 38
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV297",
+   "reads_total": 329,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 265,
+    "Kalibhanjadiha": 64
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV282",
+   "reads_total": 329,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 329
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV278",
+   "reads_total": 329,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 329
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV302",
+   "reads_total": 328,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 127,
+    "Kalibhanjadiha": 201
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV296",
+   "reads_total": 317,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 67,
+    "Kalibhanjadiha": 250
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV298",
+   "reads_total": 310,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 236,
+    "Kalibhanjadiha": 74
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV295",
+   "reads_total": 304,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 304
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV319",
+   "reads_total": 303,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 303
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV304",
+   "reads_total": 295,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Microascaceae",
+   "genus": "Microascus",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 295
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV443",
+   "reads_total": 295,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 201,
+    "Gupti": 94
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV294",
+   "reads_total": 294,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 294
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV398",
+   "reads_total": 293,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 293
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV306",
+   "reads_total": 291,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 265,
+    "Gupti": 26
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV286",
+   "reads_total": 290,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 13,
+    "Kalibhanjadiha": 277
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV301",
+   "reads_total": 290,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Clavicipitaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 186,
+    "Kalibhanjadiha": 104
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV289",
+   "reads_total": 288,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 288
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV305",
+   "reads_total": 287,
+   "kingdom": "Viridiplantae",
+   "phylum": "Chlorophyta",
+   "class": "Prasinophyceae",
+   "order": "Chlorodendrales",
+   "family": "Chlorodendraceae",
+   "genus": "Tetraselmis",
+   "species": "Tetraselmis_gracilis",
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 287
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV314",
+   "reads_total": 287,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 50,
+    "Habalikhati": 103,
+    "Kalibhanjadiha": 134
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV343",
+   "reads_total": 286,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 272,
+    "Kalibhanjadiha": 14
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV299",
+   "reads_total": 285,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 285
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV324",
+   "reads_total": 284,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 28,
+    "Gupti": 252,
+    "Kalibhanjadiha": 4
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV328",
+   "reads_total": 284,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 76,
+    "Gupti": 208
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV309",
+   "reads_total": 282,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 21,
+    "Habalikhati": 198,
+    "Kalibhanjadiha": 63
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV300",
+   "reads_total": 280,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 280
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV312",
+   "reads_total": 278,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 278
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV315",
+   "reads_total": 275,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Hypocreaceae",
+   "genus": "Hypomyces",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 17,
+    "Kalibhanjadiha": 258
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV310",
+   "reads_total": 273,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 273
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV317",
+   "reads_total": 273,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 7,
+    "Gupti": 13,
+    "Habalikhati": 149,
+    "Kalibhanjadiha": 104
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV441",
+   "reads_total": 272,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 31,
+    "Gupti": 241
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV318",
+   "reads_total": 268,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": "Aspergillus_japonicus",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 46,
+    "Habalikhati": 70,
+    "Kalibhanjadiha": 152
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV313",
+   "reads_total": 268,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 268
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV320",
+   "reads_total": 265,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 265
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV321",
+   "reads_total": 263,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": "Fusarium",
+   "species": "Fusarium_variasi",
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 135,
+    "Kalibhanjadiha": 128
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV303",
+   "reads_total": 262,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 262
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV316",
+   "reads_total": 261,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 261
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV325",
+   "reads_total": 256,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Cladosporiales",
+   "family": "Cladosporiaceae",
+   "genus": "Cladosporium",
+   "species": "Cladosporium_halotolerans",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 28,
+    "Gupti": 96,
+    "Habalikhati": 92,
+    "Kalibhanjadiha": 40
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV322",
+   "reads_total": 256,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 256
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV337",
+   "reads_total": 255,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 221,
+    "Gupti": 34
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV327",
+   "reads_total": 253,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Savoryellales",
+   "family": "Savoryellaceae",
+   "genus": "Savoryella",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 253
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV332",
+   "reads_total": 250,
+   "kingdom": "Fungi",
+   "phylum": "Chytridiomycota",
+   "class": "Rhizophydiomycetes",
+   "order": "Rhizophydiales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 221,
+    "Kalibhanjadiha": 29
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV334",
+   "reads_total": 248,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Glomerellales",
+   "family": "Glomerellaceae",
+   "genus": "Colletotrichum",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 19,
+    "Habalikhati": 15,
+    "Kalibhanjadiha": 214
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV330",
+   "reads_total": 248,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": "Aspergillus_occultus",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 235,
+    "Gupti": 11,
+    "Habalikhati": 2
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV323",
+   "reads_total": 247,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Cladosporiales",
+   "family": "Cladosporiaceae",
+   "genus": "Cladosporium",
+   "species": "Cladosporium_herbarum",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 17,
+    "Gupti": 190,
+    "Habalikhati": 38,
+    "Kalibhanjadiha": 2
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV329",
+   "reads_total": 246,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Tremellomycetes",
+   "order": "Tremellales",
+   "family": "Bulleribasidiaceae",
+   "genus": "Vishniacozyma",
+   "species": "Vishniacozyma_phoenicis",
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 246
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV361",
+   "reads_total": 245,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 245
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV456",
+   "reads_total": 241,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 241
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV333",
+   "reads_total": 241,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 241
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV331",
+   "reads_total": 241,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 241
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV356",
+   "reads_total": 240,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 240
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV342",
+   "reads_total": 235,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 235
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV336",
+   "reads_total": 235,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 235
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV353",
+   "reads_total": 233,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Trichocomaceae",
+   "genus": "Talaromyces",
+   "species": "Talaromyces_aurantiacus",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 15,
+    "Gupti": 199,
+    "Kalibhanjadiha": 19
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV467",
+   "reads_total": 233,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 10,
+    "Gupti": 223
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV340",
+   "reads_total": 232,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 232
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV378",
+   "reads_total": 232,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 232
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV335",
+   "reads_total": 232,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 232
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV388",
+   "reads_total": 231,
+   "kingdom": "Viridiplantae",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 231
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV339",
+   "reads_total": 229,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 229
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV345",
+   "reads_total": 227,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 210,
+    "Kalibhanjadiha": 17
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV359",
+   "reads_total": 227,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 28,
+    "Gupti": 174,
+    "Habalikhati": 2,
+    "Kalibhanjadiha": 23
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV405",
+   "reads_total": 227,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 20,
+    "Gupti": 207
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV348",
+   "reads_total": 227,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": "Oligohymenophorea",
+   "order": "Philasterida",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 227
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV341",
+   "reads_total": 226,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 226
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV360",
+   "reads_total": 226,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 226
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV347",
+   "reads_total": 226,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 226
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV372",
+   "reads_total": 225,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 225
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV386",
+   "reads_total": 223,
+   "kingdom": "Viridiplantae",
+   "phylum": "Chlorophyta",
+   "class": "Chlorophyceae",
+   "order": "Chlamydomonadales",
+   "family": "Coccomyxaceae",
+   "genus": "Choricystis",
+   "species": "Choricystis_krienitzii",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 12,
+    "Gupti": 108,
+    "Habalikhati": 44,
+    "Kalibhanjadiha": 59
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV354",
+   "reads_total": 222,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 222
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV475",
+   "reads_total": 222,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": "Dipodascaceae",
+   "genus": "Geotrichum",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 222
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV661",
+   "reads_total": 221,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 102,
+    "Habalikhati": 119
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV349",
+   "reads_total": 220,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 220
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV368",
+   "reads_total": 219,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Mycosphaerellales",
+   "family": "Mycosphaerellaceae",
+   "genus": "Phaeophleospora",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Habalikhati": 21,
+    "Kalibhanjadiha": 197
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV365",
+   "reads_total": 219,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 219
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV362",
+   "reads_total": 219,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 219
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV352",
+   "reads_total": 218,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Bionectriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 218
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV351",
+   "reads_total": 218,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 218
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV346",
+   "reads_total": 218,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 218
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV374",
+   "reads_total": 218,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Hypocreaceae",
+   "genus": "Trichoderma",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 53,
+    "Kalibhanjadiha": 165
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV355",
+   "reads_total": 217,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 217
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV375",
+   "reads_total": 216,
+   "kingdom": "Fungi",
+   "phylum": "Glomeromycota",
+   "class": "Glomeromycetes",
+   "order": "Glomerales",
+   "family": "Glomeraceae",
+   "genus": "Glomus",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Habalikhati": 144,
+    "Kalibhanjadiha": 71
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV387",
+   "reads_total": 216,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": "Spirotrichea",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 216
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV364",
+   "reads_total": 216,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 119,
+    "Gupti": 64,
+    "Kalibhanjadiha": 33
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV344",
+   "reads_total": 216,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Diaporthales",
+   "family": "Cytosporaceae",
+   "genus": "Cytospora",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 67,
+    "Kalibhanjadiha": 149
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV369",
+   "reads_total": 215,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Pyrenochaetopsidaceae",
+   "genus": "Pyrenochaetopsis",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 215
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV373",
+   "reads_total": 214,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 214
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV400",
+   "reads_total": 210,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 87,
+    "Gupti": 123
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV407",
+   "reads_total": 209,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 74,
+    "Kalibhanjadiha": 135
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV358",
+   "reads_total": 209,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 209
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV370",
+   "reads_total": 207,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 207
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV376",
+   "reads_total": 207,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 207
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV384",
+   "reads_total": 207,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": "Lulworthia",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 125,
+    "Gupti": 29,
+    "Habalikhati": 22,
+    "Kalibhanjadiha": 31
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV397",
+   "reads_total": 207,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 207
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV383",
+   "reads_total": 206,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 206
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV371",
+   "reads_total": 205,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 205
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV377",
+   "reads_total": 205,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 205
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV395",
+   "reads_total": 205,
+   "kingdom": "Viridiplantae",
+   "phylum": "Chlorophyta",
+   "class": "Ulvophyceae",
+   "order": "Ulotrichales",
+   "family": "Ulotrichaceae",
+   "genus": "Chlorocystis",
+   "species": "Chlorocystis_john-westii",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 30,
+    "Habalikhati": 39,
+    "Kalibhanjadiha": 136
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV380",
+   "reads_total": 204,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 201,
+    "Gupti": 3
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV357",
+   "reads_total": 204,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 204
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV396",
+   "reads_total": 204,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 204
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV366",
+   "reads_total": 203,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 16,
+    "Gupti": 178,
+    "Kalibhanjadiha": 9
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV402",
+   "reads_total": 202,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": "Fusarium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 191,
+    "Gupti": 11
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV379",
+   "reads_total": 202,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": "Moleospora",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 143,
+    "Kalibhanjadiha": 59
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV391",
+   "reads_total": 201,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Cantharellales",
+   "family": "Ceratobasidiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 201
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV382",
+   "reads_total": 201,
+   "kingdom": "Viridiplantae",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 201
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV392",
+   "reads_total": 201,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": "Oligohymenophorea",
+   "order": "Philasterida",
+   "family": "Uronematidae",
+   "genus": "Homalogastra",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 12,
+    "Kalibhanjadiha": 189
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV381",
+   "reads_total": 200,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 46,
+    "Gupti": 154
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV367",
+   "reads_total": 199,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 199
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV404",
+   "reads_total": 198,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 48,
+    "Gupti": 117,
+    "Kalibhanjadiha": 33
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV390",
+   "reads_total": 198,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 198
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV399",
+   "reads_total": 198,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 22,
+    "Habalikhati": 15,
+    "Kalibhanjadiha": 161
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV385",
+   "reads_total": 195,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 195
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV406",
+   "reads_total": 194,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Trichocomaceae",
+   "genus": "Talaromyces",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 132,
+    "Habalikhati": 11,
+    "Kalibhanjadiha": 51
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV524",
+   "reads_total": 192,
+   "kingdom": "Viridiplantae",
+   "phylum": "Anthophyta",
+   "class": "Eudicotyledonae",
+   "order": "Fabales",
+   "family": "Fabaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 172,
+    "Kalibhanjadiha": 20
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV401",
+   "reads_total": 192,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Mycosphaerellales",
+   "family": "Neodevriesiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 192
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV393",
+   "reads_total": 192,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 187,
+    "Kalibhanjadiha": 5
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV438",
+   "reads_total": 192,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 192
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV403",
+   "reads_total": 192,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 27,
+    "Habalikhati": 165
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV414",
+   "reads_total": 192,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": "Fusarium",
+   "species": "Fusarium_variasi",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 7,
+    "Habalikhati": 51,
+    "Kalibhanjadiha": 134
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV421",
+   "reads_total": 192,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Hypocreaceae",
+   "genus": "Trichoderma",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 36,
+    "Gupti": 19,
+    "Habalikhati": 72,
+    "Kalibhanjadiha": 65
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV430",
+   "reads_total": 189,
+   "kingdom": "Fungi",
+   "phylum": "Chytridiomycota",
+   "class": "Rhizophydiomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 136,
+    "Gupti": 53
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV409",
+   "reads_total": 188,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 187,
+    "Habalikhati": 1
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV389",
+   "reads_total": 187,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Xylariales",
+   "family": "Microdochiaceae",
+   "genus": "Microdochium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 51,
+    "Gupti": 93,
+    "Habalikhati": 36,
+    "Kalibhanjadiha": 7
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV435",
+   "reads_total": 187,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 112,
+    "Habalikhati": 51,
+    "Kalibhanjadiha": 24
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV411",
+   "reads_total": 187,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 187
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV410",
+   "reads_total": 186,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 186
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV412",
+   "reads_total": 186,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 186
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV408",
+   "reads_total": 186,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 186
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV413",
+   "reads_total": 185,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 185
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV433",
+   "reads_total": 183,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Xylariales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 86,
+    "Kalibhanjadiha": 97
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV450",
+   "reads_total": 183,
+   "kingdom": "Viridiplantae",
+   "phylum": "Anthophyta",
+   "class": "Eudicotyledonae",
+   "order": "Malpighiales",
+   "family": "Euphorbiaceae",
+   "genus": "Excoecaria",
+   "species": "Excoecaria_agallocha",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 127,
+    "Gupti": 22,
+    "Habalikhati": 12,
+    "Kalibhanjadiha": 22
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV446",
+   "reads_total": 183,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Cordycipitaceae",
+   "genus": "Simplicillium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 36,
+    "Habalikhati": 3,
+    "Kalibhanjadiha": 144
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV418",
+   "reads_total": 183,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": "Aspergillus_penicillioides",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 69,
+    "Gupti": 11,
+    "Habalikhati": 89,
+    "Kalibhanjadiha": 14
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV520",
+   "reads_total": 182,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 182
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV439",
+   "reads_total": 181,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 181
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV416",
+   "reads_total": 180,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 180
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV431",
+   "reads_total": 180,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 98,
+    "Gupti": 82
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV415",
+   "reads_total": 179,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 179
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV463",
+   "reads_total": 179,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 179
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV417",
+   "reads_total": 179,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 179
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV540",
+   "reads_total": 177,
+   "kingdom": "Fungi",
+   "phylum": "Rozellomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 177
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV426",
+   "reads_total": 177,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 177
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV423",
+   "reads_total": 176,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Astrosphaeriellaceae",
+   "genus": "Pteridiospora",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 53,
+    "Kalibhanjadiha": 123
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV432",
+   "reads_total": 175,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Chaetothyriales",
+   "family": "Herpotrichiellaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 38,
+    "Habalikhati": 107,
+    "Kalibhanjadiha": 30
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV420",
+   "reads_total": 174,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Onygenales",
+   "family": "Onygenaceae",
+   "genus": "Malbranchea",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 160,
+    "Kalibhanjadiha": 14
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV427",
+   "reads_total": 174,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Trichocomaceae",
+   "genus": "Talaromyces",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 11,
+    "Gupti": 127,
+    "Kalibhanjadiha": 36
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV425",
+   "reads_total": 174,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Anteagloniaceae",
+   "genus": "Anteaglonium",
+   "species": "Anteaglonium_gordoniae",
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 22,
+    "Kalibhanjadiha": 152
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV428",
+   "reads_total": 173,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 173
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV442",
+   "reads_total": 173,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 85,
+    "Gupti": 23,
+    "Habalikhati": 46,
+    "Kalibhanjadiha": 19
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV703",
+   "reads_total": 172,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Malasseziomycetes",
+   "order": "Malasseziales",
+   "family": "Malasseziaceae",
+   "genus": "Malassezia",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 65,
+    "Gupti": 38,
+    "Habalikhati": 50,
+    "Kalibhanjadiha": 19
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV419",
+   "reads_total": 172,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 172
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV436",
+   "reads_total": 171,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 162,
+    "Gupti": 9
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV465",
+   "reads_total": 169,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 1,
+    "Gupti": 168
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV457",
+   "reads_total": 169,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Russulales",
+   "family": "Peniophoraceae",
+   "genus": "Peniophora",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 100,
+    "Gupti": 69
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV447",
+   "reads_total": 169,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 169
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV429",
+   "reads_total": 169,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Polyporales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 27,
+    "Kalibhanjadiha": 142
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV454",
+   "reads_total": 168,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Geminibasidiomycetes",
+   "order": "Geminibasidiales",
+   "family": "Geminibasidiaceae",
+   "genus": "Geminibasidium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 126,
+    "Kalibhanjadiha": 42
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV458",
+   "reads_total": 168,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 8,
+    "Kalibhanjadiha": 160
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV459",
+   "reads_total": 167,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": "Pluteaceae",
+   "genus": "Pluteus",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 55,
+    "Kalibhanjadiha": 112
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV449",
+   "reads_total": 165,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 165
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV424",
+   "reads_total": 165,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 165
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV531",
+   "reads_total": 163,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": "Trichomonascaceae",
+   "genus": "Starmerella",
+   "species": "Starmerella_etchellsii",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 63,
+    "Gupti": 29,
+    "Habalikhati": 71
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV437",
+   "reads_total": 163,
+   "kingdom": "Fungi",
+   "phylum": "Glomeromycota",
+   "class": "Glomeromycetes",
+   "order": "Glomerales",
+   "family": "Glomeraceae",
+   "genus": "Glomus",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 124,
+    "Kalibhanjadiha": 39
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV440",
+   "reads_total": 163,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 163
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV453",
+   "reads_total": 162,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Bambusicolaceae",
+   "genus": "Leucaenicola",
+   "species": "Leucaenicola_phraeana",
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 45,
+    "Kalibhanjadiha": 117
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV434",
+   "reads_total": 161,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 161
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV455",
+   "reads_total": 160,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 160
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV461",
+   "reads_total": 159,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 159
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV444",
+   "reads_total": 157,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Mycosphaerellales",
+   "family": "Mycosphaerellaceae",
+   "genus": "Pseudocercospora",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 150,
+    "Kalibhanjadiha": 7
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV466",
+   "reads_total": 153,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Cladosporiales",
+   "family": "Cladosporiaceae",
+   "genus": "Cladosporium",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 38,
+    "Kalibhanjadiha": 115
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV452",
+   "reads_total": 153,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": "Psathyrellaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 71,
+    "Gupti": 82
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV445",
+   "reads_total": 152,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Amphisphaeriales",
+   "family": "Sporocadaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 87,
+    "Kalibhanjadiha": 65
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV469",
+   "reads_total": 152,
+   "kingdom": "Fungi",
+   "phylum": "Chytridiomycota",
+   "class": "Rhizophydiomycetes",
+   "order": "Rhizophydiales",
+   "family": "Halomycetaceae",
+   "genus": "Paludomyces",
+   "species": "Paludomyces_mangrovei",
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 12,
+    "Kalibhanjadiha": 140
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV451",
+   "reads_total": 151,
+   "kingdom": "Alveolata",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 151
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV480",
+   "reads_total": 151,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": "Lulworthiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 99,
+    "Kalibhanjadiha": 52
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV448",
+   "reads_total": 151,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 151
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV479",
+   "reads_total": 150,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 150
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV956",
+   "reads_total": 150,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 144,
+    "Kalibhanjadiha": 6
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV462",
+   "reads_total": 149,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Mycosphaerellales",
+   "family": "Neodevriesiaceae",
+   "genus": "Neodevriesia",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 53,
+    "Kalibhanjadiha": 96
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV482",
+   "reads_total": 149,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 38,
+    "Kalibhanjadiha": 111
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV460",
+   "reads_total": 149,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 144,
+    "Kalibhanjadiha": 5
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV471",
+   "reads_total": 148,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 148
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV474",
+   "reads_total": 148,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": "Debaryomycetaceae",
+   "genus": "Meyerozyma",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 52,
+    "Gupti": 69,
+    "Habalikhati": 13,
+    "Kalibhanjadiha": 14
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV473",
+   "reads_total": 148,
+   "kingdom": "Fungi",
+   "phylum": "Chytridiomycota",
+   "class": "Rhizophydiomycetes",
+   "order": "Rhizophydiales",
+   "family": "Halomycetaceae",
+   "genus": "Paludomyces",
+   "species": "Paludomyces_mangrovei",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 61,
+    "Habalikhati": 9,
+    "Kalibhanjadiha": 78
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV490",
+   "reads_total": 147,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 41,
+    "Gupti": 106
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV478",
+   "reads_total": 146,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 137,
+    "Gupti": 9
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV477",
+   "reads_total": 146,
+   "kingdom": "Alveolata",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 146
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV488",
+   "reads_total": 145,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 145
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV505",
+   "reads_total": 144,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 144
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV481",
+   "reads_total": 144,
+   "kingdom": "Fungi",
+   "phylum": "Glomeromycota",
+   "class": "Glomeromycetes",
+   "order": "Glomerales",
+   "family": "Glomeraceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 110,
+    "Kalibhanjadiha": 34
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV472",
+   "reads_total": 144,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Microascales",
+   "family": "Halosphaeriaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 131,
+    "Gupti": 13
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV468",
+   "reads_total": 144,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Bionectriaceae",
+   "genus": "Lasionectria",
+   "species": "Lasionectria_antillana",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 144
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV483",
+   "reads_total": 143,
+   "kingdom": "Viridiplantae",
+   "phylum": "Chlorophyta",
+   "class": "Chlorophyceae",
+   "order": "Chlamydomonadales",
+   "family": "Coccomyxaceae",
+   "genus": "Choricystis",
+   "species": "Choricystis_limnetica",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 11,
+    "Gupti": 108,
+    "Habalikhati": 3,
+    "Kalibhanjadiha": 21
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV516",
+   "reads_total": 143,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 24,
+    "Habalikhati": 119
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV484",
+   "reads_total": 143,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 143
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV1253",
+   "reads_total": 140,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 140
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV489",
+   "reads_total": 140,
+   "kingdom": "Alveolata",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 3,
+    "Kalibhanjadiha": 137
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV464",
+   "reads_total": 139,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Microbotryomycetes",
+   "order": "Sporidiobolales",
+   "family": "Sporidiobolaceae",
+   "genus": "Sporobolomyces",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 25,
+    "Gupti": 78,
+    "Habalikhati": 12,
+    "Kalibhanjadiha": 24
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV535",
+   "reads_total": 139,
+   "kingdom": "Viridiplantae",
+   "phylum": "Anthophyta",
+   "class": "Eudicotyledonae",
+   "order": "Malpighiales",
+   "family": "Euphorbiaceae",
+   "genus": "Excoecaria",
+   "species": "Excoecaria_agallocha",
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 9,
+    "Gupti": 4,
+    "Habalikhati": 21,
+    "Kalibhanjadiha": 105
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV496",
+   "reads_total": 138,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 138
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV498",
+   "reads_total": 138,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Gupti": 138
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV521",
+   "reads_total": 137,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Exobasidiomycetes",
+   "order": "Microstromatales",
+   "family": null,
+   "genus": "Sympodiomycopsis",
+   "species": "Sympodiomycopsis_kandeliae",
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 10,
+    "Kalibhanjadiha": 127
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV500",
+   "reads_total": 137,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Kalibhanjadiha": 137
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV529",
+   "reads_total": 136,
+   "kingdom": "Fungi",
+   "phylum": "Glomeromycota",
+   "class": "Glomeromycetes",
+   "order": "Entrophosporales",
+   "family": "Entrophosporaceae",
+   "genus": "Claroideoglomus",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Dangmal": 136
+   }
+  },
+  {
+   "asv_id": "ITS2_ASV485",
+   "reads_total": 136,
+   "kingdom": "Alveolata",
+   "phylum": "Ciliophora",
+   "class": "Spirotrichea",
+   "order": "Euplotida",
+   "family": "Euplotidae",
+   "genus": "Euplotes",
+   "species": null,
+   "sintax_conf": null,
+   "per_sample": {
+    "Habalikhati": 136
+   }
+  }
+ ],
+ "composition": {
+  "phylum": {
+   "Ascomycota": 41.102,
+   "Non-fungal": 35.152,
+   "Basidiomycota": 12.009,
+   "Unassigned": 9.043,
+   "Glomeromycota": 1.199,
+   "Chytridiomycota": 0.621,
+   "Rozellomycota": 0.397,
+   "Mortierellomycota": 0.218,
+   "Mucoromycota": 0.155,
+   "Blastocladiomycota": 0.104
+  },
+  "genus": {
+   "Unassigned": 47.731,
+   "Non-fungal": 35.152,
+   "Penicillium": 2.307,
+   "Candolleomyces": 2.113,
+   "Cladosporium": 1.231,
+   "Fusarium": 1.227,
+   "Aspergillus": 1.132,
+   "Pestalotiopsis": 0.639,
+   "Clitopilus": 0.628,
+   "Keqinzhangia": 0.6,
+   "Candida": 0.481,
+   "Boubovia": 0.441,
+   "Talaromyces": 0.431,
+   "Phaeophleospora": 0.411,
+   "Malassezia": 0.333,
+   "Other": 5.144
+  }
+ },
+ "files": {
+  "result.json": "/api/jobs/ebe1f6d12027/files/result.json",
+  "asv_table_with_taxonomy.tsv": "/api/jobs/ebe1f6d12027/files/asv_table_with_taxonomy.tsv",
+  "asvs.fasta": "/api/jobs/ebe1f6d12027/files/asvs.fasta",
+  "read_tracking.tsv": "/api/jobs/ebe1f6d12027/files/read_tracking.tsv"
+ },
+ "notes": [
+  "Test data rebuilt from the project's earlier Indian coastal eDNA results (tests/make_test_data.py).",
+  "sintax_conf is null: the source ASV table has no SINTAX confidence column."
+ ]
+}

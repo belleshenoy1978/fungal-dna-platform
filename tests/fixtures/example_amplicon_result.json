@@ -1,0 +1,2393 @@
+{
+ "job_id": "e90e6df6dc7f",
+ "job_type": "amplicon",
+ "status": "done",
+ "submitted_at": "2026-11-12T06:11:37Z",
+ "completed_at": "2026-11-12T06:12:09Z",
+ "params": {
+  "marker": "ITS1",
+  "fwd_primer": "CTTGGTCATTTAGAGGAAGTAA",
+  "rev_primer": "GCTGCGTTCTTCATCGATGC",
+  "paired": true,
+  "trim_primers": true,
+  "min_merge_len": 100,
+  "max_ee": 1.0,
+  "minsize": 8,
+  "sintax_cutoff": 0.8,
+  "location": "test",
+  "lat": 0.0,
+  "lon": 0.0,
+  "submitter": "test_amplicon_api",
+  "substrate": "",
+  "input_files": [
+   "SRR21859822_1.fastq.gz",
+   "SRR21859822_2.fastq.gz",
+   "SRR21859823_1.fastq.gz",
+   "SRR21859823_2.fastq.gz"
+  ]
+ },
+ "summary": {
+  "n_samples": 2,
+  "n_reads_in": 140055,
+  "n_reads_kept": 126975,
+  "n_asvs": 127,
+  "n_fungal_asvs": 114,
+  "n_species": 37,
+  "marker": "ITS1",
+  "location": "test",
+  "lat": 0.0,
+  "lon": 0.0
+ },
+ "samples": [
+  {
+   "sample_id": "SRR21859822",
+   "reads_in": 59580,
+   "reads_trimmed": 57339,
+   "reads_merged": 54653,
+   "reads_filtered": 54621,
+   "reads_nonchimeric": 53604,
+   "n_asvs": 91,
+   "n_fungal_asvs": 90,
+   "shannon": 1.2796,
+   "shannon_all": 1.2806,
+   "pct_fungal": 99.99
+  },
+  {
+   "sample_id": "SRR21859823",
+   "reads_in": 80475,
+   "reads_trimmed": 78761,
+   "reads_merged": 75407,
+   "reads_filtered": 75375,
+   "reads_nonchimeric": 73371,
+   "n_asvs": 123,
+   "n_fungal_asvs": 111,
+   "shannon": 1.4494,
+   "shannon_all": 1.5396,
+   "pct_fungal": 98.27
+  }
+ ],
+ "taxa": [
+  {
+   "asv_id": "ITS1_ASV1",
+   "reads_total": 85422,
+   "length": 273,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Trichocomaceae",
+   "genus": "Talaromyces",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 37546,
+    "SRR21859823": 47876
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV3",
+   "reads_total": 12179,
+   "length": 260,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "order",
+   "per_sample": {
+    "SRR21859822": 9124,
+    "SRR21859823": 3055
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV2",
+   "reads_total": 11127,
+   "length": 248,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Amphisphaeriales",
+   "family": "Apiosporaceae",
+   "genus": "Nigrospora",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 151,
+    "SRR21859823": 10976
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV4",
+   "reads_total": 2830,
+   "length": 251,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "phylum",
+   "per_sample": {
+    "SRR21859822": 237,
+    "SRR21859823": 2593
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV5",
+   "reads_total": 1631,
+   "length": 234,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Glomerellales",
+   "family": "Plectosphaerellaceae",
+   "genus": "Plectosphaerella",
+   "species": null,
+   "sintax_conf": 0.84,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 1189,
+    "SRR21859823": 442
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV6",
+   "reads_total": 1278,
+   "length": 260,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Thermoascaceae",
+   "genus": "Paecilomyces",
+   "species": "Paecilomyces_maximus",
+   "sintax_conf": 0.99,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 419,
+    "SRR21859823": 859
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV7",
+   "reads_total": 1111,
+   "length": 268,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Leotiomycetes",
+   "order": "Helotiales",
+   "family": "Helotiaceae",
+   "genus": "Scytalidium",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 14,
+    "SRR21859823": 1097
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV8",
+   "reads_total": 839,
+   "length": 267,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Glomerellales",
+   "family": "Glomerellaceae",
+   "genus": "Colletotrichum",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 602,
+    "SRR21859823": 237
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV53",
+   "reads_total": 526,
+   "length": 287,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {
+    "SRR21859823": 526
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV13",
+   "reads_total": 483,
+   "length": 246,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "kingdom",
+   "per_sample": {
+    "SRR21859822": 220,
+    "SRR21859823": 263
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV9",
+   "reads_total": 482,
+   "length": 245,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": null,
+   "genus": "Candida",
+   "species": "Candida_parapsilosis",
+   "sintax_conf": 1.0,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 241,
+    "SRR21859823": 241
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV10",
+   "reads_total": 422,
+   "length": 234,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": "Saccharomycetaceae",
+   "genus": "Oligophagozyma",
+   "species": "Oligophagozyma_castellii",
+   "sintax_conf": 0.99,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 130,
+    "SRR21859823": 292
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV11",
+   "reads_total": 378,
+   "length": 265,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {
+    "SRR21859823": 378
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV12",
+   "reads_total": 357,
+   "length": 249,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 202,
+    "SRR21859823": 155
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV20",
+   "reads_total": 310,
+   "length": 298,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Cantharellales",
+   "family": "Ceratobasidiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 199,
+    "SRR21859823": 111
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV18",
+   "reads_total": 288,
+   "length": 237,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Glomerellales",
+   "family": "Plectosphaerellaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 194,
+    "SRR21859823": 94
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV14",
+   "reads_total": 280,
+   "length": 247,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": "Fusarium",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 277,
+    "SRR21859823": 3
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV27",
+   "reads_total": 227,
+   "length": 296,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Cantharellales",
+   "family": "Ceratobasidiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.99,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 130,
+    "SRR21859823": 97
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV16",
+   "reads_total": 225,
+   "length": 243,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": null,
+   "genus": "Candida",
+   "species": "Candida_pseudojiufengensis",
+   "sintax_conf": 0.96,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 90,
+    "SRR21859823": 135
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV17",
+   "reads_total": 222,
+   "length": 267,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Glomerellales",
+   "family": "Glomerellaceae",
+   "genus": "Colletotrichum",
+   "species": null,
+   "sintax_conf": 0.99,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 168,
+    "SRR21859823": 54
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV22",
+   "reads_total": 215,
+   "length": 276,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Hypocreaceae",
+   "genus": "Trichoderma",
+   "species": null,
+   "sintax_conf": 0.86,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 109,
+    "SRR21859823": 106
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV19",
+   "reads_total": 199,
+   "length": 276,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Dothideales",
+   "family": "Saccotheciaceae",
+   "genus": "Aureobasidium",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 61,
+    "SRR21859823": 138
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV32",
+   "reads_total": 197,
+   "length": 239,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "kingdom",
+   "per_sample": {
+    "SRR21859822": 139,
+    "SRR21859823": 58
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV21",
+   "reads_total": 186,
+   "length": 248,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Microbotryomycetes",
+   "order": "Sporidiobolales",
+   "family": "Sporidiobolaceae",
+   "genus": "Rhodotorula",
+   "species": "Rhodotorula_mucilaginosa",
+   "sintax_conf": 0.9,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859823": 186
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV30",
+   "reads_total": 185,
+   "length": 265,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Sordariales",
+   "family": "Chaetomiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.92,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 145,
+    "SRR21859823": 40
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV25",
+   "reads_total": 166,
+   "length": 252,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": "Penicillium_oxalicum",
+   "sintax_conf": 0.88,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859823": 166
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV35",
+   "reads_total": 161,
+   "length": 255,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Stachybotryaceae",
+   "genus": "Stachybotrys",
+   "species": null,
+   "sintax_conf": 0.9,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 105,
+    "SRR21859823": 56
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV24",
+   "reads_total": 158,
+   "length": 292,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": "Saccharomycopsidaceae",
+   "genus": "Saccharomycopsis",
+   "species": "Saccharomycopsis_fibuligera",
+   "sintax_conf": 0.94,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 63,
+    "SRR21859823": 95
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV37",
+   "reads_total": 151,
+   "length": 251,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 89,
+    "SRR21859823": 62
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV23",
+   "reads_total": 150,
+   "length": 219,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Tremellomycetes",
+   "order": "Trichosporonales",
+   "family": "Trichosporonaceae",
+   "genus": "Trichosporon",
+   "species": "Trichosporon_asahii",
+   "sintax_conf": 0.97,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 84,
+    "SRR21859823": 66
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV26",
+   "reads_total": 150,
+   "length": 263,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Cantharellales",
+   "family": "Ceratobasidiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.97,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 150
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV31",
+   "reads_total": 133,
+   "length": 259,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.98,
+   "assignment_level": "class",
+   "per_sample": {
+    "SRR21859823": 133
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV28",
+   "reads_total": 129,
+   "length": 265,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {
+    "SRR21859823": 129
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV29",
+   "reads_total": 127,
+   "length": 247,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Microbotryomycetes",
+   "order": "Sporidiobolales",
+   "family": "Sporidiobolaceae",
+   "genus": "Sporobolomyces",
+   "species": "Sporobolomyces_salmonicolor",
+   "sintax_conf": 0.99,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 19,
+    "SRR21859823": 108
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV38",
+   "reads_total": 117,
+   "length": 267,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Glomerellales",
+   "family": "Glomerellaceae",
+   "genus": "Colletotrichum",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 89,
+    "SRR21859823": 28
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV52",
+   "reads_total": 110,
+   "length": 286,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Malasseziomycetes",
+   "order": "Malasseziales",
+   "family": "Malasseziaceae",
+   "genus": "Malassezia",
+   "species": "Malassezia_restricta",
+   "sintax_conf": 0.98,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 24,
+    "SRR21859823": 86
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV45",
+   "reads_total": 106,
+   "length": 258,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Myrotheciomycetaceae",
+   "genus": "Emericellopsis",
+   "species": "Emericellopsis_humicola",
+   "sintax_conf": 0.94,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859823": 106
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV36",
+   "reads_total": 104,
+   "length": 317,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Ustilaginomycetes",
+   "order": "Ustilaginales",
+   "family": "Ustilaginaceae",
+   "genus": "Pseudozyma",
+   "species": "Pseudozyma_hubeiensis",
+   "sintax_conf": 1.0,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 35,
+    "SRR21859823": 69
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV33",
+   "reads_total": 101,
+   "length": 259,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.97,
+   "assignment_level": "class",
+   "per_sample": {
+    "SRR21859823": 101
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV65",
+   "reads_total": 98,
+   "length": 244,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Sporormiaceae",
+   "genus": "Westerdykella",
+   "species": "Westerdykella_dispersa",
+   "sintax_conf": 0.96,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859823": 98
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV39",
+   "reads_total": 95,
+   "length": 238,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": "Aspergillus_ruber",
+   "sintax_conf": 0.83,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 64,
+    "SRR21859823": 31
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV34",
+   "reads_total": 95,
+   "length": 270,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": null,
+   "sintax_conf": 0.98,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 39,
+    "SRR21859823": 56
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV42",
+   "reads_total": 93,
+   "length": 264,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": "Debaryomycetaceae",
+   "genus": "Meyerozyma",
+   "species": "Meyerozyma_guilliermondii",
+   "sintax_conf": 0.99,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 84,
+    "SRR21859823": 9
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV40",
+   "reads_total": 92,
+   "length": 277,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": "Aspergillus_flavus",
+   "sintax_conf": 0.92,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 41,
+    "SRR21859823": 51
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV68",
+   "reads_total": 92,
+   "length": 269,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Pleosporaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.99,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 80,
+    "SRR21859823": 12
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV44",
+   "reads_total": 89,
+   "length": 258,
+   "kingdom": "Fungi",
+   "phylum": "Chytridiomycota",
+   "class": "Rhizophydiomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.87,
+   "assignment_level": "class",
+   "per_sample": {
+    "SRR21859823": 89
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV49",
+   "reads_total": 82,
+   "length": 177,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": "Pichiaceae",
+   "genus": "Pichia",
+   "species": null,
+   "sintax_conf": 0.84,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 32,
+    "SRR21859823": 50
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV41",
+   "reads_total": 80,
+   "length": 283,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Chaetothyriales",
+   "family": "Trichomeriaceae",
+   "genus": "Lithohypha",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 33,
+    "SRR21859823": 47
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV63",
+   "reads_total": 79,
+   "length": 255,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Pleosporaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 33,
+    "SRR21859823": 46
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV43",
+   "reads_total": 74,
+   "length": 225,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {
+    "SRR21859823": 74
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV59",
+   "reads_total": 74,
+   "length": 244,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": "Fusarium",
+   "species": "Fusarium_equiseti",
+   "sintax_conf": 1.0,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 62,
+    "SRR21859823": 12
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV62",
+   "reads_total": 74,
+   "length": 243,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": "Fusarium",
+   "species": null,
+   "sintax_conf": 0.99,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 58,
+    "SRR21859823": 16
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV46",
+   "reads_total": 71,
+   "length": 269,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": "Aspergillus_penicillioides",
+   "sintax_conf": 0.99,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 22,
+    "SRR21859823": 49
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV56",
+   "reads_total": 68,
+   "length": 237,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": "Phaffomycetaceae",
+   "genus": "Cyberlindnera",
+   "species": "Cyberlindnera_jadinii",
+   "sintax_conf": 0.99,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 48,
+    "SRR21859823": 20
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV50",
+   "reads_total": 66,
+   "length": 246,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "kingdom",
+   "per_sample": {
+    "SRR21859822": 45,
+    "SRR21859823": 21
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV92",
+   "reads_total": 64,
+   "length": 237,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Glomerellales",
+   "family": "Plectosphaerellaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.86,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 26,
+    "SRR21859823": 38
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV102",
+   "reads_total": 64,
+   "length": 258,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "order",
+   "per_sample": {
+    "SRR21859823": 64
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV67",
+   "reads_total": 61,
+   "length": 238,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": "Aspergillus_ruber",
+   "sintax_conf": 0.99,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 35,
+    "SRR21859823": 26
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV61",
+   "reads_total": 60,
+   "length": 178,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.93,
+   "assignment_level": "order",
+   "per_sample": {
+    "SRR21859822": 29,
+    "SRR21859823": 31
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV66",
+   "reads_total": 60,
+   "length": 258,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Hypocreaceae",
+   "genus": "Trichoderma",
+   "species": null,
+   "sintax_conf": 0.94,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 16,
+    "SRR21859823": 44
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV57",
+   "reads_total": 58,
+   "length": 259,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.91,
+   "assignment_level": "class",
+   "per_sample": {
+    "SRR21859823": 58
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV48",
+   "reads_total": 56,
+   "length": 261,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": null,
+   "sintax_conf": 0.99,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 26,
+    "SRR21859823": 30
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV60",
+   "reads_total": 56,
+   "length": 263,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "order",
+   "per_sample": {
+    "SRR21859823": 56
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV51",
+   "reads_total": 53,
+   "length": 265,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {
+    "SRR21859823": 53
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV47",
+   "reads_total": 52,
+   "length": 172,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.96,
+   "assignment_level": "order",
+   "per_sample": {
+    "SRR21859822": 18,
+    "SRR21859823": 34
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV118",
+   "reads_total": 50,
+   "length": 235,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "kingdom",
+   "per_sample": {
+    "SRR21859822": 28,
+    "SRR21859823": 22
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV70",
+   "reads_total": 49,
+   "length": 235,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Penicillium",
+   "species": "Penicillium_citrinum",
+   "sintax_conf": 0.94,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 10,
+    "SRR21859823": 39
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV76",
+   "reads_total": 47,
+   "length": 236,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": null,
+   "genus": "Candida",
+   "species": "Candida_orthopsilosis",
+   "sintax_conf": 0.91,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 10,
+    "SRR21859823": 37
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV64",
+   "reads_total": 47,
+   "length": 208,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Wallemiomycetes",
+   "order": "Wallemiales",
+   "family": "Wallemiaceae",
+   "genus": "Wallemia",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 8,
+    "SRR21859823": 39
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV75",
+   "reads_total": 46,
+   "length": 260,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Sarocladiaceae",
+   "genus": "Sarocladium",
+   "species": "Sarocladium_oryzae",
+   "sintax_conf": 0.99,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 22,
+    "SRR21859823": 24
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV77",
+   "reads_total": 45,
+   "length": 265,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "order",
+   "per_sample": {
+    "SRR21859822": 29,
+    "SRR21859823": 16
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV87",
+   "reads_total": 44,
+   "length": 252,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Cladosporiales",
+   "family": "Cladosporiaceae",
+   "genus": "Cladosporium",
+   "species": "Cladosporium_halotolerans",
+   "sintax_conf": 0.99,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 20,
+    "SRR21859823": 24
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV80",
+   "reads_total": 42,
+   "length": 257,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Stachybotryaceae",
+   "genus": "Striaticonidium",
+   "species": null,
+   "sintax_conf": 0.98,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859823": 42
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV107",
+   "reads_total": 39,
+   "length": 245,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": "Fusarium",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 15,
+    "SRR21859823": 24
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV55",
+   "reads_total": 39,
+   "length": 245,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": "Schizophyllaceae",
+   "genus": "Schizophyllum",
+   "species": "Schizophyllum_commune",
+   "sintax_conf": 0.99,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 34,
+    "SRR21859823": 5
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV103",
+   "reads_total": 38,
+   "length": 234,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "kingdom",
+   "per_sample": {
+    "SRR21859822": 27,
+    "SRR21859823": 11
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV119",
+   "reads_total": 37,
+   "length": 257,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Pleosporaceae",
+   "genus": "Curvularia",
+   "species": null,
+   "sintax_conf": 0.97,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 30,
+    "SRR21859823": 7
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV72",
+   "reads_total": 36,
+   "length": 217,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "kingdom",
+   "per_sample": {
+    "SRR21859823": 36
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV71",
+   "reads_total": 36,
+   "length": 303,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Malasseziomycetes",
+   "order": "Malasseziales",
+   "family": "Malasseziaceae",
+   "genus": "Malassezia",
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 2,
+    "SRR21859823": 34
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV58",
+   "reads_total": 35,
+   "length": 270,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": "Aspergillus_clavatophorus",
+   "sintax_conf": 0.99,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 24,
+    "SRR21859823": 11
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV82",
+   "reads_total": 34,
+   "length": 287,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {
+    "SRR21859823": 34
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV73",
+   "reads_total": 34,
+   "length": 275,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Trichocomaceae",
+   "genus": "Talaromyces",
+   "species": "Talaromyces_helicus",
+   "sintax_conf": 1.0,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859823": 34
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV123",
+   "reads_total": 34,
+   "length": 244,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": "Fusarium",
+   "species": "Fusarium_equiseti",
+   "sintax_conf": 0.92,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 18,
+    "SRR21859823": 16
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV122",
+   "reads_total": 33,
+   "length": 252,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Bionectriaceae",
+   "genus": "Acremonium",
+   "species": "Acremonium_sclerotigenum",
+   "sintax_conf": 0.98,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 19,
+    "SRR21859823": 14
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV74",
+   "reads_total": 33,
+   "length": 243,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Nectriaceae",
+   "genus": "Fusarium",
+   "species": null,
+   "sintax_conf": 0.97,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 22,
+    "SRR21859823": 11
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV78",
+   "reads_total": 30,
+   "length": 262,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.96,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 12,
+    "SRR21859823": 18
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV86",
+   "reads_total": 28,
+   "length": 228,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Lulworthiales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "order",
+   "per_sample": {
+    "SRR21859823": 28
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV69",
+   "reads_total": 27,
+   "length": 271,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "phylum",
+   "per_sample": {
+    "SRR21859822": 1,
+    "SRR21859823": 26
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV121",
+   "reads_total": 27,
+   "length": 256,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Cladosporiales",
+   "family": "Cladosporiaceae",
+   "genus": "Cladosporium",
+   "species": null,
+   "sintax_conf": 0.9,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 15,
+    "SRR21859823": 12
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV105",
+   "reads_total": 26,
+   "length": 298,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": "Aspergillus_halophilicus",
+   "sintax_conf": 0.89,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 23,
+    "SRR21859823": 3
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV89",
+   "reads_total": 26,
+   "length": 276,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {
+    "SRR21859823": 26
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV83",
+   "reads_total": 25,
+   "length": 269,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": null,
+   "sintax_conf": 0.99,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 12,
+    "SRR21859823": 13
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV85",
+   "reads_total": 25,
+   "length": 262,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": "Aspergillus_terreus",
+   "sintax_conf": 0.98,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 22,
+    "SRR21859823": 3
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV84",
+   "reads_total": 25,
+   "length": 225,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": "Trichomonascaceae",
+   "genus": "Starmerella",
+   "species": "Starmerella_etchellsii",
+   "sintax_conf": 0.99,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 10,
+    "SRR21859823": 15
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV126",
+   "reads_total": 25,
+   "length": 290,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.97,
+   "assignment_level": "kingdom",
+   "per_sample": {
+    "SRR21859823": 25
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV90",
+   "reads_total": 24,
+   "length": 241,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Mycosphaerellales",
+   "family": "Mycosphaerellaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 12,
+    "SRR21859823": 12
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV79",
+   "reads_total": 24,
+   "length": 182,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": "Trichomonascaceae",
+   "genus": "Wickerhamiella",
+   "species": "Wickerhamiella_pararugosa",
+   "sintax_conf": 0.9,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 2,
+    "SRR21859823": 22
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV96",
+   "reads_total": 24,
+   "length": 198,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.99,
+   "assignment_level": "kingdom",
+   "per_sample": {
+    "SRR21859823": 24
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV117",
+   "reads_total": 23,
+   "length": 278,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Hymenochaetales",
+   "family": "Hymenochaetaceae",
+   "genus": "Fuscoporia",
+   "species": "Fuscoporia_torulosa",
+   "sintax_conf": 1.0,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 5,
+    "SRR21859823": 18
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV95",
+   "reads_total": 23,
+   "length": 235,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Didymellaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.8,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 12,
+    "SRR21859823": 11
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV106",
+   "reads_total": 22,
+   "length": 264,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": "Pleosporales",
+   "family": "Pleosporaceae",
+   "genus": "Alternaria",
+   "species": "Alternaria_nitrimali",
+   "sintax_conf": 0.8,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 13,
+    "SRR21859823": 9
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV112",
+   "reads_total": 21,
+   "length": 242,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": "Neoacremoniaceae",
+   "genus": "Neoacremonium",
+   "species": "Neoacremonium_minutisporum",
+   "sintax_conf": 0.97,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859823": 21
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV97",
+   "reads_total": 21,
+   "length": 288,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {
+    "SRR21859823": 21
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV94",
+   "reads_total": 21,
+   "length": 261,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Sordariales",
+   "family": "Chaetomiaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 18,
+    "SRR21859823": 3
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV114",
+   "reads_total": 21,
+   "length": 336,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Agaricomycetes",
+   "order": "Agaricales",
+   "family": "Psathyrellaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859823": 21
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV115",
+   "reads_total": 21,
+   "length": 249,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Eurotiomycetes",
+   "order": "Eurotiales",
+   "family": "Aspergillaceae",
+   "genus": "Aspergillus",
+   "species": null,
+   "sintax_conf": 0.91,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 9,
+    "SRR21859823": 12
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV111",
+   "reads_total": 20,
+   "length": 172,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": "Metschnikowiaceae",
+   "genus": "Kodamaea",
+   "species": "Kodamaea_ohmeri",
+   "sintax_conf": 0.91,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 3,
+    "SRR21859823": 17
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV108",
+   "reads_total": 20,
+   "length": 262,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": "Saccharomycopsidaceae",
+   "genus": "Ambrosiozyma",
+   "species": "Ambrosiozyma_kamigamensis",
+   "sintax_conf": 0.88,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 14,
+    "SRR21859823": 6
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV98",
+   "reads_total": 19,
+   "length": 216,
+   "kingdom": "Fungi",
+   "phylum": "Rozellomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.97,
+   "assignment_level": "phylum",
+   "per_sample": {
+    "SRR21859823": 19
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV101",
+   "reads_total": 19,
+   "length": 253,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Dothideomycetes",
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "class",
+   "per_sample": {
+    "SRR21859822": 12,
+    "SRR21859823": 7
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV109",
+   "reads_total": 19,
+   "length": 249,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Sordariomycetes",
+   "order": "Hypocreales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.83,
+   "assignment_level": "order",
+   "per_sample": {
+    "SRR21859823": 19
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV93",
+   "reads_total": 19,
+   "length": 267,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Orbiliomycetes",
+   "order": "Orbiliales",
+   "family": "Orbiliaceae",
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.83,
+   "assignment_level": "family",
+   "per_sample": {
+    "SRR21859822": 19
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV127",
+   "reads_total": 18,
+   "length": 288,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {
+    "SRR21859823": 18
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV91",
+   "reads_total": 18,
+   "length": 317,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Ustilaginomycetes",
+   "order": "Ustilaginales",
+   "family": "Ustilaginaceae",
+   "genus": "Pseudozyma",
+   "species": "Pseudozyma_hubeiensis",
+   "sintax_conf": 0.98,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859822": 3,
+    "SRR21859823": 15
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV110",
+   "reads_total": 17,
+   "length": 185,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "kingdom",
+   "per_sample": {
+    "SRR21859823": 17
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV88",
+   "reads_total": 16,
+   "length": 261,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "phylum",
+   "per_sample": {
+    "SRR21859822": 16
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV104",
+   "reads_total": 16,
+   "length": 249,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "phylum",
+   "per_sample": {
+    "SRR21859822": 4,
+    "SRR21859823": 12
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV120",
+   "reads_total": 15,
+   "length": 248,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Microbotryomycetes",
+   "order": null,
+   "family": null,
+   "genus": "Sampaiozyma",
+   "species": null,
+   "sintax_conf": 0.96,
+   "assignment_level": "genus",
+   "per_sample": {
+    "SRR21859822": 1,
+    "SRR21859823": 14
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV125",
+   "reads_total": 14,
+   "length": 288,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.95,
+   "assignment_level": "kingdom",
+   "per_sample": {
+    "SRR21859823": 14
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV116",
+   "reads_total": 14,
+   "length": 272,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {
+    "SRR21859822": 6,
+    "SRR21859823": 8
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV100",
+   "reads_total": 13,
+   "length": 269,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 1.0,
+   "assignment_level": "order",
+   "per_sample": {
+    "SRR21859822": 3,
+    "SRR21859823": 10
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV113",
+   "reads_total": 13,
+   "length": 240,
+   "kingdom": "Fungi",
+   "phylum": "Basidiomycota",
+   "class": "Microbotryomycetes",
+   "order": "Sporidiobolales",
+   "family": "Sporidiobolaceae",
+   "genus": "Sporobolomyces",
+   "species": "Sporobolomyces_bannaensis",
+   "sintax_conf": 0.94,
+   "assignment_level": "species",
+   "per_sample": {
+    "SRR21859823": 13
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV124",
+   "reads_total": 13,
+   "length": 228,
+   "kingdom": "Fungi",
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.97,
+   "assignment_level": "kingdom",
+   "per_sample": {
+    "SRR21859823": 13
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV99",
+   "reads_total": 13,
+   "length": 164,
+   "kingdom": "Fungi",
+   "phylum": "Ascomycota",
+   "class": "Saccharomycetes",
+   "order": "Saccharomycetales",
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": 0.84,
+   "assignment_level": "order",
+   "per_sample": {
+    "SRR21859822": 3,
+    "SRR21859823": 10
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV15",
+   "reads_total": 3,
+   "length": 288,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {
+    "SRR21859823": 3
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV81",
+   "reads_total": 1,
+   "length": 288,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {
+    "SRR21859823": 1
+   }
+  },
+  {
+   "asv_id": "ITS1_ASV54",
+   "reads_total": 0,
+   "length": 288,
+   "kingdom": null,
+   "phylum": null,
+   "class": null,
+   "order": null,
+   "family": null,
+   "genus": null,
+   "species": null,
+   "sintax_conf": null,
+   "assignment_level": "unassigned",
+   "per_sample": {}
+  }
+ ],
+ "composition": {
+  "phylum": {
+   "Ascomycota": 97.894,
+   "Basidiomycota": 1.254,
+   "Unresolved": 0.766,
+   "Chytridiomycota": 0.071,
+   "Rozellomycota": 0.015
+  },
+  "genus": {
+   "Talaromyces": 67.985,
+   "Unresolved": 14.585,
+   "Nigrospora": 8.852,
+   "Plectosphaerella": 1.298,
+   "Paecilomyces": 1.017,
+   "Colletotrichum": 0.937,
+   "Scytalidium": 0.884,
+   "Candida": 0.6,
+   "Aspergillus": 0.599,
+   "Penicillium": 0.455,
+   "Fusarium": 0.425,
+   "Oligophagozyma": 0.336,
+   "Trichoderma": 0.219,
+   "Aureobasidium": 0.158,
+   "Rhodotorula": 0.148,
+   "Stachybotrys": 0.128,
+   "Saccharomycopsis": 0.126,
+   "Trichosporon": 0.119,
+   "Malassezia": 0.116,
+   "Sporobolomyces": 0.111,
+   "Pseudozyma": 0.097,
+   "Emericellopsis": 0.084,
+   "Westerdykella": 0.078,
+   "Meyerozyma": 0.074,
+   "Pichia": 0.065,
+   "Lithohypha": 0.064,
+   "Cladosporium": 0.056,
+   "Cyberlindnera": 0.054,
+   "Sarocladium": 0.037,
+   "Wallemia": 0.037,
+   "Striaticonidium": 0.033,
+   "Schizophyllum": 0.031,
+   "Curvularia": 0.029,
+   "Acremonium": 0.026,
+   "Starmerella": 0.02,
+   "Wickerhamiella": 0.019,
+   "Fuscoporia": 0.018,
+   "Alternaria": 0.018,
+   "Neoacremonium": 0.017,
+   "Ambrosiozyma": 0.016,
+   "Kodamaea": 0.016,
+   "Sampaiozyma": 0.012
+  }
+ },
+ "files": {
+  "asv_table.tsv": "http://127.0.0.1:8011/api/jobs/e90e6df6dc7f/files/asv_table.tsv",
+  "asv_taxonomy.tsv": "http://127.0.0.1:8011/api/jobs/e90e6df6dc7f/files/asv_taxonomy.tsv",
+  "asvs.fasta": "http://127.0.0.1:8011/api/jobs/e90e6df6dc7f/files/asvs.fasta",
+  "read_tracking.tsv": "http://127.0.0.1:8011/api/jobs/e90e6df6dc7f/files/read_tracking.tsv",
+  "diversity_summary.tsv": "http://127.0.0.1:8011/api/jobs/e90e6df6dc7f/files/diversity_summary.tsv",
+  "composition_phylum.tsv": "http://127.0.0.1:8011/api/jobs/e90e6df6dc7f/files/composition_phylum.tsv",
+  "composition_genus.tsv": "http://127.0.0.1:8011/api/jobs/e90e6df6dc7f/files/composition_genus.tsv",
+  "pipeline_log.txt": "http://127.0.0.1:8011/api/jobs/e90e6df6dc7f/files/pipeline_log.txt",
+  "result.json": "http://127.0.0.1:8011/api/jobs/e90e6df6dc7f/files/result.json"
+ },
+ "notes": [
+  "Mode: paired-end merging; marker ITS1; primer trimming ON; maxEE 1.0; min length 100; UNOISE3 minsize 8; SINTAX cutoff 0.8.",
+  "Reference: v38d9421b_unite10_sintax.fasta.gz; VSEARCH vsearch.exe; wall time 32s.",
+  "Results are automated and provisional; no negative controls are enforced; verify taxonomic assignments before publication"
+ ],
+ "citations": [
+  "cutadapt: Martin M. (2011) EMBnet.journal 17(1):10-12",
+  "VSEARCH: Rognes T. et al. (2016) PeerJ 4:e2584",
+  "UNITE: Abarenkov K. et al. (2024) Nucleic Acids Research 52(D1):D791-D797",
+  "SINTAX: Edgar R.C. (2016) bioRxiv 074161",
+  "Plotly.js (MIT licence)"
+ ],
+ "result_folder_url": "http://127.0.0.1:8011/jobs/e90e6df6dc7f"
+}
