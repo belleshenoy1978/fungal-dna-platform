@@ -34,6 +34,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # lets the run start the Pages workflow after committing job pages
 
 concurrency:
   group: fungal-jobs
@@ -139,6 +140,7 @@ jobs:
           python scripts/actions_runner.py --job-id "${{ github.event.client_payload.job_id || inputs.job_id }}"
 
       - name: Commit job pages (docs/jobs)
+        id: commit
         if: always()
         run: |
           set -euo pipefail
@@ -149,11 +151,12 @@ jobs:
             echo "no new job pages to commit"
             exit 0
           fi
-          git commit -m "jobs: results for run ${{ github.run_id }} [skip ci]"
+          git commit -m "jobs: results for run ${{ github.run_id }}"
           # Another run may have pushed meanwhile; rebase keeps our commit on top.
           for attempt in 1 2 3 4 5; do
             if git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}"; then
               echo "pushed docs/jobs"
+              echo "pushed=true" >> "$GITHUB_OUTPUT"
               exit 0
             fi
             echo "push attempt $attempt failed; retrying"
@@ -161,6 +164,14 @@ jobs:
           done
           echo "::error::could not push docs/jobs after 5 attempts"
           exit 1
+
+      # Pushes made with GITHUB_TOKEN never trigger other workflows, so the Pages
+      # site would not pick up docs/jobs/<id>.json. Start it explicitly instead.
+      - name: Redeploy GitHub Pages with the new job pages
+        if: always() && steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run pages.yml --repo "${{ github.repository }}" --ref "${{ github.ref_name }}"
 
       - name: Upload run logs (debugging aid)
         if: always()
