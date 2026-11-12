@@ -132,8 +132,8 @@
   "description": "Zero-cost deployment: Google Form intake -> Apps Script trigger -> GitHub Actions compute -> Drive + Sheets -> static dashboard on GitHub Pages embedded in Google Sites.",
   "github_repo": "belleshenoy1978/fungal-dna-platform",
   "github_pages_url": "https://belleshenoy1978.github.io/fungal-dna-platform/",
-  "google_form_url": "<filled in by apps_script setup()>",
-  "google_form_embed_url": "<filled in by apps_script setup()>",
+  "google_form_url": "https://docs.google.com/forms/d/e/1FAIpQLSevIKhtwJBls5cyyFLA2yOgGUV3QVAzCN0JUOX-cvPcz8i0UQ/viewform",
+  "google_form_embed_url": "https://docs.google.com/forms/d/e/1FAIpQLSevIKhtwJBls5cyyFLA2yOgGUV3QVAzCN0JUOX-cvPcz8i0UQ/viewform?embedded=true",
   "queue_sheet": "queue",
   "queue_status_values": [
    "queued",
