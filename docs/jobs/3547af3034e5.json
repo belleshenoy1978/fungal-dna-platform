@@ -1,0 +1,178 @@
+{
+ "job_id": "3547af3034e5",
+ "job_type": "barcode",
+ "status": "done",
+ "submitted_at": "2026-11-14T05:35:55Z",
+ "completed_at": "2026-11-14T08:10:56Z",
+ "params": {
+  "submitter": "Dr. Poonam Mishra & Dr. Shilpi Thakur",
+  "marker": "ITS",
+  "location": "Varnama, vadodara",
+  "lat": null,
+  "lon": null,
+  "input_dir": "/home/runner/work/_temp/data/jobs/3547af3034e5/input",
+  "input_files": [
+   "/home/runner/work/_temp/data/jobs/3547af3034e5/input/pasted.fasta"
+  ],
+  "submitted_at": "2026-11-14T05:35:55Z",
+  "threads": 4,
+  "n_pasted_chars": 0
+ },
+ "summary": {
+  "n_samples": 1,
+  "n_reads_in": 1,
+  "n_reads_kept": 1,
+  "n_asvs": 1,
+  "n_fungal_asvs": 1,
+  "n_species": 0,
+  "marker": "ITS",
+  "location": "Varnama, vadodara",
+  "lat": null,
+  "lon": null
+ },
+ "samples": [],
+ "taxa": [],
+ "composition": {},
+ "barcoding": [
+  {
+   "query_id": "STPMN1-01",
+   "query_length": 577,
+   "strand": "-",
+   "best_hit_accession": "SH1857694.10FU",
+   "best_hit_species": "Fusarium tonkinense",
+   "best_hit_sh": "SH1857694.10FU",
+   "best_hit_taxonomy": {
+    "kingdom": "Fungi",
+    "phylum": "Ascomycota",
+    "class": "Sordariomycetes",
+    "order": "Hypocreales",
+    "family": "Nectriaceae",
+    "genus": "Fusarium",
+    "species": "Fusarium tonkinense"
+   },
+   "identity_pct": 98.6,
+   "coverage_pct": 83.5,
+   "sintax": {
+    "kingdom": [
+     "Fungi",
+     1.0
+    ],
+    "phylum": [
+     "Ascomycota",
+     0.95
+    ],
+    "class": [
+     "Sordariomycetes",
+     0.95
+    ],
+    "order": [
+     "Hypocreales",
+     0.95
+    ],
+    "family": [
+     "Nectriaceae",
+     0.94
+    ],
+    "genus": [
+     "Fusarium",
+     0.94
+    ],
+    "species": [
+     "Fusarium variasi",
+     0.55
+    ]
+   },
+   "assignment_level": "chimera suspected (not assigned)",
+   "chimera_flag": true,
+   "hits": [
+    {
+     "accession": "SH1857694.10FU",
+     "species": "Fusarium tonkinense",
+     "sh": "SH1857694.10FU",
+     "identity_pct": 98.6,
+     "coverage_pct": 83.5
+    },
+    {
+     "accession": "SH1857416.10FU",
+     "species": "Fusarium variasi",
+     "sh": "SH1857416.10FU",
+     "identity_pct": 98.3,
+     "coverage_pct": 93.2
+    },
+    {
+     "accession": "SH1344688.10FU",
+     "species": "unidentified",
+     "sh": "SH1344688.10FU",
+     "identity_pct": 98.3,
+     "coverage_pct": 83.0
+    },
+    {
+     "accession": "SH1857183.10FU",
+     "species": "Neocosmospora lichenicola",
+     "sh": "SH1857183.10FU",
+     "identity_pct": 97.6,
+     "coverage_pct": 77.6
+    },
+    {
+     "accession": "SH1344692.10FU",
+     "species": "Fusarium sp.",
+     "sh": "SH1344692.10FU",
+     "identity_pct": 97.3,
+     "coverage_pct": 75.9
+    },
+    {
+     "accession": "SH1344743.10FU",
+     "species": "Fusarium sp.",
+     "sh": "SH1344743.10FU",
+     "identity_pct": 97.1,
+     "coverage_pct": 83.0
+    },
+    {
+     "accession": "SH1857667.10FU",
+     "species": "Fusarium merkxianum",
+     "sh": "SH1857667.10FU",
+     "identity_pct": 97.0,
+     "coverage_pct": 75.2
+    },
+    {
+     "accession": "SH1344630.10FU",
+     "species": "Fusarium oxysporum",
+     "sh": "SH1344630.10FU",
+     "identity_pct": 97.0,
+     "coverage_pct": 74.2
+    },
+    {
+     "accession": "SH1344795.10FU",
+     "species": "Fusarium solani",
+     "sh": "SH1344795.10FU",
+     "identity_pct": 96.9,
+     "coverage_pct": 76.3
+    },
+    {
+     "accession": "SH1344987.10FU",
+     "species": "Fusarium oxysporum",
+     "sh": "SH1344987.10FU",
+     "identity_pct": 96.8,
+     "coverage_pct": 79.7
+    }
+   ],
+   "notes": [
+    "query coverage 83.5% < 90%: species call downgraded",
+    "uchime_ref: chimera of SH1393428.10FU and SH1857416.10FU (score 0.84)",
+    "query was reverse-complemented (minus strand matched better)"
+   ],
+   "raw_length": 577,
+   "trimmed_length": 577,
+   "input_file": "pasted.fasta"
+  }
+ ],
+ "files": {
+  "report.html": "https://drive.google.com/uc?export=download&id=1dEfctcsP_F5KQTI51pudCMj3AfxiaiRe",
+  "hits.tsv": "https://drive.google.com/uc?export=download&id=1XJIV2R50HihTjmDU6WW3oTyRekHj-csw",
+  "queries_oriented.fasta": "https://drive.google.com/uc?export=download&id=1t2aSgIlYWKc6lOEybGXfZ7XQIA49LuGv",
+  "result.json": "https://drive.google.com/uc?export=download&id=17O10Du1LRaX2h68ZYBtowDMZhb3f0VtW"
+ },
+ "notes": [],
+ "result_folder_url": "https://drive.google.com/drive/folders/1J5Xbyz7449wwog09rG6mFuoMrPLQZkxc",
+ "result_page_url": "https://belleshenoy1978.github.io/fungal-dna-platform/job.html?id=3547af3034e5"
+}
